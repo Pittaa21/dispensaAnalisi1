@@ -10,6 +10,8 @@
 \usepackage[a4paper]{geometry}
 \usepackage[dvipsnames]{xcolor}
 \usepackage[skip=8pt, indent= 0pt]{parskip}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18, width=10cm}
  \geometry{
  a4paper,
  total={170mm,257mm},
@@ -155,17 +157,14 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \[\forall n\in\mathbb{N}\text{ vale }\forall p,q\in\mathbb{R} \qquad (p+q)^n=\sum_{k=0}^{n}\binom{n}{k}p^kq^{n-k}\]
 \end{defi}
 \section{Limiti di funzioni}
-    \begin{defi}{Intorno}{}
+    \begin{defi}{Definizione di intorno e limite}{}
         Si dice intorno sferico di $r$ con $r\in\mathbb{R}$, un intervallo ]$r-\epsilon,r+\epsilon$[ con $\epsilon>0$ ; $\epsilon$ viene detta raggio dell'intorno
         \begin{itemize}
             \item Se $r=+\infty$, si dice intorno di $+\infty$ un intervallo del tipo \quad ]$M,+\infty$[ \quad con $M>0$ ($M\in\mathbb{R}$)
             \item Se $r=-\infty$, si dice intorno di $-\infty$ un intervallo del tipo \quad ]$-\infty,-M$[ \quad con $M>0$ ($M\in\mathbb{R}$)
-        \end{itemize}
-    \end{defi}
-    \begin{defi}{Definizione di limite}{}
-        $f: \text{dom}f \rightarrow\mathbb{R}, \quad\text{dom}f\subseteq\mathbb{R},\quad x_0\in\mathbb{\bar{R}}$\quad è di acc. a dom$f$,\quad$l\in\mathbb{\bar{R}}$\\
-        Si dice che $f$ ha limite $l$ per $x\rightarrow x_0$ e si scrive:
-            \[\lim_{x\rightarrow x_0}f(x)=l \qquad\text{(oppure $f(x)\rightarrow l$ per $x\rightarrow x_0$)}\]
+        \end{itemize}\vspace{5pt}
+        Dato $\varnothing\ne A\subseteq\mathbb{R},\ x_0\in\mathbb{R}\ \cup\ \{\pm\infty\}$ punto di accumulazione per $A,\ f:A\rightarrow\mathbb{R}$. Se esiste il limite $f$ per $x\rightarrow x_0$ allora è unico. E si indica con:
+        \[\lim_{x\rightarrow x_0}f(x)=l\]
     \end{defi}
     Se $\forall\ V$ intorno di $l$\quad$\exists\ U$ intorno di $x_0$ tale che se $x\in U\cap$ dom$f$, $x\ne x_0$ allora $f(x)\in V$\\
     \colorbox{yellow}{OSSERVAZIONE}: 
@@ -174,4 +173,44 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         \item Se $l=+\infty$ o $l=-\infty$, allora $f$ si dice \underline{divergente} per $x\rightarrow x_0$
         \item Se $l=0$, allora si dice che $f$ è \underline{infinitesima} in $x_0$
     \end{itemize}
+    \begin{theo}{Unicità del limite}{}
+        Se $x_0,l_1,l_2\in\mathbb{\bar{R}}$ e
+        \[\lim_{x\rightarrow x_0}f(x)=l_1\qquad\text{e}\qquad\lim_{x\rightarrow x_0}f(x)=l_2\]
+        allora $l_1=l_2$
+    \end{theo}
+    \colorbox{yellow}{Dim}: Suppongo per assurdo che $l_1\ne l_2$
+    \begin{itemize}
+        \item [] $P_1$ la proposizione di separazione di $\mathbb{R}$
+        \item [] $\exists\ V_1$ intorno di $l_1$
+        \item [] $\exists\ V_2$ intorno di $l_2$
+        \item [] tale che $V_1\ \cap\ V_2 = \varnothing $
+    \end{itemize}
+    D'altra parte\\
+    \begin{minipage}{0.7\textwidth}
+        \[\lim_{x\rightarrow x_0}f(x)=l_1\Rightarrow \]
+    \end{minipage}
+    \begin{minipage}{0.3\textwidth}
+        $\exists\ U_1$ intorno di $x_0$ tale che\\$x\in U_1\ \cap\ \text{dom}f, x\ne x_0$\\ allora $f(x)\in V_1$
+    \end{minipage}\vspace{10pt}
+        \begin{minipage}{0.7\textwidth}
+        \[\lim_{x\rightarrow x_0}f(x)=l_2\Rightarrow \]
+    \end{minipage}
+    \begin{minipage}{0.3\textwidth}
+        $\exists\ U_2$ intorno di $x_0$ tale che\\$x\in U_2\ \cap\ \text{dom}f, x\ne x_0$\\ allora $f(x)\in V_2$
+    \end{minipage}
+    Pongo
+    \begin{itemize}
+        \item [] $U=U_1\ \cap\ U_2$ intorno di $x_0$
+        \item [] $\Rightarrow\exists\ \bar{x}\in\quad U\ \smallsetminus\{ x_0\},\ \bar{x}\in\text{dom}f$
+        \item [] $\Rightarrow f(\bar{x})\in V_1\ \cap\ V_2 = \varnothing$\qquad \colorbox{yellow}{ASSURDO}\quad poichè $\bar{x}\in U_1$ e $\bar{x}\in U_2$
+    \end{itemize}
+    \begin{ex}{Verificare}{}
+        \[\lim_{x\rightarrow2}2\ |x-2|\ \cos[\ \ln |x-2| + e^{\sin x}]=0\]
+    \end{ex}
+    $x_0=2,\quad l=0$
+    \begin{align*}
+        &f(x)= 2\ |x-2|\ \cos[\ \ln|x-2|+e^{\sin x}]\\
+        &\text{dom}f=\mathbb{R}\smallsetminus\{2\}
+    \end{align*}
+    Devo verificare che $\forall\epsilon>0\quad\exists\ \delta $ tale che se $\underbrace{|x-2|<\delta\ ,\ x\in\mathbb{R}\smallsetminus\{2\},\ x\ne2}_{0<|x-2|<\delta}$ allora 
 \end{document}
