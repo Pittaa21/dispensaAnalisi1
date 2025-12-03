@@ -23,8 +23,8 @@
 \date{}
 
 \newtcbtheorem{theo}{Teorema}{%
-    colframe=blue!100!white,
-    colback=blue!10!white
+    colframe=BrickRed!100!white,
+    colback=red!5!white
 }{th}
 
 \newtcbtheorem{ex}{Esempio}{%
@@ -33,8 +33,8 @@
 }{ex}
 
 \newtcbtheorem{defi}{Definizione}{%
-    colframe=BrickRed!100!white,
-    colback=Red!5!white
+    colframe=blue!100!white,
+    colback=blue!10!white
 }{def}
 
 \begin{document}
@@ -163,7 +163,8 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
             \item Se $r=+\infty$, si dice intorno di $+\infty$ un intervallo del tipo \quad ]$M,+\infty$[ \quad con $M>0$ ($M\in\mathbb{R}$)
             \item Se $r=-\infty$, si dice intorno di $-\infty$ un intervallo del tipo \quad ]$-\infty,-M$[ \quad con $M>0$ ($M\in\mathbb{R}$)
         \end{itemize}\vspace{5pt}
-        Dato $\varnothing\ne A\subseteq\mathbb{R},\ x_0\in\mathbb{R}\ \cup\ \{\pm\infty\}$ punto di accumulazione per $A,\ f:A\rightarrow\mathbb{R}$. Se esiste il limite $f$ per $x\rightarrow x_0$ allora è unico. E si indica con:
+        Dato $f:\text{dom}f\rightarrow\mathbb{R},\ \text{dom}f\subseteq \mathbb{R},\ x_0\in\mathbb{R}$ è punto di accumulazione a dom$f,\ l\in\mathbb{\bar{R}}$\\
+        Si dice che $f$ ha limite $l$ per $x\rightarrow x_0$ e si scrive:
         \[\lim_{x\rightarrow x_0}f(x)=l\]
     \end{defi}
     Se $\forall\ V$ intorno di $l$\quad$\exists\ U$ intorno di $x_0$ tale che se $x\in U\cap$ dom$f$, $x\ne x_0$ allora $f(x)\in V$\\
@@ -212,5 +213,82 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         &f(x)= 2\ |x-2|\ \cos[\ \ln|x-2|+e^{\sin x}]\\
         &\text{dom}f=\mathbb{R}\smallsetminus\{2\}
     \end{align*}
-    Devo verificare che $\forall\epsilon>0\quad\exists\ \delta $ tale che se $\underbrace{|x-2|<\delta\ ,\ x\in\mathbb{R}\smallsetminus\{2\},\ x\ne2}_{0<|x-2|<\delta}$ allora 
+    Devo verificare che 
+    $\forall\epsilon>0\quad\exists\ \delta $ tale che se $\underbrace{|x-2|<\delta\ ,\ x\in\mathbb{R}\smallsetminus\{2\},\ x\ne2}_{0<|x-2|<\delta}$ 
+    \quad allora \quad $\underbrace{|f(x)-0|<\epsilon}_{|f(x)<\epsilon|}$\\
+    ossia \[|2\ |x-2|\ \cos[\ \ln|x-2|+e^{\sin x}]|<\epsilon\quad \Rightarrow\quad \circledast \]
+    Parto da $\circledast$ \[2\ |x-2|\ \underbrace{|cos[\ \ln|x-2|+e^{\sin x}]|}_{\le\ 1}\quad\le\quad 2\ |x-2|\quad<\quad\epsilon\]
+    Voglio $\delta>0$ tale che se $|x-2|<\delta$ e $x\ne2$\quad allora\quad $2\ |x-2|<\epsilon\quad\Leftrightarrow\quad|x-2|<\frac{\epsilon}{2}$
+
+    Prendo $\delta=\frac{\epsilon}{2}$ e ho verificato che vale il limite.
+    \begin{ex}{Limite destro e sinistro}{}
+        $\sin x =$
+        \begin{align*}
+            -1\quad x<0\\
+            0\quad x=0\\
+            1\quad x>0
+        \end{align*}
+    \end{ex}
+    \begin{minipage}{0.5\textwidth}
+    \begin{tikzpicture}
+        \begin{axis}[axis lines=middle, xmax=5,xmin=-5,ymax=5,ymin=-5,ylabel=$y$,xlabel=$x$]
+            \addplot[color=blue, domain=0.3:100]{2};
+            \addplot[color=blue, domain=-0.3:-100]{-2};
+        \end{axis}
+    \end{tikzpicture}
+    \end{minipage}\hspace{50pt}
+    \begin{minipage}{0.5\textwidth}
+        Se $x\rightarrow0^-\quad \text{sgn}\ x\rightarrow-1$\\
+        Se $x\rightarrow0^+\quad \text{sgn}\ x\rightarrow1$\\\\
+        Quindi $\nexists \lim_{x\rightarrow0}\text{sgn}\ x$ perchè affinchè esista, i limiti destro e sinistro devono essere uguali
+    \end{minipage}\vspace{20pt}
+    \begin{defi}{Punto di Accumulazione}{}
+        Sia $A\subseteq \mathbb{R},\ r\in\mathbb{R}$ si dice:
+        \begin{itemize}
+            \item \underline{punto di acc. destro per $A$} se $\forall\epsilon>0\quad A\ \cap\ ]r,r+\epsilon[\ \ne\varnothing$\quad(cioè $\exists\ a\in A$ tale che $r<a<r+\epsilon$)
+            \item \underline{punto di acc. sinistro per $A$} se $\forall\epsilon>0\quad A\ \cap\ ]r-\epsilon,r[\ \ne\varnothing$\quad(cioè $\exists\ a\in A$ tale che $r-\epsilon<a<r$)
+        \end{itemize}
+    \end{defi}\vspace{20pt}
+    \begin{ex}{Verificare che}{}
+        \[\lim_{x\rightarrow0^+}e^{1/x}=+\infty\]
+    \end{ex}
+    \colorbox{yellow}{Soluzione}:\quad devo mostrare $\forall\ M>0\quad\exists\ \delta>0$ tale che se\quad$0<x<\underbrace{0+\delta}_{\delta}$\quad allora\quad$e^{1/x}>M$\\
+    $e^{1/x}>M\Leftrightarrow\ln e^{1/x}>\ln M\Leftrightarrow\frac{1}{x}>\ln M\Leftrightarrow x<\underbrace{\frac{1}{\ln M}}_{\delta}$\\
+    Prendo $\delta=\frac{1}{\ln M}$\\
+    \begin{defi}{Limiti e valore assoluto}{}
+        Sia $x_0\in\mathbb{\bar{R}},\quad l\in\mathbb{R},\quad x_0$ di acc. per dom$f$. Allora:\\
+        \[\lim_{x\rightarrow x_0}f(x)=l\quad\Leftrightarrow\quad\lim_{x\rightarrow x_0}|f(x)-l|=0\]
+    \end{defi}
+    \colorbox{yellow}{Prop}: Sia $x_0,\ l\in\mathbb{\bar{R}}$. Se $\lim_{x\rightarrow x_0}f(x)=l$, allora:\\
+    \[\lim_{x\rightarrow x_0}|f(x)|=|l|\]
+    \colorbox{yellow}{Osservazione}: \[\lim_{x\rightarrow x_0}|f(x)|=|l|\quad\nRightarrow\quad\lim_{x\rightarrow x_0}f(x)=\pm l\]\\
+    \begin{theo}{Permanenza del segno}{}
+        Dato $f$ reale di variabile reale, $x_0\in\mathbb{\bar{R}}$, di acc. per dom$f$ e supp.
+        \[\lim_{x\rightarrow x_0}f(x)=l\quad>\ 0 \]
+        Allora $\exists\ U$ intorno di $x_0$ tale che se $x\in U\ \cap$ dom$f$, $x\ne x_0$, allora\[f(x)>0\]
+    \end{theo}
+    \colorbox{yellow}{Dim}:\quad Considero il caso $l\in\mathbb{R},\ x_0\in\mathbb{\bar{R}}$. Poichè $l>0\Rightarrow\ \exists\ V$ intorno di $l$ tale che:
+    \[V\subseteq\ ]0,+\infty[\]
+    $\exists\ U$ intorno di $x_0$ tale che se $x\in U\ \cap$ dom$f,\ x\ne x_0$ allora $f(x)\in V$\quad Poichè $V\subseteq\ ]0,+\infty[$, ho
+    \[f(x>0)\]
+    $\forall x\in U$ dom$f,\ x\ne x_0$\\
+    \colorbox{yellow}{Oss}: vale l'analogo con $l<0$\\
+    \begin{theo}{Teorema del Confronto}{}
+        Siano $f,\ g$ funzioni reali di variabile reale, $x_0$ di acc. per dom$f\ \cap$ dom$g$, tale che
+        \[f(x)\le g(x)\qquad\text{definitivamente per } x\rightarrow x_0\]
+        Se \[l_f=\lim_{x\rightarrow x_0}f(x)\qquad\text{e}\qquad l_g=\lim_{x\rightarrow x_0}g(x)\]
+        allora\[l_f\le l_g\]
+    \end{theo}
+    \colorbox{yellow}{Oss}: se $f(x)<g(x)$\quad definitivamente per \LARGE{$x\rightarrow x_0\brace \exists\ l_f\ \text{e}\ l_g$$\nRightarrow$}\large\quad $l_f<l_g$\\\normalsize
+    \begin{ex}{}{}
+        $0<e^x\qquad\forall x\in\mathbb{R}\qquad\lim_{x\rightarrow-\infty}e^x=0=\lim_{x\rightarrow-\infty}0$
+    \end{ex}\vspace{10pt}
+    \begin{theo}{Teorema dei due carabinieri}{}
+        Sia $X\subseteq\mathbb{R},\ f,g,h\ =X\rightarrow\mathbb{R},\ x_0\in\mathbb{\bar{R}}$ di acc. a $X$. Se
+        \large\[\circledast\qquad f(x)\le h(x)\le g(x)\qquad \text{def. per }x\rightarrow x_0\]\normalsize
+        e\large\[\lim_{x\rightarrow x_0}f(x)=\lim_{x\rightarrow x_0}g(x)=l\]\normalsize
+        allora\large\[\lim_{x\rightarrow x_0}h(x)=l\]\normalsize
+    \end{theo}
+    \colorbox{yellow}{Dim}: Suppongo per semplicità che $\circledast$ valga $\forall x\in X$. Devo mostrare che $\forall V$ intorno di $l\quad\exists\ U$ intorno di $x_0$ t.c.
+    se $x\in(U\ \cap\ \underbrace{\text{dom}f}_{X})\smallsetminus\{x_0\}$, allora $h(x)\in V$
 \end{document}
