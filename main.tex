@@ -290,5 +290,22 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         allora\large\[\lim_{x\rightarrow x_0}h(x)=l\]\normalsize
     \end{theo}
     \colorbox{yellow}{Dim}: Suppongo per semplicità che $\circledast$ valga $\forall x\in X$. Devo mostrare che $\forall V$ intorno di $l\quad\exists\ U$ intorno di $x_0$ t.c.
-    se $x\in(U\ \cap\ \underbrace{\text{dom}f}_{X})\smallsetminus\{x_0\}$, allora $h(x)\in V$
+    se $x\in(U\ \cap\ \underbrace{\text{dom}f}_{X})\smallsetminus\{x_0\}$, allora $h(x)\in V$ con $V$ intorno di $l$\\
+    $\lim_{x\rightarrow x_0}f(x)=l \Rightarrow\ \exists\ U_f$ intorno di $x_0$ tale che se $x\in(U_f\ \cap\ X)\smallsetminus\{x_0\}$ allora $f(x)\in V$\\
+    $\lim_{x\rightarrow x_0}g(x)=l \Rightarrow\ \exists\ U_g$ intorno di $x_0$ tale che se $x\in(U_g\ \cap\ X)\smallsetminus\{x_0\}$ allora $g(x)\in V$\\
+    Prendo $U=U_f\ \cap\ U_g$ è intorno di $x_0$ se $x\in(U\ \cap\ X)\smallsetminus\{x_0\}\Rightarrow f(x)\in V,\quad g(x)\in V$\\
+    Quindi $f(x)\le h(x)\le g(x)$ e $V$ intervallo\qquad allora $h(x)\in V$
+    \begin{ex}{Teorema due carabinieri}{}
+        \[\lim_{x\rightarrow0}\frac{\sin x}{x}=1\]
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}:\qquad Si sfrutta il fatto che:\[\cos x\le\frac{\sin x}{x}\le1\qquad\text{def. per }x\rightarrow0\]
+    \begin{ex}{Dimostrare}{}
+        \[\lim_{x\rightarrow0}\frac{1-\cos x}{x^2}=\frac{1}{2}\]
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}: 
+    \begin{align*}
+        &\lim_{x\rightarrow0}\frac{1-\cos x}{x^2} = \lim_{x\rightarrow0}\frac{1-\cos x}{x^2}\cdot\frac{1+\cos x}{1+\cos x}=\\
+        &=\lim_{x\rightarrow0}\frac{1-\cos^2x}{x^2}\cdot\frac{1}{1+\cos x} =\\
+        &=\lim_{x\rightarrow0}\underbrace{\frac{\sin^2x}{x^2}}_{1}\cdot\underbrace{\frac{1}{1+\cos x}}_{1/2}= \frac{1}{2}
+    \end{align*}
 \end{document}
