@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1765130926.21339 "/home/pitta/Documents/Latex/main.tex" "main.pdf" "main" 1765130927.46765 0
+["pdflatex"] 1765220569.64833 "/home/pitta/Documents/Latex/main.tex" "main.pdf" "main" 1765220570.90438 0
   "/etc/texmf/web2c/texmf.cnf" 1764412924.27367 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/pitta/Documents/Latex/main.tex" 1765130926.01958 17867 509aaf82aa60d29f047e7ec86b11c378 ""
+  "/home/pitta/Documents/Latex/main.tex" 1765220569.44294 20296 9696bdeb5649c6d414f768234b9afba5 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/atkinson/atksn_cvs3iv.enc" 1612564038 2852 0e84d9c42a84502cb059a346f06c6632 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/atkinson/atksn_ycy2xh.enc" 1612564038 3176 391809404193674ae2e225815b04d7d6 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -36,6 +36,8 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1248133631 37912 77d683123f92148345f3fc36a38d9ab1 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1248133631 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -245,9 +247,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1764412946.09031 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1764413083 8214005 b94c646e6e46fa3fbdf3b229186627aa ""
-  "main.aux" 1765130927.37382 480 7a410b246cdd8e805c3405d0eb73e111 "pdflatex"
-  "main.tex" 1765130926.01958 17867 509aaf82aa60d29f047e7ec86b11c378 ""
-  "main.toc" 1765130927.37482 283 b27d412ee1a97471fc09ec138a893820 "pdflatex"
+  "main.aux" 1765220570.80165 481 a48af8e37d97ab6b554ad0ac821aa258 "pdflatex"
+  "main.tex" 1765220569.44294 20296 9696bdeb5649c6d414f768234b9afba5 ""
+  "main.toc" 1765220570.80165 283 b27d412ee1a97471fc09ec138a893820 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

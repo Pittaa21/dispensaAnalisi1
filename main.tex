@@ -305,8 +305,8 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \colorbox{yellow}{Svolgimento}: 
     \begin{align*}
         &\lim_{x\rightarrow0}\frac{1-\cos x}{x^2} = \lim_{x\rightarrow0}\frac{1-\cos x}{x^2}\cdot\frac{1+\cos x}{1+\cos x}=\\
-        &=\lim_{x\rightarrow0}\frac{1-\cos^2x}{x^2}\cdot\frac{1}{1+\cos x} =\\
-        &=\lim_{x\rightarrow0}\underbrace{\frac{\sin^2x}{x^2}}_{1}\cdot\underbrace{\frac{1}{1+\cos x}}_{1/2}= \frac{1}{2}
+        =&\lim_{x\rightarrow0}\frac{1-\cos^2x}{x^2}\cdot\frac{1}{1+\cos x} =\\
+        =&\lim_{x\rightarrow0}\underbrace{\frac{\sin^2x}{x^2}}_{1}\cdot\underbrace{\frac{1}{1+\cos x}}_{1/2}= \frac{1}{2}
     \end{align*}
     \begin{defi}{Limite notevole}{}
         \[\lim_{x\rightarrow\pm\infty}(1+\frac{1}{x})^x=e\]
@@ -326,9 +326,50 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \begin{ex}{}{}
         \[\lim_{x\rightarrow0}g(x\cdot\sin\frac{1}{x})\text{ non esiste}\]
     \end{ex}
-    $g(y)=\qquad\cos y$ se $y\ne0$\qquad$0$ se $y=0$
+    $g(y)=\qquad\cos y$ se $y\ne0$\qquad$0$ se $y=0$\newpage
     \begin{theo}{Operazioni sui limiti}{}
         $X\subseteq \mathbb{R},\ f,g$: $X\rightarrow\mathbb{R},\ x_0$ punto di acc. per $X,\ x_0\in\mathbb{\bar{R}}$. Supp.\\
         \[\lim_{x\rightarrow x_0}f(x)=l_f,\quad\lim_{x\rightarrow x_0}g(x)=l_g,\quad l_f,\ l_g\in\mathbb{R}\]
+        Allora:
     \end{theo}
+    \begin{enumerate}
+        \item $c\in\mathbb{R},\quad\lim_{x\rightarrow x_0}(c\ f(x))=c\ l_f$
+        \item $\lim_{x\rightarrow x_0}(f(x)\pm g(x))=l_f\pm l_g$
+        \item $\lim_{x\rightarrow x_0}(f(x)\cdot g(x))=l_f\cdot l_g$
+        \item $\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)}=\frac{l_f}{l_g}\qquad$se $l_g\ne0$
+        \item $\lim_{x\rightarrow x_0}\frac{1}{f(x)}=\frac{1}{l_f}$\qquad se $l_f\ne0$
+    \end{enumerate}
+    \colorbox{yellow}{Oss}: il teorema rimane vero se faccio limite destro o sinitro\\
+    \begin{ex}{Calcolare}{}
+        \[\lim_{x\rightarrow x_0}(f(x))^{g(x)}=(l_f)^{l_g}\]
+        con \qquad$\lim_{x\rightarrow x_0}f(x)=l_f>0$\hfill$\lim_{x\rightarrow x_0}g(x)=l_g\in\mathbb{R}$
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}:
+    \large\begin{align*}
+        &\lim_{x\rightarrow x_0}f(x)^{g(x)}=\lim_{x\rightarrow x_0}e^{\ln((f(x)^{g(x)})}=\\
+        =&\lim_{x\rightarrow x_0}e^{g(x)\cdot\ln f(x)}=\lim_{t\rightarrow l_g\ln l_f}e^t=\\
+        =&e^{l_g\ln l_f}=e^{\ln((l_f)^{l_g})}=\\
+        =&l_f^{l_g}
+    \end{align*}
+    \normalsize
+    \\\colorbox{yellow}{Proposizione}:\quad Sia $X\subseteq\mathbb{R},\ f,g:\ X\rightarrow\mathbb{R},\ x_0\in\mathbb{\bar{R}}$ 
+    punto di acc. per $X,\ f$ infinitesima in $x_0$ (cioè $\lim_{x\rightarrow x_0}f(x)=0$) e $g$ sia limitata def. per $x\rightarrow x_0$.
+    Allora: \[\lim_{x\rightarrow x_0}f(x)\cdot g(x)=0\]
+    \large\begin{center}
+        ("prodotto di $f$. infinitesima per $f$. limitata è infinitesimo")
+    \end{center}\normalsize\vspace{10pt}
+    \begin{ex}{}{}
+        \[\lim_{x\rightarrow+\infty}2^x\cdot\sin\frac{1}{2^x+1}\]
+    \end{ex}
+    \begin{align*}
+        &\lim_{x\rightarrow+\infty}[(2^x)\sin(\frac{1}{2^x+1})+\sin(\frac{1}{2^x+1})-\sin(\frac{1}{2^x+1})]=\lim_{x\rightarrow+\infty}[(2^x+1)\sin(\frac{1}{2^x+1})-\sin(\frac{1}{2^x+1})]=\\
+        &y=\frac{1}{2^x+1}\qquad y\rightarrow0 \text{ per }x\rightarrow+\infty\\
+        =&\lim_{y\rightarrow0}[\frac{1}{y}\sin y-\sin y]=\lim_{y\rightarrow0}[\underbrace{\frac{\sin y}{y}}_1-\sin y]=\\
+        =&1-0=1
+    \end{align*}
+    \begin{ex}{Verificare che}{}
+        \[\lim_{x\rightarrow0}\frac{\arctan x}{x}=1\]
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}: Pongo $y=\arctan x\Leftrightarrow x=\tan y$\\
+    Quindi\[\lim_{x\rightarrow0}\frac{\arctan x}{x}=\lim_{y\rightarrow0}\frac{y}{\tan y}=\lim_{y\rightarrow0}\frac{y}{\frac{\sin y}{\cos y}}\]
 \end{document}
