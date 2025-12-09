@@ -371,5 +371,44 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         \[\lim_{x\rightarrow0}\frac{\arctan x}{x}=1\]
     \end{ex}
     \colorbox{yellow}{Svolgimento}: Pongo $y=\arctan x\Leftrightarrow x=\tan y$\\
-    Quindi\[\lim_{x\rightarrow0}\frac{\arctan x}{x}=\lim_{y\rightarrow0}\frac{y}{\tan y}=\lim_{y\rightarrow0}\frac{y}{\frac{\sin y}{\cos y}}\]
+    Quindi\[\lim_{x\rightarrow0}\frac{\arctan x}{x}=\lim_{y\rightarrow0}\frac{y}{\tan y}=\lim_{y\rightarrow0}\frac{y}{\frac{\sin y}{\cos y}}=\]
+    \[\lim_{y\rightarrow0}y\cdot\frac{\cos y}{\sin y}=\lim_{y\rightarrow0}\underbrace{(\frac{\sin y}{y})^{-1}}_{1}\cdot\cos y=1\cdot1=1\]
+    \begin{ex}{Calcolare}{}
+        \[\lim_{x\rightarrow0}\sqrt{|x|}\ \cos\frac{1}{x^2}\]
+    \end{ex}
+    \colorbox{yellow}{Soluzione}: il limite vale $0$ poichè $\sqrt{|x|}$ è infinitesima in $x=0$ e $\cos\frac{1}{x^2}$ è limitata def. per $x\rightarrow0$\\
+    \begin{ex}{Calcolare}{}
+        \[\lim_{x\rightarrow+\infty}(x+\sin x)\]
+    \end{ex}
+    \colorbox{yellow}{Soluzione}:\qquad $x+\sin x\ge \underbrace{x-1}_{+\infty}\qquad\forall x\in\mathbb{R}$\\
+    Quindi anche: \[\lim_{x\rightarrow+\infty}x+\sin x=+\infty\]\\
+    \begin{defi}{Forme Indeterminate}{}
+        $f,g:\ X\rightarrow\mathbb{R},\quad x_0$ punto di acc. per $X$
+        \[\lim_{x\rightarrow x_0}f(x)\cdot g(x)\]
+        Non posso dire nulla se so che
+        \[\lim_{x\rightarrow x_0}f(x)=0\qquad e\qquad\lim_{x\rightarrow x_0}g(x)=\pm\infty\qquad\text{F.I. }0\cdot\infty\]
+        Oppure\[\text{F.I.}\qquad+\infty-\infty\qquad\frac{0}{0}\qquad\frac{\infty}{\infty}\qquad0^0\qquad+\infty^0\qquad1^{+\infty}\]
+    \end{defi}
+    \begin{ex}{Limite notevole}{}
+        \[\lim_{x\rightarrow\pm\infty}(1+\frac{\alpha}{x})^x=e^x\qquad\forall\alpha\in\mathbb{R}\]
+    \end{ex}
+    \colorbox{yellow}{Soluzione}:\\
+    \[\lim_{x\rightarrow\pm\infty}(1+\frac{\alpha}{x})^x=\lim_{y\rightarrow\pm\infty}(1+\frac{1}{y})^{\alpha y}=\lim_{y\rightarrow\pm\infty}(\underbrace{(1+\frac{1}{y})^y}_{e})^\alpha=e^\alpha\quad\checkmark\]
+    \begin{ex}{Limite notevole}{}
+        \[\lim_{x\rightarrow0}\frac{\ln(1+x)}{x}=1\]
+    \end{ex}
+    \colorbox{yellow}{Soluzione}:
+    \[\lim_{x\rightarrow0}\frac{\ln(1+x)}{x}=\lim_{x\rightarrow0}\frac{1}{x}\ln(1+x)=\lim_{x\rightarrow0}\ln(\underbrace{(1+x)^{1/x}}_{e})=\ln e=1\qquad\checkmark\]\\
+    \begin{ex}{Verificare il limite}{}
+        \[\lim_{x\rightarrow0}\frac{e^x-1}{x}=1\]
+    \end{ex}
+    \colorbox{yellow}{Soluzione}:
+    \begin{align*}
+        &\lim_{x\rightarrow0}\frac{e^x-1}{x}=&y=e^x-1\\
+        =&\lim_{y\rightarrow0}\frac{y}{\ln(1+y)}=&\text{uso il limite notevole verificato prima (esempio 18)}\\
+        =&1\quad\checkmark
+    \end{align*}
+    \begin{defi}{Limite notevole}{}
+        Dall'esempio precedente (es. 19) si ricava:\[\lim_{x\rightarrow0}\frac{\alpha^x-1}{x}=\ln\alpha\qquad\forall\alpha>0\]
+    \end{defi}
 \end{document}
