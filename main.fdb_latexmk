@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1765478551.25015 "/home/pitta/Documents/Latex/main.tex" "main.pdf" "main" 1765478552.58181 0
+["pdflatex"] 1765638376.5769 "/home/pitta/Documents/Latex/main.tex" "main.pdf" "main" 1765638377.9929 0
   "/etc/texmf/web2c/texmf.cnf" 1764412924.27367 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/pitta/Documents/Latex/main.tex" 1765478551.03923 24436 1d60d93bb993b34d3600a93d6450885b ""
+  "/home/pitta/Documents/Latex/main.tex" 1765638376.37224 29424 284517421b029c8ca3d0818acc07e5d6 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/atkinson/atksn_cvs3iv.enc" 1612564038 2852 0e84d9c42a84502cb059a346f06c6632 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/atkinson/atksn_ycy2xh.enc" 1612564038 3176 391809404193674ae2e225815b04d7d6 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -184,6 +184,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty" 1705352648 5048 425739d70251273bf93e3d51f3c40048 ""
   "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1705352648 8448 dbc0dbf4156c0bb9ba01a1c685d3bad0 ""
   "/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty" 1705352648 2894 fc64867f9d198785eabe71a88276a9cb ""
+  "/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty" 1659300143 12441 3b2a708337608012a865c7d9b7f05d28 ""
   "/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty" 1399239813 4378 f429f0da968c278653359293040a8f52 ""
   "/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
@@ -241,6 +242,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty" 1691524336 2573 42712c9e0a2df004e43df5b3c95f0c1e ""
   "/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty" 1691524336 1120 ba535da48caa03bf1fd3f03ea87779f8 ""
   "/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex" 1691524336 10931 717eb52299f416934beb8b2b7cd8cee6 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty" 1698869629 12667 e4b5eb11e4b7239e6c8a52bbe074a6c6 ""
   "/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty" 1700689882 7500 db31c3d04f8bc9010e47a5efbbace9ff ""
   "/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty" 1253232110 1380 971a51b00a14503ddf754cab24c3f209 ""
   "/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty" 1700082560 55487 80a65caedd3722f4c20a14a69e785d8f ""
@@ -249,9 +251,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1764412946.09031 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1764413083 8214005 b94c646e6e46fa3fbdf3b229186627aa ""
-  "main.aux" 1765478552.48767 481 dbb97601edb93faaca29a92c334cefbd "pdflatex"
-  "main.tex" 1765478551.03923 24436 1d60d93bb993b34d3600a93d6450885b ""
-  "main.toc" 1765478552.48867 283 b27d412ee1a97471fc09ec138a893820 "pdflatex"
+  "main.aux" 1765638377.88724 481 0ccff1aa28fd774bd773a23ab7aeba83 "pdflatex"
+  "main.tex" 1765638376.37224 29424 284517421b029c8ca3d0818acc07e5d6 ""
+  "main.toc" 1765638377.88724 283 b27d412ee1a97471fc09ec138a893820 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

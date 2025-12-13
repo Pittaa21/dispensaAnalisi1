@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage[most]{tcolorbox}
-\usepackage{xcolor}
+\usepackage{xcolor, array}
+\usepackage[table]{xcolor}
 \usepackage{graphicx, float}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -36,7 +37,8 @@
     colframe=blue!100!white,
     colback=blue!10!white
 }{def}
-
+\renewcommand{\arraystretch}{2}
+\setlength{\tabcolsep}{30pt}
 \begin{document}
 \maketitle
 \tableofcontents
@@ -433,5 +435,87 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         \[\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)}=0\]
         E si scrive:\quad$f(x)=o(g(x))$ per $x\rightarrow x_0$\quad$f(x)\in o(g(x))$ per $x\rightarrow x_0$
     \end{defi}
-    \colorbox{yellow}{Osservazione}:\[\lim_{x\rightarrow x_0}f(x)=0\Leftrightarrow\lim_{x\rightarrow x_0}\frac{f(x)}{1}=0\Leftrightarrow f=o(1)\text{ per }x\rightarrow x_0\]
+    \colorbox{yellow}{Osservazione}:\[\lim_{x\rightarrow x_0}f(x)=0\Leftrightarrow\lim_{x\rightarrow x_0}\frac{f(x)}{1}=0\Leftrightarrow f=o(1)\text{ per }x\rightarrow x_0\]\\
+    \begin{ex}{o-piccolo}{}
+        $1-\cos x=o(x)$ per $x\rightarrow0$?
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}: \[\lim_{x\rightarrow0}\frac{1-\cos x}{x}=\lim_{x\rightarrow0}x\cdot\frac{1-\cos x}{x^2}\qquad x=0\qquad\frac{1-\cos x}{x^2}=\frac{1}{2}\]
+    Quindi \qquad$0\cdot\frac{1}{2}=0\quad\checkmark$ e $1-\cos x$ è o-piccolo di $x$ per $x\rightarrow0$\\\\\\
+    \colorbox{yellow}{Osservazione}:
+    \begin{minipage}{0.4\textwidth}
+        \begin{center}
+            $f_1(x)=o[g(x)]$ per $x\rightarrow x_0$\\
+            $f_2(x)=o[g(x)]$ per $x\rightarrow x_0$
+        \end{center}
+    \end{minipage}
+    \begin{minipage}{0.1\textwidth}
+        \large$\nRightarrow$
+    \end{minipage}
+    \begin{minipage}{0.4\textwidth}
+        $f_1(x)=f_2(x)$ per $x\rightarrow x_0$
+    \end{minipage}\\\\
+    \colorbox{yellow}{Osservazione}:
+    \[\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)}=l\in\mathbb{R}\quad\Rightarrow\quad f(x)=lg(x)+o[g(x)]\quad\text{per }x\rightarrow x_0\]
+    cioè \[f(x)-lg(x)=o[g(x)]\quad\text{per }x\rightarrow x_0\]\\
+    \colorbox{yellow}{Dim}:\[\lim_{x\rightarrow x_0}\frac{f(x)-lg(x)}{g(x)}=\lim_{x\rightarrow x_0}(\underbrace{\frac{f(x)}{g(x)}}_l-\underbrace{\frac{lg(x)}{g(x)}}_l)=l-l=0\quad\checkmark\]\\
+    \begin{theo}{Principio di sostituzione degli infinitesimi}{}
+        $X\subseteq \mathbb{R}\ f,g,f_1,g_1:\ X\rightarrow\mathbb{R},\ x_0\in\mathbb{\bar{R}}$ punto di acc. per $X$.\\
+        Se $g(x)\ne0$ def. per $x\rightarrow x_0$ e:\\
+        \begin{itemize}
+            \item [] $f(x)=f_1(x)+o(f_1(x))$\qquad per $x\rightarrow x_0$
+            \item [] $g(x)=g_1(x)+o(g_1(x))$\qquad per $x\rightarrow x_0$
+        \end{itemize}\vspace{8pt}
+        Allora:\[\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)}=\lim_{x\rightarrow x_0}\frac{f_1(x)}{g_1(x)}\]
+    \end{theo}
+    \colorbox{yellow}{Osservazione}:\[\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)}=\lim_{x\rightarrow x_0}\frac{f_1(x)+o(f_1(x))}{g_1(x)+o(g_1(x))}=\lim_{x\rightarrow x_0}\frac{f_1(x)}{g_1(x)}\]\\
+    \begin{ex}{Calcolare}{}
+        \[\lim_{x\rightarrow0}\frac{\sin x-\ln(1+x)}{x\ln(1+x)-2\sin^2x+1-\cos x}\quad\text{F.I. }\frac{0}{0}\]
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}: \\
+    Conoscendo gli sviluppi in serie
+    \begin{itemize}
+        \item [] $\sin x=x-\frac{x^3}{6}+o(x^3)$ per $x\rightarrow0$
+        \item [] $\ln (1+x)=x+o(x)$ per $x\rightarrow0$
+    \end{itemize}
+    NUM $=\sin x-\ln(1+x)=x-\frac{x^3}{6}+o(x^3)-x+\frac{x^2}{2}+o(x^2)=\frac{x^2}{2}-\frac{x^3}{6}+o(x^2)+o(x^3)=\frac{x^2}{2}+o(\frac{x^2}{2})$
+    \begin{align*}
+        &-\frac{x^3}{6}= o(\frac{x^2}{2})&o(x^3)=o(x^2)\\
+        =\frac{x^2}{2}+o(\frac{x^2}{2 })
+    \end{align*}
+    DEN $=x\ln(1+x)-2\sin^2x+1-\cos x$\qquad $1-\cos x=\frac{1}{2}x^2+o(\frac{1}{2}x^2)$ per $x\rightarrow0$
+    \begin{align*}
+        &=x(x+o(x))-2(x+o(x))(x+o(x))+\frac{1}{2}x^2+o(\frac{x^2}{2})=&&&&&\\
+        &=x^2+x\ o(x)-2x^2-4x\ o(x)-2(0(x))^2+\frac{1}{2}x^2+o(\frac{x^2}{2})=\\
+        &=-\frac{1}{2}x^2+o(x^2)
+    \end{align*}
+    \[\lim_{x\rightarrow0}\frac{\text{NUM}}{\text{DEN}}=\lim_{x\rightarrow0}\frac{\frac{x^2}{2}+o(x^2)}{-\frac{1}{2}x^2+o(x^2)}=\lim_{x\rightarrow0}\frac{\frac{x^2}{2}}{-\frac{1}{2}x^2}=-1\]\\
+    \begin{center}
+        \LARGE\underline{Sviluppi asintotici di alcune funzioni}\\\vspace{10pt}\large
+        {\rowcolors{1}{green!90!yellow!60}{green!80!yellow!50}
+        \begin{tabular}{| m{5em} | m{20em} |}
+            \hline
+            $\sin x$ & $x-\frac{x^3}{3!}+\frac{x^5}{5!}+o(x^5)$ per $x\rightarrow0$\\\hline
+            $\cos x$ & $1-\frac{x^2}{2!}+\frac{x^4}{4!}+o(x^4)$ per $x\rightarrow0$\\\hline
+            $\ln(1+x)$ & $x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^3)$ per $x\rightarrow0$\\\hline
+            $\cosh x$ & $1-\frac{x^2}{2!}+\frac{x^4}{4!}+o(x^4)$ per $x\rightarrow0$\\\hline
+            $\sinh x$ & $x-\frac{x^3}{3!}+\frac{x^5}{5!}+o(x^5)$ per $x\rightarrow0$\\\hline
+            $\tan x$ & $x+\frac{x^3}{3}+o(x^3)$ per $x\rightarrow0$\\\hline
+            $\arctan x$ & $x-\frac{x^3}{3}+$ per $x\rightarrow0$\\\hline
+            $e^x$ & $1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+o(x^3)$\\\hline
+        \end{tabular}}
+    \end{center}
+    \begin{ex}{Sviluppi asintotici}{}
+        \[\sinh(e^x)\quad\text{per}\quad x\rightarrow-\infty\]
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}:\quad Voglio sfruttare\[\sinh y=y+\frac{y^3}{3!}+\frac{y^5}{5!}+o(y^5)\]
+    Quindi scrivo\[\sinh e^x=e^x+\frac{(e^x)^3}{3!}+\frac{(e^x)^5}{5!}+o((e^x)^5)\]
+    Sapendo che $y$ deve tendere a $0$, abbiamo $e^x$ che tende a $0$ per $x\rightarrow-\infty$ quindi la sostituzione è valida\\
+    \begin{defi}{Algebra degli o-piccoli}{}
+        \begin{itemize}
+            \item $o(g(x))+o(g(x))=o(g(x))$
+            \item $o(g(x))-o(g(x))=o(g(x))$
+            \item $o(g(x))\cdot o(g(x))=o(g(x)^2)$
+            \item $g(x)\cdot o(g(x))=o(g(x)^2)$
+        \end{itemize}        
+    \end{defi}
 \end{document}
