@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.29)  13 DEC 2025 16:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.29)  14 DEC 2025 18:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -834,79 +834,181 @@ Underfull \hbox (badness 10000) in paragraph at lines 425--426
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 430--437
+Underfull \hbox (badness 10000) in paragraph at lines 430--432
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 438--441
+Underfull \hbox (badness 10000) in paragraph at lines 439--442
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--458
+Underfull \hbox (badness 10000) in paragraph at lines 443--459
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--458
+Underfull \hbox (badness 10000) in paragraph at lines 443--459
 
  []
 
 
-Overfull \hbox (25.07167pt too wide) in paragraph at lines 442--458
+Overfull \hbox (25.07167pt too wide) in paragraph at lines 443--459
 [][][][][][]\T1/atkinsn-LF/m/n/10 : $[]$ $[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--458
+Underfull \hbox (badness 10000) in paragraph at lines 443--459
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 462--464
+Underfull \hbox (badness 10000) in paragraph at lines 463--465
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--469
+Underfull \hbox (badness 10000) in paragraph at lines 461--470
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 470--473
+Underfull \hbox (badness 10000) in paragraph at lines 471--474
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--492
+Underfull \hbox (badness 10000) in paragraph at lines 492--493
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 511--520
+Underfull \hbox (badness 10000) in paragraph at lines 512--521
 
  []
 
-[14] (./main.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 528--531
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 532--537
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--537
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--537
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--537
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--540
+
+ []
+
+LaTeX Font Info:    Font shape `T1/atkinsn-LF/m/n' will be
+(Font)              scaled to size 20.74pt on input line 546.
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--553
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--553
+
+ []
+
+
+Underfull \hbox (badness 1990) in paragraph at lines 549--553
+\OT1/cmr/m/n/10 0$ \T1/atkinsn-LF/m/n/10 si dice che $\OML/cmm/m/it/10 f$ \T1/atkinsn-LF/m/n/10 è un $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--553
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 562--566
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 562--566
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 562--566
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--569
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--569
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--569
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--569
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--569
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 571--574
+
+ []
+
+[15] [16] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 32836 strings out of 474222
- 827491 string characters out of 5748732
- 1952975 words of memory out of 5000000
- 54526 multiletter control sequences out of 15000+600000
- 615721 words of font info for 96 fonts, out of 8000000 for 9000
+ 32853 strings out of 474222
+ 827774 string characters out of 5748732
+ 1947975 words of memory out of 5000000
+ 54543 multiletter control sequences out of 15000+600000
+ 622754 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,16n,107p,765b,2040s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/atkinson/atkinsn-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/atkinson/atkinsn-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (14 pages, 284000 bytes).
+Output written on main.pdf (16 pages, 292693 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
+ 211 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

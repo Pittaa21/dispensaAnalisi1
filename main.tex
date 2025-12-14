@@ -429,6 +429,7 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     Adesso pongo $y=3\sin e^x$ che tende a $0$ per $x\rightarrow-\infty$ e ottengo:
     \[\cos e^{-x^2}=1\qquad\ln(1+3\sin e^x)=0\qquad3\cdot\underbrace{\frac{ln(1+y)}{y}}_1=3\]
     Il risultato è quindi $1\cdot0+3=3$\\
+    \section{O-piccoli}
     \begin{defi}{O-Piccolo}{}
         Date $f,g$ funzioni reali di variabile reale, $x_0\in\mathbb{\bar{R}}$ di acc. per dom$f\ \cap$ dom$g$ , $g(x)\ne0$ def. per $x\rightarrow x_0$\\
         Si dice che $f$ è \underline{"o-piccolo" di $g$ per $x\rightarrow x_0$} se:
@@ -489,7 +490,7 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         &=-\frac{1}{2}x^2+o(x^2)
     \end{align*}
     \[\lim_{x\rightarrow0}\frac{\text{NUM}}{\text{DEN}}=\lim_{x\rightarrow0}\frac{\frac{x^2}{2}+o(x^2)}{-\frac{1}{2}x^2+o(x^2)}=\lim_{x\rightarrow0}\frac{\frac{x^2}{2}}{-\frac{1}{2}x^2}=-1\]\\
-    \begin{center}
+    \newpage\begin{center}
         \LARGE\underline{Sviluppi asintotici di alcune funzioni}\\\vspace{10pt}\large
         {\rowcolors{1}{green!90!yellow!60}{green!80!yellow!50}
         \begin{tabular}{| m{5em} | m{20em} |}
@@ -503,7 +504,7 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
             $\arctan x$ & $x-\frac{x^3}{3}+$ per $x\rightarrow0$\\\hline
             $e^x$ & $1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+o(x^3)$\\\hline
         \end{tabular}}
-    \end{center}
+    \end{center}\vspace{10pt}
     \begin{ex}{Sviluppi asintotici}{}
         \[\sinh(e^x)\quad\text{per}\quad x\rightarrow-\infty\]
     \end{ex}
@@ -516,6 +517,77 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
             \item $o(g(x))-o(g(x))=o(g(x))$
             \item $o(g(x))\cdot o(g(x))=o(g(x)^2)$
             \item $g(x)\cdot o(g(x))=o(g(x)^2)$
-        \end{itemize}        
+        \end{itemize}
     \end{defi}
+    \vspace{10pt}
+    \large\underline{Confrontare esponenziali, logaritmi e potenze}\normalsize\\
+    \[\lim_{x\rightarrow+\infty}\frac{e^x}{x^n}=+\infty\qquad\forall n\ge1\]
+    $\Rightarrow x^n=o(e^x)$ per $x\rightarrow+\infty$
+    \[\lim_{x\rightarrow+\infty}\frac{x^n}{\ln x}=+\infty\qquad\forall n\ge1\]
+    $\Rightarrow\ln x=o(x^n)$ per $x\rightarrow+\infty$\\
+    \underline{Quindi:}\[e^x>>x^n>>\ln x\qquad\text{per }x\rightarrow+\infty\]\\
+    \begin{ex}{Calcolare}{}
+        \[\lim_{x\rightarrow+\infty}\frac{x^5+e^x+\sin x}{3e^x+x^{15}\ln x}\qquad\text{F.I. }\frac{\infty}{\infty}\]
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}: \\\\
+    NUM:\qquad$x^5=o(e^x)\qquad\frac{x\sin x}{e^x}=\frac{x}{e^x}\cdot\sin x=0\cdot f$limitata $=0$\\
+    $=e^x+o(e^x)$\\\\
+    DEN:\qquad$\frac{x^{15}\ln x}{e^x}=\frac{x^{16}}{e^x}\cdot\frac{\ln x}{x}=0\cdot0=0$ quindi è $o(e^x)$\\
+    $=3e^x+o(3e^x)$\\\\
+    \[\lim_{x\rightarrow+\infty}\frac{e^x+o(e^x)}{3e^x+o(3e^x)}=\lim_{x\rightarrow+\infty}\frac{e^x}{3e^x}=\frac{1}{3}\]\\
+    \begin{defi}{Nomenclatura}{}
+        $f,g:\ X\rightarrow\mathbb{R},\ x_0\in\mathbb{\bar{R}}$ di acc. per $X$
+    \end{defi}
+    Se $\lim|f(x)|=+\infty,\ \lim|g(x)|=+\infty$\\\\
+    \begin{minipage}{0.4\textwidth}
+        \large\[\lim_{x\rightarrow x_0}|\frac{f(x)}{g(x)}|\]
+    \end{minipage}
+    \begin{minipage}{0.08\textwidth}
+        \huge$\Rightarrow$
+    \end{minipage}
+    \begin{minipage}{0.5\textwidth}
+        $+\infty$\qquad si dice che $f$ è un \underline{infinito di ordine superiore} a $g$ per $x\rightarrow x_0$\\\\
+        $l\in\mathbb{R}\smallsetminus\{0\}$\qquad si dice che $f$ e $g$ sono \underline{infiniti dello stesso} \underline{ordine} per $x\rightarrow x_0$\\\\
+        $0$\qquad si dice che $f$ è un \underline{infinito di ordine inferiore} a $g$ per $x\rightarrow x_0$\\\\
+        $\nexists$\qquad si dice che $f$ e $g$ non sono \underline{confrontabili}
+    \end{minipage}\\\\
+    Se $\lim f(x)=0,\ \lim g(x)=0$\\\\
+    \begin{minipage}{0.4\textwidth}
+        \large\[\lim_{x\rightarrow x_0}|\frac{f(x)}{g(x)}|\]
+    \end{minipage}
+    \begin{minipage}{0.08\textwidth}
+        \huge$\Rightarrow$
+    \end{minipage}
+    \begin{minipage}{0.5\textwidth}
+        $+\infty$\qquad si dice che $f$ è un \underline{infinito di ordine inferiore} a $g$ per $x\rightarrow x_0$\\\\
+        $l\in\mathbb{R}\smallsetminus\{0\}$\qquad si dice che $f$ e $g$ sono \underline{infiniti dello stesso} \underline{ordine} per $x\rightarrow x_0$\\\\
+        $0$\qquad si dice che $f$ è un \underline{infinito di ordine superiore} a $g$ per $x\rightarrow x_0$\\\\
+        $\nexists$\qquad si dice che $f$ e $g$ non sono \underline{confrontabili}
+    \end{minipage}\\\\
+    \begin{ex}{Verificare}{}
+        $\sin x^2$ e $x^2$ sono infiniti dello stesso ordine per $x\rightarrow0$
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}:
+    \[\lim_{x\rightarrow0}\frac{\sin x^2}{x^2}=1\ \checkmark\qquad\text{Ricordando il limite notevole }\lim_{x\rightarrow0}\frac{\sin x}{x}=1\]\\
+    \begin{ex}{Calcolare}{}
+        \[\lim_{x\rightarrow0^+}\frac{4x^2\sin(\sqrt{x})+(1-\cos x)^2}{\sqrt{x}\ \sinh(x^2)+(e^x-1)^3}\]
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}: Sapendo che
+    \begin{itemize}
+        \item [] $\sin y=y-\frac{y^3}{3!}+o(y^3)$\quad per $y\rightarrow0$
+        \item [] $\cos y=1-\frac{y^2}{2!}+o(y^2)$\quad per $y\rightarrow0$
+        \item [] $e^y=1+y+\frac{y^2}{2}+o(y^2)$\quad per $y\rightarrow0$
+        \item [] $\sinh y=y+\frac{y^3}{3!}+o(y^3)$\quad per $y\rightarrow0$
+    \end{itemize}
+    \vspace{10pt}Allora NUM:\qquad$\sin(\sqrt{x})=x^{1/2}-\frac{x^{3/2}}{3!}+o(x^{3/2})$\qquad$(1-\cos x)^2=(1-1+\frac{x^2}{2}+o(x^2))^2$\qquad $x\rightarrow0$
+    \begin{itemize}
+        \item [] $=4x^{5/2}-\frac{4}{6}x^{7/2}+o(x^{7/2})+\frac{1}{4}x^4+o(x^4)=$
+        \item [] $=4x^{5/2}+o(x^{5/2})$ per $x\rightarrow0^+$\qquad perchè devo prendere ciò che tende a $0$ più lentamente
+    \end{itemize}
+    \vspace{10pt}DEN:\qquad$\sqrt{x}\ \sinh(x^2)=x^{5/2}+\frac{1}{6}x^{9/2}+o(x^{9/2})\qquad(e^x-1)^3=(1-1+x+\frac{x^2}{2}+o(x^2))^3\qquad x\rightarrow0^+$
+    \begin{itemize}
+        \item [] $=x^{5/2}+o(x^{5/2})+x^3+o(x^3)=x^{5/2}+o(x^{5/2})$ per $x\rightarrow0^+$
+    \end{itemize}
+    \vspace{5pt}\[\Rightarrow\qquad\lim_{x\rightarrow0^+}\frac{4x^{5/2}+o(x^{5/2})}{x^{5/2}+o(x^{5/2})}=\lim_{x\rightarrow0^+}\frac{4}{1}=4\]
+
 \end{document}
