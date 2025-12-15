@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1765733619.93744 "/home/pitta/Documents/Latex/main.tex" "main.pdf" "main" 1765733621.40903 0
+["pdflatex"] 1765826426.37599 "/home/pitta/Documents/Latex/main.tex" "main.pdf" "main" 1765826427.91423 0
   "/etc/texmf/web2c/texmf.cnf" 1764412924.27367 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/pitta/Documents/Latex/main.tex" 1765733619.74349 33842 91a69a1b8094b126a81b067b19195971 ""
+  "/home/pitta/Documents/Latex/main.tex" 1765826426.16438 38774 3284b07fafa2e8f1a803b33c8d5e1aae ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/atkinson/atksn_cvs3iv.enc" 1612564038 2852 0e84d9c42a84502cb059a346f06c6632 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/atkinson/atksn_ycy2xh.enc" 1612564038 3176 391809404193674ae2e225815b04d7d6 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -53,6 +53,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb" 1248133631 35309 940e81a5b9e04201a07e8b33a3ae6e64 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/atkinson/atkinsn-Bold.pfb" 1612564038 51889 6258e595a253b281c576854251c19f28 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/atkinson/atkinsn-Regular.pfb" 1612564038 49446 cdec25b8f0eacddaf9ee17f8a24134a2 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/public/atkinson/atkinsn-Bold-lf-t1.vf" 1612564038 1696 c79efc8aa349b0b7745f18824d16bceb ""
@@ -251,9 +252,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1764412946.09031 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1764413083 8214005 b94c646e6e46fa3fbdf3b229186627aa ""
-  "main.aux" 1765733621.3045 579 c2aad907b6b36fff50063966492c52e9 "pdflatex"
-  "main.tex" 1765733619.74349 33842 91a69a1b8094b126a81b067b19195971 ""
-  "main.toc" 1765733621.3055 340 e4553ddb8c72256b2f4bccf03a6ccaa0 "pdflatex"
+  "main.aux" 1765826427.80428 684 b2471e2421c57ece90d2e7d1810db79b "pdflatex"
+  "main.tex" 1765826426.16438 38774 3284b07fafa2e8f1a803b33c8d5e1aae ""
+  "main.toc" 1765826427.80528 404 4b786d1dbfbdb776dd999c73e451578c "pdflatex"
   (generated)
   "main.aux"
   "main.log"

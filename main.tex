@@ -429,7 +429,7 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     Adesso pongo $y=3\sin e^x$ che tende a $0$ per $x\rightarrow-\infty$ e ottengo:
     \[\cos e^{-x^2}=1\qquad\ln(1+3\sin e^x)=0\qquad3\cdot\underbrace{\frac{ln(1+y)}{y}}_1=3\]
     Il risultato è quindi $1\cdot0+3=3$\\
-    \section{O-piccoli}
+    \subsection{O-piccoli}
     \begin{defi}{O-Piccolo}{}
         Date $f,g$ funzioni reali di variabile reale, $x_0\in\mathbb{\bar{R}}$ di acc. per dom$f\ \cap$ dom$g$ , $g(x)\ne0$ def. per $x\rightarrow x_0$\\
         Si dice che $f$ è \underline{"o-piccolo" di $g$ per $x\rightarrow x_0$} se:
@@ -589,5 +589,84 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         \item [] $=x^{5/2}+o(x^{5/2})+x^3+o(x^3)=x^{5/2}+o(x^{5/2})$ per $x\rightarrow0^+$
     \end{itemize}
     \vspace{5pt}\[\Rightarrow\qquad\lim_{x\rightarrow0^+}\frac{4x^{5/2}+o(x^{5/2})}{x^{5/2}+o(x^{5/2})}=\lim_{x\rightarrow0^+}\frac{4}{1}=4\]
-
+    \\\section{Successioni}
+    \begin{defi}{Successione}{}
+        Una successione è una funzione il cui dominio è $\mathbb{N}$ o un suo sottoinsieme infinito, per noi avranno valori in $\mathbb{R}$, ossia\[f:\ \mathbb{N}\rightarrow\mathbb{R}\]
+        Le successioni si scrivono col simbolo $\{a_n\}_{n\in\mathbb{N}}$\\\\
+        Si dice che: \[\lim_{n\rightarrow+\infty}a_n=l\]
+        Se $\forall\ V$ intorno di $l\ \exists\ N>0$ tale che $a_n\in V\ \forall\ n>N$
+    \end{defi}
+    \colorbox{yellow}{Es}: $\{\frac{1}{n}\}_{n\ge1},\qquad1,\frac{1}{2},\frac{1}{3},\dots\rightarrow?\quad n\rightarrow+\infty$\\
+    \\\colorbox{yellow}{Def}: sia $\{a_n\}_{n\in\mathbb{N}}$ una successione:
+    \begin{enumerate}
+        \item $\{a_n\}_{n\in\mathbb{N}}$ è \underline{convergente} se $\exists\ \lim_{}a_n\in\mathbb{R}$. Se $\lim_{}a_n=0$, la successione è \underline{infinitesima}
+        \item $\{a_n\}_{n\in\mathbb{N}}$ è \underline{divergente} se $\lim_{}a_n=\pm\infty$
+        \item $\{a_n\}_{n\in\mathbb{N}}$ è \underline{regolare} o \underline{determinata} se $\exists\ \lim_{}a_n$
+        \item $\{a_n\}_{n\in\mathbb{N}}$ è \underline{irregolare} o \underline{indeterminata} se $\nexists\ \lim_{}a_n$
+    \end{enumerate}
+    \begin{ex}{}{}
+        \[a_n=(1+\frac{1}{n})^n,\ n\ge1\]
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}:\[\lim_{n\rightarrow+\infty}(1+\frac{1}{n})^n=e\]
+    $a_n$ è \underline{convergente}.\\\\
+    \colorbox{yellow}{Proposizione} sia $\{a_n\}_{n\in\mathbb{N}}$ succ. convergente, allora è anche limitata, ossia $\exists\ M>0$ tale che
+    \[|a_n|\le M\qquad\forall\ n\in\mathbb{N}\]
+    limitata $\nRightarrow$ convergente\\
+    convergente $\Rightarrow$ limitata\\
+    \begin{theo}{Teorema della permanenza del segno}{}
+        Se $\lim a_n=l>0$, allora $a_n>0$ definitivamente per $n\rightarrow+\infty$
+    \end{theo}
+    \vspace{10pt}
+    \begin{theo}{Teorema del Confronto}{}
+        $\{a_n\},\{b_n\}$ siano due succ. tali che $a_n\le b_n$ def. per $x\rightarrow+\infty$ e
+        \[\lim_{n\rightarrow+\infty}a_n=l_a\qquad\text{e}\qquad\lim_{n\rightarrow+\infty}b_n=l_b\]
+        Allora \qquad$l_a\le l_b$
+    \end{theo}
+    \vspace{10pt}
+    \begin{theo}{Teorema dei due carabinieri}{}
+        $\{a_n\},\{b_n\},\{c_n\}$ succ. tali che $a_n\le b_n\le c_n$ def. per $n\rightarrow+\infty$ Se
+        \[\lim_{n\rightarrow+\infty}a_n=\lim_{n\rightarrow+\infty}b_n=l\in\mathbb{\bar{R}}\]
+        Allora\[\lim_{n\rightarrow+\infty}b_n=l\]
+    \end{theo}
+    \vspace{10pt}\colorbox{yellow}{Gerarchia degli infiniti}:
+    \[n^n>>n!>>e^n>>n^k>>\log_bn\qquad\text{per }n\rightarrow+\infty\qquad a,b>1\qquad k>0\]
+    \begin{defi}{Successioni monotone}{}
+        $\{a_n\}_{n\in\mathbb{N}}$ succ. reale, si dice\\
+        \begin{itemize}
+            \item \underline{Crescente}: se $a_{n+1}\ge a_n\qquad\forall\ n\in\mathbb{N}$
+            \item \underline{Decrescente}: se $a_{n+1}\le a_n\qquad\forall\ n\in\mathbb{N}$
+            \item \underline{Strett. Crescente}: se $a_{n+1}> a_n\qquad\forall\ n\in\mathbb{N}$
+            \item \underline{Strett. Decrescente}: se $a_{n+1}< a_n\qquad\forall\ n\in\mathbb{N}$
+        \end{itemize}
+    \end{defi}
+    \newpage\colorbox{yellow}{Es}:
+    \begin{itemize}
+        \item [] $\{2^n\}=1,2,4,\dots$ \underline{Strett. crescente}
+        \item [] $\{1^n\}$ \underline{Costante}
+        \item [] $\{\frac{1}{2^n}\}$ \underline{Strett. decrescente}
+        \item [] $\{1+\frac{1}{n}\}$ \underline{Strett. decrescente}
+    \end{itemize}\vspace{10pt}
+    \begin{defi}{Successione di Cauchy}{}
+        Una succ. reale $\{a_n\}_{n\in\mathbb{N}}$ si dice di \underline{Cauchy} (o successione fondamentale) se $\forall\ \epsilon>0\quad\exists\ N>0$ tale che
+        \[n,p>N\Rightarrow|a_n-a_p|<\epsilon\]
+    \end{defi}
+    \colorbox{yellow}{Es}: $a_n=(-1)^n$ non è di Cauchy\\\\
+    $a_n=\frac{1}{1+n}$ è di Cauchy\\\\
+    Una successione reale $a_n$ è convergente se e solo se è di Cauchy.\\
+    \begin{defi}{Sottosuccessioni}{}
+        Data una succ. $a_n$ si dice \underline{sottosuccessione} di $\{a_n\}_{n\in\mathbb{N}}$ 
+        una succ. $\{a_{n_k}\}_{k\in\mathbb{N}}$ tale che $a_k$ sia una succ. strett. crescente di numeri naturali, cioè $n_{k+1}>n_k\qquad\forall\ k\in\mathbb{N}$
+    \end{defi}
+    \colorbox{yellow}{Es}: $n_k=2k,\ k\in\mathbb{N}\qquad a_{n_k}=a_{2k},\ k\in\mathbb{N}$\qquad prendo solo gli elementi pari\\\\
+    \colorbox{yellow}{Osservazione}: per mostrare che una succ. non ha limite, mi basta mostrare che due sottosucc. hanno limite diverso
+    o che una non abbia limite.\\
+    \begin{theo}{Teorema di Bolzano-Weistrass}{}
+        Sia $a_n$ una succ. limitata. Allora $\exists$ una sottosucc. di $a_n$ convergente
+    \end{theo}
+    \vspace{10pt}
+    \begin{ex}{Calcolare}{}
+        \[\lim_{n\rightarrow+\infty}\frac{\ln((n+5)!)-\ln(n!+5)}{\ln(n^\alpha+\cos(n\pi))}\]
+        al variare di $\alpha>0$
+    \end{ex}
+    
 \end{document}
