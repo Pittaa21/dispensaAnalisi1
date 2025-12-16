@@ -663,10 +663,33 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \begin{theo}{Teorema di Bolzano-Weistrass}{}
         Sia $a_n$ una succ. limitata. Allora $\exists$ una sottosucc. di $a_n$ convergente
     \end{theo}
-    \vspace{10pt}
+    \vspace{20pt}
     \begin{ex}{Calcolare}{}
         \[\lim_{n\rightarrow+\infty}\frac{\ln((n+5)!)-\ln(n!+5)}{\ln(n^\alpha+\cos(n\pi))}\]
         al variare di $\alpha>0$
     \end{ex}
-    
+    \vspace{10pt}\colorbox{yellow}{Svolgimento}: \\\\
+    NUM = $\ln((n+5)!)-\ln(n!+5)=\quad\ln((n+5)(n+4)(n+3)(n+2)(n+1)n!)-\ln(n!(1+\frac{5}{n!})=$
+    \begin{itemize}
+        \item [] $=\ln((n+5)(n+4)(n+3)(n+2)(n+1)))+\ln(n!)-\ln(n!)-\underbrace{\ln(1+\frac{5}{n!})}_0=$
+        \item [] $=\ln((n+5)(n+4)(n+3)(n+2)(n+1)))=$
+        \item [] $=\ln(n^5)+o(\ln n^5)$
+        \item [] $=5\ln n+o(\ln n)$\\
+    \end{itemize}
+    DEN = $\ln(n^\alpha+\underbrace{\cos(n\pi)}_{-1^n})=\quad\ln(n^\alpha(1+\frac{-1^n}{n^\alpha}))=$
+    \begin{itemize}
+        \item [] $=\ln n^\alpha\cdot\underbrace{\ln1+\frac{-1^n}{n^\alpha}}_0=$
+        \item [] $=\ln n^\alpha=$
+        \item [] $=\alpha\ln n+o(\ln n)$\\
+    \end{itemize}
+    \[\lim_{n\rightarrow+\infty}\frac{5\ln n+o(\ln n)}{\alpha\ln n+o(\ln n)}=\frac{5}{\alpha}\]
+    \section{Funzioni Continue}
+    \begin{defi}{Funzione Continua}{}
+        $f$ funzione reale di variabile reale, $x_0\in\text{dom}f$. $f$ si dice \underline{continua in $x_0$}
+        se è verificata una delle seguenti:\\
+        \begin{itemize}
+            \item $x_0$ è punto isolato del dominio
+            \item Se $x_0$ non è punto isolato del dominio (ossia $x_0$ punto di acc. per dom$f$). Allora \[\lim_{x\rightarrow x_0}f(x)=f(x_0)\] 
+        \end{itemize}
+    \end{defi}
 \end{document}
