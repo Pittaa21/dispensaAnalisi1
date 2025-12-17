@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1765912086.67196 "/home/pitta/Documents/dispensaAnalisi1/main.tex" "main.pdf" "main" 1765912088.15967 0
-  "/etc/texmf/web2c/texmf.cnf" 1765825161.37441 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/pitta/Documents/dispensaAnalisi1/main.tex" 1765912086.37712 40073 86897627d5e81720acbaac1af0666100 ""
+["pdflatex"] 1765996628.67841 "/home/pitta/Documents/Latex/main.tex" "main.pdf" "main" 1765996630.30547 0
+  "/etc/texmf/web2c/texmf.cnf" 1764412924.27367 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/pitta/Documents/Latex/main.tex" 1765996628.47581 43084 a2d52c4b2b6314d3d09f6ef2ad4f3302 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/atkinson/atksn_cvs3iv.enc" 1612564038 2852 0e84d9c42a84502cb059a346f06c6632 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/atkinson/atksn_ycy2xh.enc" 1612564038 3176 391809404193674ae2e225815b04d7d6 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -48,6 +48,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1248133631 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1248133631 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
@@ -250,11 +251,11 @@
   "/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1655411236 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1765825179.56208 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1765825191 8214958 685f9a373a959265e10b73dca7877076 ""
-  "main.aux" 1765912088.06011 790 4344f19de6a1f8d27ea74c57c8d571b5 "pdflatex"
-  "main.tex" 1765912086.37712 40073 86897627d5e81720acbaac1af0666100 ""
-  "main.toc" 1765912088.06111 469 36bb722b2d2fb55451128eea26b381f6 "pdflatex"
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1764412946.09031 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1764413083 8214005 b94c646e6e46fa3fbdf3b229186627aa ""
+  "main.aux" 1765996630.19545 790 b19ce376630d17b46cca3c2757327148 "pdflatex"
+  "main.tex" 1765996628.47581 43084 a2d52c4b2b6314d3d09f6ef2ad4f3302 ""
+  "main.toc" 1765996630.19645 469 36bb722b2d2fb55451128eea26b381f6 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

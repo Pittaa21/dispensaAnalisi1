@@ -689,7 +689,55 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         se è verificata una delle seguenti:\\
         \begin{itemize}
             \item $x_0$ è punto isolato del dominio
-            \item Se $x_0$ non è punto isolato del dominio (ossia $x_0$ punto di acc. per dom$f$). Allora \[\lim_{x\rightarrow x_0}f(x)=f(x_0)\] 
+            \item Se $x_0$ non è punto isolato del dominio (ossia $x_0$ punto di acc. per dom$f$). Allora \[\lim_{x\rightarrow x_0}f(x)=f(x_0)\]
         \end{itemize}
+        Una funzione è \underline{continua} se è continua in ogni punto del suo dominio.
     \end{defi}
-\end{document}
+    \vspace{10pt}\colorbox{yellow}{Osservazione}: Si parla di continuità di $f$ solo nei punti del dominio di $f$.\\
+    \begin{ex}{}{}
+        \[f(x)=\frac{1}{x}\qquad\text{dom}f=\mathbb{R}\smallsetminus\{0\}\]
+    \end{ex}
+    \[\lim_{x\rightarrow x_0}\frac{1}{x}=\frac{1}{x_0}=f(x_0)\quad\forall\ x_0\in\text{dom}f\]
+    $\Rightarrow f$ è continua in $x_0\quad\forall\ x_0\in$ dom$f=\mathbb{R}\smallsetminus\{0\}$\\\\
+    \colorbox{yellow}{Def}: Se $x_0\in$ dom$f$ è punto di acc. per dom$f$, ho che $f$ è continua in 
+    $x_0\Leftrightarrow\forall\ \epsilon>0\ \exists\ \delta>0$ tale che se $|x-x_0|<\delta$ e $x\in$ dom$f$ allora:
+    \[|f(x)-f(x_0)|<\epsilon\quad\Leftrightarrow\quad\lim_{x\rightarrow x_0}f(x)=f(x_0)\]\\
+    \begin{defi}{Discontinuità di I specie}{}
+        Sia $f$ funzione reale di variabile reale, $x_0\in$ dom$f$ punto di acc. destro e sinistro per dom$f$. Se esistono i limiti finiti:
+        \[\lim_{x\rightarrow x_0^+}f(x)\quad e\quad\lim_{x\rightarrow x_0^-}f(x)\]
+        Ma \[\lim_{x\rightarrow x_0^+}f(x)\quad \ne\quad\lim_{x\rightarrow x_0^-}f(x)\]
+        Allora si dice che $x_0$ è punto di discontinuità di I specie o di salto
+    \end{defi}
+    \begin{defi}{Discontinuità di II specie}{}
+        Sia $f$ funzione reale di variabile reale, $x_0\in$ dom$f$, punto di acc. destro e sinistro. Se:\\
+        \begin{enumerate}
+            \item Almeno uno dei due limiti sinistro o destro in $x_0$ sia infinito
+            \item [] Oppure
+            \item Almeno uno dei due limiti sinistro o destro in $x_0$ non esiste
+        \end{enumerate}
+        Allora si dice che $x_0$ è punto di discontinuità di II specie
+    \end{defi}
+    \vspace{20pt}
+    \begin{defi}{Discontinuità di III specie}{}
+        $I\subseteq \mathbb{R}$ intervallo, $f:I\rightarrow\mathbb{R}$, $x_0\in I$, $l\in\mathbb{R}$, tale che
+        \[\lim_{x\rightarrow x_0}f(x)=l\ne f(x_0)\]
+        Allora $x_0$ si dice punto di discontinuità eliminabile per $f$
+    \end{defi}
+    \vspace{20pt}
+    \begin{theo}{Teorema di Weistrass}{}
+        Sia $f$ funzione reale definita e continua su [$a,b$]. Allora $f$ ha massimo e minimo (assoluti) in [$a,b$],
+        cioè $\exists\ x_m,x_M\in[a,b]$ tale che:
+        \[\text{min}_{x\in[a,b]}f(x)=f(x_m)\qquad\text{max}_{x\in[a,b]}f(x)=f(x_M)\]
+    \end{theo}
+    \vspace{20pt}
+    \begin{theo}{Teorema degli zeri}{}
+        Sia $f:[a,b]\rightarrow\mathbb{R}$ continua in $[a,b]$ chiuso e limitato. Se $f(a)\cdot f(b)<0$\\
+        Allora $\exists\ \epsilon\in]a,b[$ tale che $f(\epsilon)=0$
+    \end{theo}
+    \vspace{20pt}
+    \begin{theo}{Teorema dei valori intermedi}{}
+        Siano $I\subseteq\mathbb{R}$ intervallo $f:I\rightarrow\mathbb{R}$ continua. Allora $f(I)$ è un intervallo,
+        cioè $\forall\ x_1,x_2\in I$ e $y\in\mathbb{R}$ tale che\[f(x_1)<y<f(x_2)\]
+        Allora $\exists\ \epsilon\in I$ tale che $f(\epsilon)=y$
+    \end{theo}
+    \end{document}
