@@ -38,7 +38,7 @@
     colback=blue!10!white
 }{def}
 \renewcommand{\arraystretch}{2}
-\setlength{\tabcolsep}{30pt}
+\setlength{\tabcolsep}{50pt}
 \begin{document}
 \maketitle
 \tableofcontents
@@ -750,8 +750,69 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         \item la $f$ inversa $f^{-1}:f(I)\rightarrow I$ è continua
     \end{enumerate}
     \end{theo}
+    \section{Derivata}\vspace{10pt}
     \begin{defi}{Calcolo differenziale}{}
         Sia $I\subseteq\mathbb{R}$ intervallo, $x_0\in I,\ f:I\rightarrow\mathbb{R}$ funzione. Se esiste il limite:
-        \[\lim_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}(= \lim_{h\rightarrow})\]
+        \[\lim_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}\text{ rapporto incrementale}\qquad(= \lim_{h\rightarrow0}\frac{f(x_0+h)-f(x_0)}{h})\]
+        Tale limite si dice \underline{derivata di $f$ in $x_0$} (oppure derivata prima) e si indica con
+        \[f^1(x_0),\ Df(x_0),\ \frac{d}{dx}f(x_0)\]
+        Inoltre se il limite esiste finito, $f$ si dice \underline{derivabile in $x_0$}.\\
+        Se $f$ è derivabile $\forall\ x_0\in I$, $f$ si dice derivabile in $I$
+    \end{defi}
+    \colorbox{yellow}{Es}: $f(x)=x^n,\ x\in\mathbb{R},\ n\in\mathbb{N}$. Sia $x_0\in\mathbb{R}$ Calcolo $f^1(x_0)$
+    \begin{align*}
+        &f(x)=1\qquad\forall\ x\in\mathbb{R}\qquad n=0&&&&&\\
+        &f^1(x_0)=\lim_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}=\\
+        =&\lim_{x\rightarrow x_0}\frac{1-1}{x-x_0}=0\\
+        &f^1(x_0)=0\qquad\forall\ x_0\in\mathbb{R}\quad\text{se }n=0\\\\
+        &f(x)=x\qquad\forall\ x\in\mathbb{R},\qquad n=1\\
+        &f^1(x_0)=\lim_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}=\lim_{x\rightarrow x_0}\frac{x-x_0}{x-x_0}=1\\
+        &f^1(x_0)=1\qquad\forall\ x_0\in\mathbb{R}\\\\
+        &\text{Se }n>1\qquad f(x)=x^n\\
+        &f^1(x_0)=\lim_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}=\lim_{x\rightarrow x_0}\frac{x^n-x_0^n}{x-x_0}=\\
+        =&\lim_{h\rightarrow0}\frac{(x_o+h)^n-x_0^n}{h}=\\
+        &\text{Utilizziamo il binomio di Newton: }(a+b)^n=\sum_{k=0}^{n}\binom{n}{k}a^{n-k}b^k\\
+        =&\sum_{k=0}^{n}\frac{n!}{k!(n-k)!}\cdot x_0^{n-k}\cdot h^k=\\
+        =&\underbrace{\frac{n!}{n!}\cdot x_0^n\cdot1}_{x_0^n}+\underbrace{\frac{n!}{(n-1)!}\cdot x_0^{n-1}\cdot h}_{n\cdot x_0^{n-1}\cdot h^2}+\underbrace{\frac{n!}{2(n-2)!}\cdot x_0^{n-2}\cdot h^2}_{\frac{1}{2}n(n-1)\cdot x_0^{n-2}\cdot h^2}\qquad\text{nel caso di }n=2\text{ (per gli altri valori è analogo)}\\
+        =&\lim_{h\rightarrow0}\frac{x^n_0+n\cdot x_0^{n-1}\cdot h+\frac{1}{2}n(n-1)\cdot x_0^{n-2}\cdot h^2-x^n_0}{h}=\\
+        =&\lim_{h\rightarrow0}\frac{n\cdot x_0^{n-1}\cdot h+\frac{1}{2}n(n-1)\cdot x_0^{n-2}\cdot h^2}{h}=\\
+        =&\lim_{h\rightarrow0}n\cdot x_0^{n-1}+\underbrace{\frac{1}{2}n(n-1)\cdot x_0^{n-2}\cdot h}_0=\\
+        =&n\cdot x_0^{n-1}\qquad\forall x_0\in\mathbb{R}\\
+    \end{align*}
+        \newpage\begin{center}
+        \LARGE\underline{Tabella Derivate Semplici}\\\vspace{10pt}\large
+        {\rowcolors{2}{green!90!yellow!60}{green!80!yellow!50}
+        \begin{tabular}{| c | c |}
+            \hline
+            \rowcolor{yellow!50}\LARGE f(x) &\LARGE f$^\text{1}$(x)\\\hline
+            $k$ & $0$\\\hline
+            $x^n$ & $n\cdot x^{n-1}$\\\hline
+            $\ln |x|$ & $\frac{1}{x}$\\\hline
+            $\log_a |x|$ & $(\log_ae)\cdot\frac{1}{x}$\\\hline
+            $e^x$ & $e^x$\\\hline
+            $a^x$ & $(\ln a)\cdot a^x$\\\hline
+            $\sin x$ & $\cos x$\\\hline
+            $\cos x$ & $-\sin x$\\\hline
+            $\tan x$ & $\frac{1}{\cos^2x}=1+\tan^2x$\\\hline
+            $\cot x$ & $-\frac{1}{\sin^2x}=-1-\cot^2x$\\\hline
+            $\arcsin x$ & $\frac{1}{\sqrt{1-x^2}}$\\\hline
+            $\arccos x$ & $-\frac{1}{\sqrt{1-x^"}}$\\\hline
+            $\arctan x$ & $-\frac{1}{1+x^2}$\\\hline
+        \end{tabular}}
+    \end{center}
+    \vspace{20pt}
+    \begin{theo}{Derivabilità}{}
+        Sia $I\subseteq \mathbb{R}$ intervallo, $x_0\in I,\ f:I\rightarrow\mathbb{R}$ derivabile in $x_0$.
+        Allora, $f$ è continua in $x_0$.
+    \end{theo}
+    \colorbox{yellow}{Dim}: Devo mostrare\[\lim_{x\rightarrow x_0}f(x)=f(x_0)\]
+    Poichè $f$ è derivabile in $x_0$\\
+    $f(x)=f(x_0)+f^1(x_0)\ (x-x_0)+o(x-x_0)$\quad per $x\rightarrow x_0$\\\\
+    Quindi\[\lim_{x\rightarrow x_0}f(x)=\lim_{x\rightarrow x_0}(f(x_0)+\underbrace{f^1(x_0)\ (x-x_0)}_0+\underbrace{o(x-x_0)}_0)=f(x_0)\quad\checkmark\]\\
+    \colorbox{yellow}{Osservazione}: $f$ derivabile in $x_0\Rightarrow f$ e $x_0\nLeftarrow f$ continua in $x_0$\\
+    \begin{defi}{Derivata destra e sinistra}{}
+        Sia $I$ intervallo di $\mathbb{R},\ f:I\rightarrow\mathbb{R},\ x_0\in I$. Se esiste
+        \[\lim_{x\rightarrow x_0^+}\frac{f(x)-f(x_0)}{x-x_0}\quad (=\lim_{h\rightarrow0^+}\frac{f(x_0+h)-f(x_0)}{h})\]
+        Tale limite si dice \underline{derivata destra di $f$ in $x_0$}. Se $f^1_+(x_0)\in\mathbb{R},\ f$ si dice \underline{derivabile da destra in $x_0$}
     \end{defi}
     \end{document}

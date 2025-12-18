@@ -5,3 +5,4 @@
 \contentsline {subsection}{\numberline {3.1}O-piccoli}{12}{}%
 \contentsline {section}{\numberline {4}Successioni}{16}{}%
 \contentsline {section}{\numberline {5}Funzioni Continue}{19}{}%
+\contentsline {section}{\numberline {6}Derivata}{21}{}%
