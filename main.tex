@@ -729,6 +729,8 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         cioè $\exists\ x_m,x_M\in[a,b]$ tale che:
         \[\text{min}_{x\in[a,b]}f(x)=f(x_m)\qquad\text{max}_{x\in[a,b]}f(x)=f(x_M)\]
     \end{theo}
+    \colorbox{yellow}{Es}:\qquad$\sin[-2\pi,2\pi]\rightarrow\mathbb{R}$\\
+    \[\text{min}_{x\in[-2\pi,2\pi]}\sin x=-1\qquad\text{max}_{x\in[-2\pi,2\pi]}\sin x=1\]
     \vspace{20pt}
     \begin{theo}{Teorema degli zeri}{}
         Sia $f:[a,b]\rightarrow\mathbb{R}$ continua in $[a,b]$ chiuso e limitato. Se $f(a)\cdot f(b)<0$\\
@@ -740,4 +742,16 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         cioè $\forall\ x_1,x_2\in I$ e $y\in\mathbb{R}$ tale che\[f(x_1)<y<f(x_2)\]
         Allora $\exists\ \epsilon\in I$ tale che $f(\epsilon)=y$
     \end{theo}
+    \vspace{20pt}
+    \begin{theo}{Continuità della funzione inversa}{}
+    Sia $I\subseteq\mathbb{R}$ intervallo, $f:I\rightarrow\mathbb{R}$ continua e invertibile. Allora:
+    \begin{enumerate}
+        \item $f$ è strettamente monotona
+        \item la $f$ inversa $f^{-1}:f(I)\rightarrow I$ è continua
+    \end{enumerate}
+    \end{theo}
+    \begin{defi}{Calcolo differenziale}{}
+        Sia $I\subseteq\mathbb{R}$ intervallo, $x_0\in I,\ f:I\rightarrow\mathbb{R}$ funzione. Se esiste il limite:
+        \[\lim_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}(= \lim_{h\rightarrow})\]
+    \end{defi}
     \end{document}
