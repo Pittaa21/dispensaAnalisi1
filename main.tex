@@ -493,7 +493,7 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \newpage\begin{center}
         \LARGE\underline{Sviluppi asintotici di alcune funzioni}\\\vspace{10pt}\large
         {\rowcolors{1}{green!90!yellow!60}{green!80!yellow!50}
-        \begin{tabular}{| m{5em} | m{20em} |}
+        \begin{tabular}{| c | c |}
             \hline
             $\sin x$ & $x-\frac{x^3}{3!}+\frac{x^5}{5!}+o(x^5)$ per $x\rightarrow0$\\\hline
             $\cos x$ & $1-\frac{x^2}{2!}+\frac{x^4}{4!}+o(x^4)$ per $x\rightarrow0$\\\hline
@@ -815,4 +815,38 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         \[\lim_{x\rightarrow x_0^+}\frac{f(x)-f(x_0)}{x-x_0}\quad (=\lim_{h\rightarrow0^+}\frac{f(x_0+h)-f(x_0)}{h})\]
         Tale limite si dice \underline{derivata destra di $f$ in $x_0$}. Se $f^1_+(x_0)\in\mathbb{R},\ f$ si dice \underline{derivabile da destra in $x_0$}
     \end{defi}
+    \colorbox{yellow}{Osservazione}:\\
+    \begin{minipage}{0.3\textwidth}
+        $f$ derivabile in $x_0$
+    \end{minipage}\hfill
+    \begin{minipage}{0.1\textwidth}
+        \LARGE$\Leftrightarrow$
+    \end{minipage}\hfill
+    \begin{minipage}{0.3\textwidth}
+        $f$ derivabile da destra in $x_0$\\
+        $f$ derivabile da sinitra in $x_0$\\
+        $f^1_+(x_0)=f^1_-(x_0)$
+    \end{minipage}\\\\
+    \begin{theo}{Algebra delle derivate}{}
+        $f,g$ derivabile in $x_0\in I,\ I$ intervallo aperto di $\mathbb{R},\ \alpha\in\mathbb{R}$\\
+        \begin{enumerate}
+            \item $\alpha f$ è derivabile in $x_0$ e\quad$(\alpha f)^1(x_0)=\alpha f^1(x_0)$
+            \item $f+g$ è derivabile in $x_0$\quad$(f+g)^1(x_0)=f^1(x_0)+g^1(x_0)$
+            \item $f\cdot g$ è derivabile in $x_0\quad(f\cdot g)^1(x_0)=f^1(x_0)\cdot g(x_0)+f(x_0)\cdot g^1(x_0)$
+            \item Se $g(x_0)\ne0$, allora $f/g$ è derivabile in $x_0\quad(\frac{f}{g})^1(x_0)=\frac{f^1(x_0)\cdot g(x_0)-f(x_0)\cdot g^1(x_0)}{g(x_0)^2}$
+        \end{enumerate}
+    \end{theo}
+    \colorbox{yellow}{Derivata della $f$ inversa}\\
+        $f:\ I\rightarrow\mathbb{R},\ I$ intervallo aperto, $f$ continua, invertibile in $I$ e derivabile
+        in $x_0$, tale che $f^1(x_0)\ne0$. Allora $f^{-1}$ è invertibile in $y_0=f(x_0)$ e si ha:
+        \[(f^{-1})^1(y_0)=\frac{1}{f^1(x_0)}\qquad=f^1(f^{-1}(y_0))\] \\
+    \begin{ex}{}{}
+        \[\text{D}(\arcsin y)=?\]
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}:\\
+    Posso calcolare la derivata negli $y_0=\sin x_0$ ove $\sin^1(x_0)\ne0$ ossia $\cos(x_0)\ne0$, quindi $x_0=\pm\pi/2$
+    \begin{align*}
+        &\text{D}\arcsin y = \frac{1}{(\text{D}\sin)(\arcsin y)}=\frac{1}{\cos(\arcsin y)}=&&&&&&&\\
+        &\frac{1}{\sqrt{1-\sin^2(\arcsin y)}}=\frac{1}{\sqrt{1-(\sin(\arcsin y))^2}}=\frac{1}{\sqrt{1-\sin^2 x}}\\
+    \end{align*}
     \end{document}
