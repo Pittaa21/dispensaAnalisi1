@@ -926,7 +926,25 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \colorbox{yellow}{Osservazione}: per quanto riguarda massimo e minimo locale se $\exists\ U$ intorno di $x_0$ si dice che 
     $f(x_0)$ è max o min locale se $f(x_0)\ge f(x)$ oppure $f(x_0)\le f(x)\qquad\forall\ x\in U\cap X$\\\\
     \begin{theo}{Teorema di Fermat o del punto critico}{}
-        $f:\ ]a,b[\rightarrow\mathbb{R}\qquad x_0\in\ ]a,b[$, $f$ derivabile in $x_0$, $f$ ha estremo locale in $x_0$
+        $f:\ ]a,b[\rightarrow\mathbb{R}\qquad x_0\in\ ]a,b[$, $f$ derivabile in $x_0$, $f$ ha estremo locale in $x_0$. Allora $f^1(x_0)=0$
     \end{theo}
-    \colorbox{yellow}{Dim}:
+    \colorbox{yellow}{Dim}: Ipotizziamo che $x_0$ è punto di estremo locale e $f$ è derivabile in $x_0$. Allora esiste $U\subseteq\ ]a,b[$ intorno di $x_0$
+    tale che \[f(x)\le f(x_0)\qquad\forall x\in U\]
+    Quindi \[f(x)-f(x_0)\le0\qquad\forall x\in U\]
+    Osservo\[\frac{f(x)-f(x_0)}{x-x_0}\qquad\le0\ x>x_0\qquad\ge0\ x<x_0\]
+    Applicando la definizione di derivata esiste, quindi, il limite di $\frac{f(x)-f(x_0)}{x-x_0}$ che è $\le0$ per $x\rightarrow x_0^+$ oppure $\ge0$ per $x\rightarrow x_0^-$\\\\
+    $\Rightarrow\qquad0\le f^1_-(x_0)=f^1(x_0)=f^1_+(x_0)\le0$\\
+    $\Rightarrow\qquad f^1(x_0)=0$\\
+    \colorbox{yellow}{Osservazione}: il teorema non è valido se $x_0=a$ o $x_0=b$ e anche se $f$ non è derivabile.\\\\
+    \begin{theo}{Teorema di Rolle}{}
+        $f:\ [a,b]\rightarrow\mathbb{R}$,\\
+        \begin{enumerate}
+            \item $f$ continua in $[a,b]$
+            \item $f$ derivabile in $]a,b[$
+            \item $f(a)=f(b)$
+        \end{enumerate}
+        Allora esiste $c\in\ ]a,b[$ tale che $f^1(c)=0$
+    \end{theo}
+    \colorbox{yellow}{Dim}: Se $f$ non c'è nulla da dimostrare poichè $f^1(c)=0$.\\
+    Suppongo che $f$ non sia costante, per il teorema di Weistrass ha max e min in $[a,b]$
 \end{document}

@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1766338837.2521 "/home/pitta/Documents/dispensaAnalisi1/main.tex" "main.pdf" "main" 1766338839.82381 0
-  "/etc/texmf/web2c/texmf.cnf" 1765825161.37441 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/pitta/Documents/dispensaAnalisi1/main.tex" 1766338836.95164 54679 b574c48b0d69df579030f6f0e7d8e2fa ""
+["pdflatex"] 1766342351.43943 "/home/pitta/Documents/Latex/main.tex" "main.pdf" "main" 1766342353.38308 0
+  "/etc/texmf/web2c/texmf.cnf" 1764412924.27367 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/pitta/Documents/Latex/main.tex" 1766342351.22585 55907 7b5bd35fe96478ab3384a068f53a0261 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/atkinson/atksn_cvs3iv.enc" 1612564038 2852 0e84d9c42a84502cb059a346f06c6632 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/atkinson/atksn_ycy2xh.enc" 1612564038 3176 391809404193674ae2e225815b04d7d6 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -251,11 +251,11 @@
   "/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1655411236 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1765825179.56208 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1765825191 8214958 685f9a373a959265e10b73dca7877076 ""
-  "main.aux" 1766338839.72067 1022 04cdfbf681b99ba03c05078a17dc9016 "pdflatex"
-  "main.tex" 1766338836.95164 54679 b574c48b0d69df579030f6f0e7d8e2fa ""
-  "main.toc" 1766338839.72067 619 dce7bb3b00a320bea95493c579e1e9fc "pdflatex"
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1764412946.09031 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1764413083 8214005 b94c646e6e46fa3fbdf3b229186627aa ""
+  "main.aux" 1766342353.26989 1022 34b7abe1ddff996b1aec2a5e9797b1aa "pdflatex"
+  "main.tex" 1766342351.22585 55907 7b5bd35fe96478ab3384a068f53a0261 ""
+  "main.toc" 1766342353.27089 619 dce7bb3b00a320bea95493c579e1e9fc "pdflatex"
   (generated)
   "main.aux"
   "main.log"
