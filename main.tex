@@ -849,4 +849,84 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         &\text{D}\arcsin y = \frac{1}{(\text{D}\sin)(\arcsin y)}=\frac{1}{\cos(\arcsin y)}=&&&&&&&\\
         &\frac{1}{\sqrt{1-\sin^2(\arcsin y)}}=\frac{1}{\sqrt{1-(\sin(\arcsin y))^2}}=\frac{1}{\sqrt{1-\sin^2 x}}\\
     \end{align*}
-    \end{document}
+    \begin{theo}{Derivata delle $f$ composte}{}
+        Siano $f,g$ funzioni reali di variabile reale, definite in un intervallo $I$, se $g$ è derivabile in $x_0$ e $f$ è derivabile in $g(x_0)$.
+        Allora si ha:
+        \[\text{D}f(g(x_0))=f^1(g(x_0))\cdot g^1(x_0)\]
+    \end{theo}
+    \newpage
+    \begin{ex}{}{}
+        Calcolare la derivata di $x^\alpha$ con $\alpha>0$
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}: $x^\alpha=e^{\alpha\log x} = f\cdot g(x)\quad f(y)=e^y\quad g(x)=\alpha\log x$\\
+    $f^1(y)=e^y,\qquad g^1(x)=\alpha\cdot\frac{1}{x}\qquad\text{D}(x^\alpha)=e^{\alpha\log x}\cdot(\alpha\cdot\frac{1}{x})=\alpha\cdot x^{\alpha-1}$\\\\
+    \begin{defi}{Punti di non derivabilità}{}
+        $I\subseteq\mathbb{R}$ intervallo, $f:\ I\rightarrow\mathbb{R}$ con derivata sinistra e destra in $x_0$ tale che:
+        \[f^1_+(x_0)\ne f^1_-(x_0)\]
+        E almeno una delle due sia finita
+    \end{defi}
+    \vspace{20pt}
+    \begin{defi}{}{}
+        $f:\ I\rightarrow\mathbb{R},\ I$ intervallo aperto, $x_0\in I$ e si indica:
+        \[f^1(x_0)=\pm\infty\]
+        Allora $x_0$ si dice punto di \underline{flesso a tangente verticale}\\
+        Se, invece si ha:\[f^1_-(x_0)=-\infty\qquad f^1_+(x_0)=+\infty\]
+        Oppure il contrario, $x_0$ si dice punto di \underline{cuspide}
+    \end{defi}
+    \vspace{20pt}
+    \begin{theo}{Limite della derivata}{}
+        $I \subseteq\mathbb{R},$ intervallo, $f:\ I\rightarrow\mathbb{R},\ x_0\in I$. Supp:
+        \begin{enumerate}
+            \item $f$ sia continua in $x_0$
+            \item $f$ sia derivabile in $I\smallsetminus\{x_0\}$
+            \item $\exists\ \lim_{x\rightarrow x_0}f^1(x)$
+        \end{enumerate}
+        Allora $\exists\ f^1(x_0)$ e vale\[f^1(x_0)=\lim_{x\rightarrow x_0}f^1(x)\]
+        In particolare se il limite è in $\mathbb{R},\ f$ è derivabile.
+    \end{theo}
+    \vspace{20pt}
+    \begin{defi}{Derivata di ordine superiore}{}
+        $I\subseteq\mathbb{R}$ intervallo, $f:\ I\rightarrow\mathbb{R}$ derivabile. Se $f^1$ è derivabile in $x_0$, allora $f$ è
+        derivabile due volte in $x_0$ e si dice che tale valore è la derivata seconda di $f$ in $x_0$ e si indica con
+        \[f^{11}(x_0),\ \text{D}^2f(x_0),\ \frac{d^2}{dx^2}f(x_0)\]
+    \end{defi}
+    \colorbox{yellow}{Osservazione}: dalla definizione di derivata seconda si ottiene anche quella di derivata n-esima di $f$ in $x_0$.\\\\
+    \colorbox{yellow}{Formule di Leibniz}: Date $f,g$ derivabili n volte in $x_0$ si ha:
+    \[(f\cdot g)^n(x_0)=\sum_{k=0}^{n}\binom{k}{n}\cdot f^{(n-k)}(x_0)\cdot g^k(x_0)\]\\
+    \begin{theo}{Teorema di de L'Hopital}{}
+        Siano $f,g:\ ]a,b[\rightarrow\mathbb{R},\quad a,b\in\mathbb{\bar{R}}\quad f,g$ derivabile in $]a,b[$. Se:\\
+        \begin{enumerate}
+            \item $g^1(x)\ne0\qquad\forall\ x\in\ ]a,b[$
+            \item $f(x),\ g(x)\rightarrow0$ oppure $f(x),\ g(x)\rightarrow+\infty$ per $x\rightarrow a^+$
+            \item $\exists\ \lim_{x\rightarrow a^+}\frac{f^1(x)}{g^1(x)}=l\in\mathbb{\bar{R}}$
+        \end{enumerate}
+        Allora\[\lim_{x\rightarrow a^+}\frac{f(x)}{g(x)}=l\]
+        Si ha l'analogo per $x\rightarrow b^-$ oppure per $x\rightarrow x_0\quad x_0\in\ ]a,b[$
+    \end{theo}
+    \colorbox{yellow}{Osservazione}: non sempre applicando de l'Hopital si semplifica il limite.\\\\
+    \subsection{Massimo e minimo assuluto di una funzione}
+    \begin{defi}{}{}
+        M massimo assoluto per $f$ se $\exists\ x_1\in X$ tale che $f(x_1)=$ M e $f(x)\le f(x_1)=$ M $\forall\ x\in X$\\
+        ($x_1$ è punto di massimo assoluto), per il minimo assoluto si ha la situazione analoga
+    \end{defi}
+    \colorbox{yellow}{Esempio}: $\sin x$\\\\
+    \begin{minipage}{0.5\textwidth}
+        \begin{tikzpicture}
+            \begin{axis}[clip=false, xmin=0,xmax=2*pi,ylabel=$y$,xlabel=$x$, axis lines= middle,
+        xtick={0,1.57,3.14,4.71,6.28},
+        xticklabels={$0$, $\frac{\pi}{2}$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}]
+                \addplot[samples=200,blue, domain=0:2*pi]{sin(deg(x))}node[right,pos=0.9]{$f(x)=\sin x$};
+            \end{axis}
+        \end{tikzpicture}
+    \end{minipage}\hfill
+    \begin{minipage}{0.35\textwidth}
+        Punti di massimo assoluto = 1;\\\\
+        Punti di minimo assoluto = -1
+    \end{minipage}\\\\
+    \colorbox{yellow}{Osservazione}: per quanto riguarda massimo e minimo locale se $\exists\ U$ intorno di $x_0$ si dice che 
+    $f(x_0)$ è max o min locale se $f(x_0)\ge f(x)$ oppure $f(x_0)\le f(x)\qquad\forall\ x\in U\cap X$\\\\
+    \begin{theo}{Teorema di Fermat o del punto critico}{}
+        $f:\ ]a,b[\rightarrow\mathbb{R}\qquad x_0\in\ ]a,b[$, $f$ derivabile in $x_0$, $f$ ha estremo locale in $x_0$
+    \end{theo}
+    \colorbox{yellow}{Dim}:
+\end{document}
