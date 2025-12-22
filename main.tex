@@ -946,5 +946,67 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         Allora esiste $c\in\ ]a,b[$ tale che $f^1(c)=0$
     \end{theo}
     \colorbox{yellow}{Dim}: Se $f$ non c'è nulla da dimostrare poichè $f^1(c)=0$.\\
-    Suppongo che $f$ non sia costante, per il teorema di Weistrass ha max e min in $[a,b]$
+    Suppongo che $f$ non sia costante, per il teorema di Weistrass ha max e min in $[a,b]$ tali che
+    \[f(x_m)\le f(x)\le f(x_M)\qquad\forall\ x\in\ [a,b]\]
+    È necessario dimostrare che $x_m$ o $x_M$ siano all'interno dell'intervallo aperto a,b. Perchè per il teorema di Fermat
+    $f^1$ si annulla in tali punti.\\\\
+    Suppongo per assurdo che $x_m$ e $x_M$ appartengono agli estremi a e b compresi. Di conseguenza ottengo che, per il terzo punto del teorema di Rolle, 
+    $f(a)=f(b)$, quindi, $f(x_m)=f(x_M)$ ciò implica che $f$ è continua, ma all'inizio abbiamo considerato $f$ come non continua.\\\\
+    \begin{theo}{Teorema di Lagrange}{}
+        Sia $f:\ [a,b]\rightarrow\mathbb{R}$ continua in $[a,b]$ e derivabile in $]a,b[$. Allora esiste $c\in\ ]a,b[$ tale che
+        \[\frac{f(b)-f(a)}{b-a}=f^1(c)\]
+    \end{theo}
+    \colorbox{yellow}{Dim}: La dimostrazione viene da se applicando la formula del teorema, la prima parte indica il coefficiente angolare della retta
+    che passa secante per i due estremi a,b che è uguale alla derivata prima della funzione nel punto c, che è il coefficiente angolare della tangente nel punto c\\\\
+    \begin{theo}{Teorema di Cauchy}{}
+        $f,g:\ [a,b]\rightarrow\mathbb{R}$, continue in $[a,b]$ e derivabili in $]a,b[$. Allora esiste $c\in\ ]a,b[$ tale che
+        \[g^1(c)[f(b)-f(a)]=f^1(c)[g(b)-g(a)]\]
+        Se $g^1(x)\ne0$ vale:
+        \[\frac{f(b)-f(a)}{g(b)-g(a)}=\frac{f^1(c)}{g^1(c)}\]
+    \end{theo}
+    \colorbox{yellow}{Osservazione}: Cauchy $\underbrace{\Rightarrow}_{g(x)=x}$ Lagrange $\underbrace{\Rightarrow}_{f(a)=f(b)}$ Rolle
+    \begin{theo}{Monotonie}{}
+        $f:\ ]a,b[\rightarrow\mathbb{R}$ derivabile:
+        \begin{enumerate}
+            \item $f$ è crescente $\Leftrightarrow f^1(x)\ge0\quad\forall x\in\ ]a,b[$
+            \item $f$ è decrescente $\Leftrightarrow f^1(x)\le0\quad\forall x\in\ ]a,b[$
+            \item Se $f^1(x)>0\quad\forall\ x\in\ ]a,b[\ \Rightarrow f$ è strett crescente
+            \item Se $f^1(x)<0\quad\forall\ x\in\ ]a,b[\ \Rightarrow f$ è strett decrescente
+        \end{enumerate}
+    \end{theo}
+    \colorbox{yellow}{Dim}: faccio solo punto 1 (per gli altri il ragionamento è analogo)\\\\
+    Se $f$ è crescente e prendo due punti $x,y$ con $y>x$, allora di conseguenza ho che $f(y)\ge f(x)$, quindi applicando Lagrange
+    ho $\frac{f(y)-f(x)\ge0}{y-x>0}=f^1(c)\quad \ge0$ quindi se faccio il limite per $y\rightarrow x^+$ ottengo che $f^1_+(x)\ge0$ se ora applico il ragionamento per 
+    ogni $x$ ottengo che $f^1(x)\ge0$. \checkmark\\\\
+    \section{Studio di Funzione}
+    \begin{defi}{Funzioni concave e convesse}{}
+        $f:\ \mathbb{R}\supseteq I\rightarrow\mathbb{R},\ I$ intervallo, $f$ è \underline{convessa} in $I$ se $\forall\ x_1,x_2\in I$, il segmento che congiunge $x_1,f(x_1)$ e $x_2,f(x_2)$ non ha
+        punto sotto il grafico di $f$. Se gli unici punti che appartengono al grafico di $f$ sono gli estremi del segmento, allora $f$ si dice \underline{strettamente convessa}.\\
+        $f$ è \underline{concava} se $-f$ è convessa, $f$ è \underline{strettamente concava} se $-f$ è strettamente convessa
+    \end{defi}\vspace{10pt}
+    \begin{minipage}{0.3\textwidth}
+            \begin{tikzpicture}
+        \begin{axis}[axis lines=middle, xmax=5,xmin=-5,ymax=15, ymin=0, ylabel=$y$,xlabel=$x$]
+            \addplot[color=blue, samples=200]{x^2+1};
+        \end{axis}
+    \end{tikzpicture}
+    \end{minipage}\hspace{100pt}
+    \begin{minipage}{0.3\textwidth}
+        \begin{tikzpicture}
+        \begin{axis}[axis lines=middle, xmax=5,xmin=-5,ymax=0,ymin=-15, ylabel=$y$,xlabel=$x$]
+            \addplot[color=red, samples=200]{-x^2-1};
+        \end{axis}
+    \end{tikzpicture}
+    \end{minipage}\\\\
+    \begin{defi}{Asintoti}{}
+        Sia $f$ funzione reale di variabile reale:
+        \begin{itemize}
+            \item se $\lim_{x\rightarrow+\infty}f(x)=c\in\mathbb{R}\quad\Rightarrow\quad$ la retta $y=c$ è asintoto orizzontale a $+\infty$
+            \item se $\lim_{x\rightarrow-\infty}f(x)=c\in\mathbb{R}\quad\Rightarrow\quad$ la retta $y=c$ è asintoto orizzontale a $-\infty$\\\\
+            Per $x_0\in\mathbb{R}$ punto di acc. per dom$f$
+            \item se $\lim_{x\rightarrow x_0^+}f(x)=\pm\infty$ oppure vale lo stesso per $x\rightarrow x_0^-$, allora la retta $x=x_0$ è asintoto verticale\\\\
+            Se esiste $m,q\in\mathbb{R},\ m\ne0$
+            \item $\lim_{x\rightarrow\pm\infty}\frac{f(x)}{x}=m$ e $\lim_{x\rightarrow\pm\infty}f(x)-m\cdot x=q$, allora la retta $y=m\cdot x+q$ è asintoto obliquo per $x\rightarrow\pm\infty$
+        \end{itemize}
+    \end{defi}
 \end{document}
