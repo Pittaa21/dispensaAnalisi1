@@ -38,7 +38,7 @@
     colback=blue!10!white
 }{def}
 \renewcommand{\arraystretch}{2}
-\setlength{\tabcolsep}{50pt}
+\setlength{\tabcolsep}{20pt}
 \begin{document}
 \maketitle
 \tableofcontents
@@ -492,7 +492,7 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \[\lim_{x\rightarrow0}\frac{\text{NUM}}{\text{DEN}}=\lim_{x\rightarrow0}\frac{\frac{x^2}{2}+o(x^2)}{-\frac{1}{2}x^2+o(x^2)}=\lim_{x\rightarrow0}\frac{\frac{x^2}{2}}{-\frac{1}{2}x^2}=-1\]\\
     \newpage\begin{center}
         \LARGE\underline{Sviluppi asintotici di alcune funzioni}\\\vspace{10pt}\large
-        {\rowcolors{1}{green!90!yellow!60}{green!80!yellow!50}
+        {\rowcolors{1}{gray!10}{white!100}
         \begin{tabular}{| c | c |}
             \hline
             $\sin x$ & $x-\frac{x^3}{3!}+\frac{x^5}{5!}+o(x^5)$ per $x\rightarrow0$\\\hline
@@ -781,10 +781,10 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \end{align*}
         \newpage\begin{center}
         \LARGE\underline{Tabella Derivate Semplici}\\\vspace{10pt}\large
-        {\rowcolors{2}{green!90!yellow!60}{green!80!yellow!50}
+        {\rowcolors{1}{gray!10}{white!100}
         \begin{tabular}{| c | c |}
             \hline
-            \rowcolor{yellow!50}\LARGE f(x) &\LARGE f$^\text{1}$(x)\\\hline
+            \LARGE f(x) &\LARGE f$^\text{1}$(x)\\\hline
             $k$ & $0$\\\hline
             $x^n$ & $n\cdot x^{n-1}$\\\hline
             $\ln |x|$ & $\frac{1}{x}$\\\hline
@@ -863,7 +863,7 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \begin{defi}{Punti di non derivabilità}{}
         $I\subseteq\mathbb{R}$ intervallo, $f:\ I\rightarrow\mathbb{R}$ con derivata sinistra e destra in $x_0$ tale che:
         \[f^1_+(x_0)\ne f^1_-(x_0)\]
-        E almeno una delle due sia finita
+        E almeno una delle due sia finita, allora $x_0$ si dice \underline{punto angoloso}
     \end{defi}
     \vspace{20pt}
     \begin{defi}{}{}
@@ -1009,4 +1009,78 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
             \item $\lim_{x\rightarrow\pm\infty}\frac{f(x)}{x}=m$ e $\lim_{x\rightarrow\pm\infty}f(x)-m\cdot x=q$, allora la retta $y=m\cdot x+q$ è asintoto obliquo per $x\rightarrow\pm\infty$
         \end{itemize}
     \end{defi}
+    \vspace{20pt}
+    \begin{ex}{Studio di funzione}{}
+        \[f(x)= |\arctan(\log x)|\]
+    \end{ex}
+    \colorbox{yellow}{Dominio}: $\log x\ \rightarrow\ x>0$ quindi $]0,+\infty[$\\
+    \colorbox{yellow}{Simmetrie e Periodicità}: non è pari $f(-x)\ne f(x)$ e non è dispari $f(-x)\ne-f(x)$ per ogni $x\in\text{dom}f$,\quad inoltre
+    non è presente nessuna periodicità evidente\\
+    \colorbox{yellow}{Limti agli estremi di dom$f$}: \[\lim_{x\rightarrow0^+}|\arctan(\log x)|= |\arctan(-\infty)|=|-\frac{\pi}{2}|=\frac{\pi}{2}\]
+    \[\lim_{x\rightarrow+\infty}|\arctan(\log x)|=|\arctan(+\infty)|=\frac{\pi}{2}\]
+    Abbiamo asintoto orrizzontale per $x\rightarrow+\infty$ a $\frac{\pi}{2}$\qquad ma non abbiamo asintoto verticale\\
+    \colorbox{yellow}{Segno}: $|\arctan(\log x)|> 0$ verificata $\forall x\in\text{dom}f$\\
+    \colorbox{yellow}{Continuità}: $f$ è conposizione di funzioni continue, quindi è continua nel suo dominio.\\
+    \colorbox{yellow}{Derivabilità}: $f$ è derivabile in $]0,+\infty[\smallsetminus\{1\}$ perchè per $x=1\quad f(x)=0$\\\\
+    $f^1(x)$ per $0<x<1\qquad= -\frac{1}{1+(\log x)^2}\cdot\frac{1}{x}$\\
+    $f^1(x)$ per $1<x\qquad= \frac{1}{1+(\log x)^2}\cdot\frac{1}{x}$\\
+    Ora verifichiamo se è derivabile in $x=1$
+    \[\lim_{x\rightarrow1^-}-\frac{1}{1+(\log x)^2}\cdot\frac{1}{x}=-\frac{1}{1+0}\cdot1=-1\]
+    \[\lim_{x\rightarrow1^+}\frac{1}{1+(\log x)^2}\cdot\frac{1}{x}=\frac{1}{1+0}\cdot1=1\]
+    Derivata destra e sinistra sono diverse quindi non è derivabile in $x=1$, che è quindi punto angoloso\\
+    \colorbox{yellow}{Segno derivata}: $f^1(x)=-\frac{1}{1+(\log x)^2}\cdot\frac{1}{x}=\ <0\cdot\ >0 =\ <0\qquad\forall x\in\ ]0,1[$ quindi in quell'intervallo $f$ è strett decrescente\\
+    $f^1(x)=\frac{1}{1+(\log x)^2}\cdot\frac{1}{x}=\ >0\cdot\ >0 =\ >0\qquad\forall x\in\ ]1,+\infty[$ quindi in quell'intervallo $f$ è strett crescente\\
+    \colorbox{yellow}{Derivata Seconda}: $f^{11}(x)=-[((-1)\cdot(1+\log^2x)^{-2}\cdot2\log x\cdot\frac{1}{x})\cdot\frac{1}{x}+\frac{1}{1+\log^2x}\cdot\frac{-1}{x^2}]\qquad\forall x\in\ ]0,1[$\\
+    $f^{11}(x)=[((-1)\cdot(1+\log^2x)^{-2}\cdot2\log x\cdot\frac{1}{x})\cdot\frac{1}{x}+\frac{1}{1+\log^2x}\cdot\frac{-1}{x^2}]\qquad\forall x\in\ ]1,+\infty[$\\
+    $=\frac{-1}{(1+\log^2x)^2}\cdot\frac{1}{x^2}\cdot[2\log x+1+\log^2x] =\ <0\ \cdot>0\ \cdot\ge0=\ < 0\qquad (\log x +1)^2=0\Leftrightarrow\log x = -1\Leftrightarrow x=\frac{1}{e}\in\ ]0,1[$ la derita seconda in quell'intervallo è però $\ge0$\\
+    Quindi la derivata seconda di $f$ si annulla per $x=\frac{1}{e}$ ed è maggiore di zero per ogni $x\in\ ]0,1[\smallsetminus\{1/e\}$ quindi $f$ è strett convessa in $]0,1[\smallsetminus\{\frac{1}{e}\}$, però $x=\frac{1}{e}$ non è punto di flesso\\
+    Invece nell'intervallo $]1,+\infty[\qquad f^{11}(x)<0$ è quindi strett concava nell'intervallo\\
+    \\\colorbox{yellow}{Grafico}:\\\\
+    \begin{tikzpicture}
+        \begin{axis}[axis lines=middle, ylabel=$y$, xlabel=$x$, xtick={0.01,1/e,1,5,10}, xticklabels={$0$,$\frac{1}{e}$,$1$,$5$,$10$}, ytick={1.4}, yticklabels={$\frac{\pi}{2}$}]
+            \addplot[blue, samples=200, domain=0.00001:10]{abs(atan(ln(x)))*pi/180};
+            \addplot[red, domain=0.00001:10]{1.4};
+        \end{axis}
+    \end{tikzpicture}
+    \\\colorbox{yellow}{Massimo e minimo}: $f$ non ha max locale nel suo dominio, ma ha un min locale e assuluto in $x=1$. $x=0$  è punto di max assoluto per l'estensione per continuità di $f$.\\\\
+    \begin{defi}{Formula di Taylor}{}
+        Suppongo: \[f^1(x_0)=\lim_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}\]
+        $\Rightarrow\ f(x)-f(x_0)=f^1(x_0)\cdot(x-x_0)+o(x-x_0)$ per $x\rightarrow x_0$\\
+        $\Rightarrow\ f(x)=\underbrace{f(x_0)+f^1(x_0)\cdot(x-x_0)}_{\text{polinomio di grado 1}}\qquad\underbrace{+o(x-x_0)}_{\text{ERRORE}}$ per $x\rightarrow x_0$\\
+        se $f$ è derivabile $\Rightarrow\ f=$ polinomio di grado 1 + errore
+    \end{defi}
+    \colorbox{yellow}{Esempio}: $f(x)=e^x,\qquad x_0=0$\\
+    \begin{align*}
+        &e^x=e^0+e^0\cdot(x-0)+o(x-0)\quad\text{per }x\rightarrow0&&&&&&&&&\\
+        =\ &e^x=1+x+o(x)\quad\text{per }x\rightarrow0\\
+    \end{align*}
+    \begin{defi}{Polinomio di Taylor}{}
+        Prendo $f:\ I\rightarrow\mathbb{R},\ I$ intervallo, $x_0$ punto interno ad $I$, $f$ derivabile n volte in $x_0$.\\
+        Chiamo \underline{polinomio di Taylor di grado n} centrato in $x_0$ il polinomio:
+        \[\text{P}^n_{x_0}(x)=\sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}\cdot(x-x_0)^k\]
+        $f^{(0)}=f$
+    \end{defi}
+    \vspace{20pt}
+    \begin{theo}{formula di Taylor con resto nella forma di Peano}{}
+        Se $f:\ I\rightarrow\mathbb{R},\ I\subseteq\mathbb{R}$ intervallo, $x_0$ punto interno ad $I,\ f$ derivabili n volte in $x_0$, allora:
+        \[f(x)=\sum_{k=0}^{n}\frac{f^{(x)}(x_0)}{k!}\cdot(x-x_0)^k\quad+o((x-x_0)^n)\quad\text{per }x\rightarrow x_0\]
+    \end{theo}
+    \colorbox{yellow}{Osservazione}: se $x_0=0$, si chiama \underline{polinomio e formula di McLaurin}.\\\\
+    \newpage\begin{center}
+        \LARGE\underline{Sviluppi di McLaurin}\\\vspace{10pt}\large
+        {\rowcolors{1}{gray!10}{white!100}
+        \begin{tabular}{| c | c | c |}
+            \hline
+            \LARGE f(x) &\LARGE P$^n_0(x)$&\LARGE $\sum_{k=0}^{n\rightarrow+\infty}$\\\hline
+            $e^x$ per $x\rightarrow 0$ &$1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\dots$& $\sum\frac{x^k}{k!}+o(x^k)$\\\hline
+            $\log(1+x)$ per $x\rightarrow 0$ &$x+-\frac{x^2}{2}+\frac{x^3}{3}+\frac{x^3}{3!}+\dots$& $\sum(-1)^{k+1}\frac{x^k}{k}+o(x^k)$\\\hline
+            $(1+x)^\alpha$ per $x\rightarrow 0$ &$1+\alpha x+\frac{\alpha(\alpha-1)x^2}{2}+\dots$& $\sum\binom{\alpha}{k}x^k+o(x^k)$\\\hline
+            $\cos x$ per $x\rightarrow 0$ &$1-\frac{x^2}{2!}+\frac{x^4}{4!}-\dots$& $\sum(-1)^{k}\frac{x^{2k}}{(2k)!}+o(x^{2k})$\\\hline
+            $\cosh x$ per $x\rightarrow 0$ &$1+\frac{x^2}{2!}+\frac{x^4}{4!}+\dots$& \\\hline
+            $\sin x$ per $x\rightarrow 0$ &$x-\frac{x^3}{3!}+\frac{x^5}{5!}-\dots$& $\sum(-1)^{k}\frac{x^{2k+1}}{(2k+1)!}+o(x^{2k+1})$\\\hline
+            $\sinh x$ per $x\rightarrow 0$ &$x+\frac{x^3}{3!}+\frac{x^5}{5!}+\dots$& \\\hline
+            $\arctan x$ per $x\rightarrow 0$ &$x-\frac{x^3}{3}+\frac{x^5}{5}-\dots$& $\sum(-1)^{k}\frac{x^{2k+1}}{2k+1}+o(x^{2k+1})$\\\hline
+            $\tan x$ per $x\rightarrow 0$ &$x+\frac{x^3}{3}+\frac{2x^5}{15}+\dots$& \\\hline
+        \end{tabular}}
+    \end{center}
 \end{document}
