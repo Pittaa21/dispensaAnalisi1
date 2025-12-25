@@ -1084,5 +1084,48 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         \end{tabular}}
     \end{center}\vspace{10pt}
     \section{Serie Numeriche}
-    
+    \begin{defi}{}{}
+        Data una successione $a_n$ di numeri reali si dice \underline{serie a termine generale $a_n$} la successione $\{S_n\}_{n\in\mathbb{R}}$
+        definita da la somma di tutti i termini della successione:\[S_n=\sum_{k=0}^{n}a_k\qquad\forall n\]
+        Dove $S_n$ si dice \underline{somma parziale della serie}.
+    \end{defi}
+    \vspace{20pt}
+    \begin{defi}{Carattere della serie}{}
+        La serie di termine generale $a_n$ \[\sum_{k=0}^{+\infty}a_k\] Si dice:
+        \begin{itemize}
+            \item \underline{Convergente}: se $\lim S_n=s\in\mathbb{R}$ per $n\rightarrow+\infty$, con $s$ che si dice \underline{somma della serie} e si scrive \[\sum_{k=0}^{+\infty}a_k=s\]
+            \item \underline{Divergente}: a $\pm\infty$ se $\lim S_n=\pm\infty$ per $n\rightarrow+\infty$
+            \item \underline{Inderterminata}: se $\{S_n\}_{n\in\mathbb{N}}$ non ha limite per $n\rightarrow+\infty$
+        \end{itemize}
+    \end{defi}
+    \colorbox{yellow}{Osservazione}: Studiare il carattere di una serie, significa determinare se è convergente/divergente/indeterminata.\\\\
+    \begin{ex}{Studiare il carattere}{}
+        \[\sum_{k=1}^{+\infty}\frac{1}{2^k}\]
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}: 
+    \begin{align*}
+        &\sum_{k=1}^{+\infty}\frac{1}{2^k} = \sum_{k=1}^{+\infty}q^k\qquad q=\frac{1}{2} &&&&&&&&&&&\\
+        &q\ne1\quad\Rightarrow\quad\sum^n_{k=0} q^k=1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\dots=\frac{1-q^{n+1}}{1-q}\quad\circledast \\
+        &q=1\quad\Rightarrow\quad=1+1+1+1+\dots=n+1\\
+        &0<q<1\quad\Rightarrow\quad=\sum_{k=0}^{n+1}q^k=\frac{1-q^{n+1}}{1-q}\\
+        &=\lim_{n\rightarrow+\infty}\frac{1-(\frac{1}{2})^{n+1}}{1-\frac{1}{2}}-\frac{1}{2^0}=\frac{1}{1-\frac{1}{2}}-1=2-1=1
+    \end{align*}
+    Quindi $a_n$ è convergente ed ha come somma parziale $1$.\\\\
+    \colorbox{yellow}{Dim}: $\circledast$ La dimostrazione si fa con il principio di induzione\\
+    Caso base $n=0$\[S_0=\sum_{k=0}^{0}x^k=1\]
+    Quindi, la formula $\frac{1-x^{0+1}}{1-x}=1$ è confermata per il caso base \checkmark\\
+    Ora dimostriamo il passo induttivo. Suppongo la tesi sia vera per $n$, quindi $S_n=\sum x^k=\frac{1-x^{n+1}}{1-x}$\\
+    e dimostriamo che ciò implica che la tesi è vera per $n+1$:\[S_{n+1}\sum_{k=0}^{n+1}x^k=\frac{1-x^{n+2}}{1-x}\]
+    \begin{align*}
+        &=(\sum_{k=0}^{n}x^k)+x^{n+1}=&&&&&&&&&\\
+        &=\frac{1-x^{n+1}}{1-x}+x^{n+1}=\frac{1-x^{n+1}+(1-x)\cdot x^{n+1}}{1-x}=\\
+        &=\frac{1-x^{n+1}+x^{n+1}-x^{n+2}}{1-x}=\frac{1-x^{n+2}}{1-x}\ \checkmark
+    \end{align*}
+    Abbiamo dimostrato anche il passo induttivo.\\\\
+    \begin{defi}{Serie Geometrica}{}
+        \[\sum_{k=0}^{+\infty}r^k=1+r+r^2+r^3+\dots\qquad r\in\mathbb{R}\]
+        \underline{Serie geometrica di ragione $r$} che converge per $|r|<1$ a $\frac{1}{1-r}$\\
+        diverge a $+\infty$ per $r\ge1$\\
+        inderterminata per $r\le-1$
+    \end{defi}
 \end{document}
