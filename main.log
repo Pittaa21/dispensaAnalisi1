@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.29)  25 DEC 2025 20:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.29)  26 DEC 2025 19:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1345,25 +1345,154 @@ Underfull \hbox (badness 10000) in paragraph at lines 1123--1130
 
  []
 
-[31] (./main.aux)
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1150--1154
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1150--1154
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 1163--1166
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1163--1166
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1168--1173
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1168--1173
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1168--1173
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1184--1187
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1184--1187
+
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 1194--1204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1194--1204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1214--1224
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1214--1224
+
+ []
+
+
+LaTeX Warning: Command \` invalid in math mode on input line 1226.
+
+Missing character: There is no è in font cmr10!
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 1246--1256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1246--1256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1246--1256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1246--1256
+
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 1283--1287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1283--1287
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 1297--1307
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1297--1307
+
+ []
+
+[37] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 33020 strings out of 474222
- 831092 string characters out of 5748732
+ 33038 strings out of 474222
+ 831395 string characters out of 5748732
  1962975 words of memory out of 5000000
- 54710 multiletter control sequences out of 15000+600000
+ 54728 multiletter control sequences out of 15000+600000
  622754 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,16n,107p,765b,2154s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/atkinson/atkinsn-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/atkinson/atkinsn-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (31 pages, 383211 bytes).
+Output written on main.pdf (37 pages, 405653 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
+ 290 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

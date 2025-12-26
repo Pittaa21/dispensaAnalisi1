@@ -1127,5 +1127,183 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         \underline{Serie geometrica di ragione $r$} che converge per $|r|<1$ a $\frac{1}{1-r}$\\
         diverge a $+\infty$ per $r\ge1$\\
         inderterminata per $r\le-1$
+    \end{defi}\vspace{20pt}
+    \begin{defi}{Algebra delle serie}{}
+        Date le serie $\sum a_k$ e $\sum b_k$ se convergono entrambe o divergono entrambe a $\pm\infty$, allora
+        \[\sum_{k=0}^{+\infty}(a_k+b_k)=\sum_{k=0}^{+\infty}a_k+\sum_{k=0}^{+\infty}b_k\]
+        Inotlre se $c\in\mathbb{R}$, vale\[\sum_{k=0}^{+\infty}(c\cdot a_k)=c\cdot\sum_{k=0}^{+\infty}a_k\]
     \end{defi}
+    \colorbox{yellow}{Proposizione}: Se $\sum a_k$ converge, allora:
+    \begin{enumerate}
+        \item il suo resto n-esimo (sommatoria da $k=n$ a $+\infty$) è infinitesimo per $n\rightarrow+\infty$
+        \item il suo termine generale $a_n$ è infinitesimo per $n\rightarrow+\infty$
+    \end{enumerate}
+    \colorbox{yellow}{Dim}: Osservo\[\sum_{k=n}^{+\infty}a_k=\sum_{k=0}^{+\infty}a_k-\sum_{k=0}^{n-1}a_k\]
+    Se $\sum_{k=0}^{+\infty}a_k=s\in\mathbb{R}\Rightarrow\lim_{n\rightarrow+\infty}S_{n-1}=S$.
+    Di conseguenza \[\lim_{n\rightarrow+\infty}\sum_{k=n}^{+\infty}a_n=S-\lim_{n\rightarrow+\infty}S_{n-1}=S-S=0\]
+    \[a_n=\sum_{k=0}^{n}a_k-\sum_{k=0}^{n-1}a_k=S_n-S_{n-1}\quad n\rightarrow+\infty\quad S-S=0\]
+    \[\Rightarrow\lim_{n\rightarrow+\infty}a_n=0\]
+    Quindi $a_n$ è infinitesimo \checkmark\\\\
+    \begin{theo}{Criterio di convergenza}{}
+        $a_n\nrightarrow0$ per $n\rightarrow+\infty\quad\Rightarrow\quad\sum a_n$ non può convergere.
+    \end{theo}
+    \colorbox{yellow}{Osservazione}: non vale però l'opposto, ossia:\[a_n\rightarrow0\nRightarrow\sum_{n=0}^{+\infty}a_n\quad\text{converge}\]\\\\
+    \begin{theo}{Criterio di Cauchy}{}
+        La serie $a_k$, da $k=0$ a $+\infty$, converge se e solo se $S_n$ p successione di Cauchy, ossia se e solo se
+        $\forall\epsilon>0\quad\exists\ N>0$ tale che $|S_n-S_m|<\epsilon\qquad\forall m,n>N$
+    \end{theo}
+    \vspace{10pt}
+    \begin{ex}{Serie Armonica}{}
+        \[\sum_{k=1}^{+\infty}\frac{1}{k}\]
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}: poichè non è di Cauchy diverge a $+\infty$
+    \begin{defi}{Convergenza assoluta}{}
+        Si dice che $a_k$ \underline{converge assolutamente} se $\sum |a_k|$ converge
+    \end{defi}
+    \colorbox{yellow}{Osservazione}: Convergenza Assoluta\quad$\Rightarrow$\quad Convergenza Semplice\\\\
+    \begin{ex}{}{}
+        \[\sum_{k=0}^{+\infty}\frac{-1^k}{2^k}\qquad a_k=\frac{-1^k}{2^k}\]
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}:\[\lim_{k\rightarrow+\infty}\frac{-1^k}{2^k}=0\quad\Rightarrow\quad a_k\text{ è infinitesimo}\]
+    Quindi $a_k$ può convergere. Studio la convergenza assoluta:\[\sum_{k=0}^{+\infty}|\frac{-1^k}{2^k}|=\sum_{k=0}^{+\infty}\frac{1}{2^k}<+\infty\]
+    Poichè $|a_k|$ è una serie geometrica di ragione $\frac{1}{2}\in\ ]-1,1[$ allora è convergente e quindi anche $a_k$ lo è.\\\\
+    \colorbox{yellow}{Osservazione}: non vale il contrario, ossia se si ha la convergenza semplice, non si ha sempre anche quella assoluta.\\\\
+    \begin{defi}{Serie a termini positivi}{}
+        Una serie a termini $a_n\ge0\quad\forall n$ o converge o diverge a $+\infty$
+    \end{defi}
+    \colorbox{yellow}{Dim}: Basta osservare che \[S_n=\sum_{k=0}^{n}a_k\]
+    È successione $\underbrace{\text{monotona crescente}}_{S_{n+1}=S_n+a_{n+1}}$ e quindi esiste il limite per $n\rightarrow+\infty$ di $S_n$\\\\
+    \begin{theo}{Criterio del Confronto}{}
+        Date $\{a_k\}_{k\in\mathbb{N}},\{b_k\}_{k\in\mathbb{N}}$ tali che\quad$0\le a_k\le b_k$\quad definitivamente per $k\rightarrow+\infty$\\
+        Allora:
+        \begin{enumerate}
+            \item Se $\sum b_k$ converge\quad$\Rightarrow\quad\sum a_k$ converge
+            \item Se $\sum a_k$ diverge\quad$\Rightarrow\quad\sum b_k$ diverge
+        \end{enumerate}
+    \end{theo}
+    \colorbox{yellow}{Osservazione}: \quad Si confrontano le serie "difficili" con serie più "facili" di cui si riesce a determinare la convergenza o meno.\\\\
+    \begin{ex}{Studiare il carattere}{}
+        \[\sum_{k=1}^{+\infty}\frac{1}{2k-1}\]
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}:
+    \begin{align*}
+        &\frac{1}{2k-1}>0\quad\forall k\ge1\ \text{(sarebbe per ogni $k>\frac{1}{2}$ ma la serie parte da $k=1$)}&&&&&&&&&&&\\
+        &\lim_{k\rightarrow+\infty}\frac{1}{2k-1}=0\quad\Rightarrow\ \text{il termine generale è infinitesimo}\\
+        &\frac{1}{2k-1}\ge\frac{1}{2}\cdot\frac{1}{k}>0\quad\forall k\ge1\\
+        &\frac{1}{2}\cdot\underbrace{\sum_{k=1}^{+\infty}\frac{1}{k}}_{+\infty}=+\infty
+    \end{align*}
+    Quindi per il secondo punto del criterio del contronto se $\frac{1}{2k}$ diverge allora anche $\frac{1}{2k-1}$ diverge.\\\\
+    \begin{defi}{Serie Armonica Generalizzata}{}
+        Data la serie\[\sum_{k=1}^{+\infty}\frac{1}{k^\alpha}\]
+        Sia $\alpha\in\mathbb{R}$, la serie è a termini positivi e come tale può essere divergente o convergente.\\
+        In particolare:
+        \begin{itemize}
+            \item converge se $\alpha>1$
+            \item diverge positivamente se $\alpha\le1$
+        \end{itemize}
+    \end{defi}\vspace{20pt}
+    \begin{ex}{Studiare il carattere}{}
+        \[\sum_{k=1}^{+\infty}\frac{2^n(n^2+\sin(e^n))}{3^n}\]
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}: $a_n$ è infinitesima ed è anche $\ge0\quad\forall n\ge1$,\\
+    Vorrei confrontare $a_n$ con $(\frac{2}{3})^n$ di cui so già che è convergente, però $0\le a_n\nleqslant(\frac{2}{3})^n$\\
+    Se avessi $a_n=(\frac{2}{3})^n\cdot b_n$ con $b_n$ tale che\quad$(\frac{2}{3})^nb_n\le c^n$\quad con $c\in\ ]0,1[$\\
+    Mi serve quindi un $b_n=\beta^n$ tale che $\lim \frac{\beta^n}{n^2+\sin(e^n)}=+\infty$ per $n\rightarrow+\infty$ e $(\frac{2}{3}\cdot\beta)^n\le c^n$, quindi
+    $\frac{2}{3}\beta\le c$ quindi visto che $c\in\ ]0,1[$ allora $\beta\in\ ]0,\frac32[$, ma questo intervallo di $\beta$ non renderebbe vero il limite,
+    per far ciò devo prendere l'intervallo $]1,\frac{3}{2}[$\\
+    Quindi:\[a_n=(\frac{2}{3})^n\cdot(n^2+\sin(e^n))\quad\le\quad(\frac23)^n\cdot\beta^n=c^n\qquad\forall\beta\in\ ]1,\frac32[\]
+    Di conseguenza ho che $a_n\le c^n$ con $c\in\ ]0,1[$, quindi $\sum c^n$ è converge, di conseguenza lo è anche $a_n$\\\\
+    \begin{theo}{Confronto asintotico}{}
+        Siano $\{a_k\},\{b_k\}$ successioni $\ge0$ def. per $k\rightarrow+\infty$ tali che\[\lim_{k\rightarrow+\infty}\frac{a_k}{b_k}=l\in\mathbb{\bar{R}}\]
+        Allora:
+        \begin{enumerate}
+            \item Se $l\in\ ]0,+\infty[$ allora $a_k$ e $b_k$ hanno lo stesso carattere
+            \item Se $l=0$ e $b_k$ converge anche $a_k$ converge
+            \item Se $l=+\infty$ e $b_k$ diverge anche $a_k$ diverge
+        \end{enumerate}
+    \end{theo}
+    \begin{theo}{Criterio del Rapporto}{}
+        Sia $\{a_k\}$ una successione a termini positivi (oppure def $\ge0$ per $k\rightarrowè\infty$).\\
+        Valgono le seguenti affermazioni:
+        \begin{enumerate}
+            \item Se esiste $0\le r<1$ tale che:\\ $\frac{a_{k+1}}{a_k}\le r$\quad def per $k\rightarrow+\infty$\\Oppure\\$\lim\frac{a_{k+1}}{a_k}=r$\quad per $k\rightarrow+\infty$
+            \item [] Allora $a_k$ converge
+            \item Se $\frac{a_{k+1}}{a_k}>1$ def per $k\rightarrow+\infty$\\Oppure\\ $\lim \frac{a_{k+1}}{a_k}>1$ per $k\rightarrow+\infty$
+            \item [] Allora $a_k$ diverge a $+\infty$
+            \item Se $\frac{a_{k+1}}{a_k}=1$ o il suo limite è uguale a $1$ allora non posso dire nulla
+        \end{enumerate}
+    \end{theo}
+    \colorbox{yellow}{Dim}: prendiamo il punto 1 nel caso $\frac{a_{k+1}}{a_k}\le r\qquad\forall k\ge k_0$ e $r<1$
+    \begin{align*}
+        &\Rightarrow\qquad a_{k+1}\le r\cdot a_k\qquad\forall k\ge k_0&&&&&&&&&\\
+        &\Rightarrow\qquad a_{k_0+1}\le r\cdot a_{k_0}\\\\
+        &\frac{a_{k_0+2}}{a_{k_0+1}}\le r\Rightarrow a_{k_0+2}\le r\cdot a_{k_0+1}\le r\cdot r\cdot a_{k_0}=r^2\cdot a_{k_0}\\
+        &\text{In generale}\qquad a_{k_0+j}\le r\cdot a_{k_0+(j-1)}\le r\cdot r^{j-1}\cdot a_{k_0}=r^j\cdot a_{k_0}\\
+        &\text{Si dimostra per induzione, ossia}\qquad a_{k_0+j}\le r^j\cdot a_{k_0}\quad\forall j\ge0\\
+        &k=k_0+j\qquad a_k\le r^{k-k_0}\cdot a_{k_0}\quad\forall k\ge k_0\\
+        &\sum_{k=0}^{+\infty}a_k=\sum_{k=0}^{k_0-1}a_k+\sum_{k=k_0}^{+\infty}a_k\le\sum_{k=0}^{k-1}a_k+\sum_{k=k_0}^{+\infty}r^{k-k_0}\cdot a_{k_0}\\
+        &=\sum_{k=0}^{k_0-1}a_k+a_{k_0}\sum_{k=k_0}^{+\infty}r^{k-k_0}=\sum_{k=0}^{k_0-1}a_k+a_{k_0}\underbrace{\sum_{j=0}^{+\infty}r^{j}}_{converge}<+\infty
+    \end{align*}
+    Quindi si ottiene che la sommatoria è convergente da $k_0$ a $+\infty$ e di conseguenza si può applicare lo stesso ragionamento, per induzione, a tutti i termini della serie da $k=0$.\\\\
+    \colorbox{yellow}{Osservazione}: Per quanto riguarda la divergenza si può applicare lo stesso ragionamento, ma con $r\ge1$ e quindi verrà sempre $\sum r^j$ che è divergente.\\
+    Oppure si può notare che $a_{k_0+1}\ge a_{k_0}>0$ che generalizzato vuol dire $a_{k_0+j}\ge a_{k_0}>0\quad\forall j\ge0$ e applicando il criterio
+    di convergenza abbiamo che $a_{k_0+1}\nrightarrow0$ per $j\rightarrow+\infty$ e quindi la serie diverge.\\\\
+    \colorbox{yellow}{Osservazione}: se $\lim\frac{a_{k+1}}{a_k}=1$ non posso dire niente. se prendo ad esempio $a_n=\frac{1}{n^2}$ il rapporto tende a 1
+    e la serie è convergente, se prendo $a_n=\frac{1}{n}$ il rapporto tende sempre a 1, ma la serie è divergente.\\\\
+    \begin{ex}{Serie esponenziale}{}
+        \[\sum_{n=0}^{+\infty}\frac{x^n}{n!}\]
+        Per quali $x\in\mathbb{R}$ converge?
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}:
+    \begin{align*}
+        &\text{Studio la convergenza assoluta di }\sum_{n=0}^{+\infty}\frac{x^n}{n!}&&&&\\
+        &\text{Applico il criterio del rapporto }\frac{|x|^{n+1}}{(n+1)!}\cdot\frac{n!}{|x|^n}=\frac{|x|}{n+1}\rightarrow0\quad\text{per }n\rightarrow+\infty\\
+        &\text{Quindi, per il primo punto del criterio del rapporto,}\\
+        &\text{la serie converge assolutamente (e quindi semplicemente) }\forall x\in\mathbb{R}\\\\
+    \end{align*}
+    \begin{defi}{Serie di Taylor}{}
+        \[e^x=\sum_{n=0}^{+\infty}\frac{x^n}{n!}\qquad\forall x\in\mathbb{R}\]
+        Generalizzata (non è sempre valida):\[\sum_{n=0}^{+\infty}\frac{f^{(n)}(x_0)}{n!}\cdot(x-x_0)^n=f(x_0)\]
+    \end{defi}\vspace{20pt}
+    \begin{theo}{Criterio della radice}{}
+        Sia $\{a_k\}$ successione con $a_k\ge0\qquad\forall k$:
+        \begin{enumerate}
+            \item Se esiste $r<1$ tale che\\ $\lim\sqrt[k]{a_k}= r<1$ per $k\rightarrow+\infty$, allora $a_k$ converge
+            \item Se $\lim\sqrt[k]{a_k}>1$ per $k\rightarrow+\infty$, allora $a_k$ diverge
+            \item Altrimenti se $r=1$ allora non si può dir nulla
+        \end{enumerate}
+    \end{theo}
+    \colorbox{yellow}{Dim}: consideriamo il caso 1
+    \begin{align*}
+        &\sqrt[k]{a_k}\le r\quad\forall k\ge k_0&&&&&&&&&\\
+        &\Rightarrow a_k\le r^k\\
+        &\sum_{k=0}^{+\infty}a_k=\sum_{k=0}^{k_0-1}a_k+\sum_{k=k_0}^{+\infty}a_k\le\sum_{k=0}^{k_0-1}a_k+\underbrace{\sum_{k=k_0}^{+\infty}r^k}_{\text{convergente}}<+\infty\\
+        &\text{Quindi stesso ragionamento della dimostrazione del criterio del rapporto:}\\
+        &\text{abbiamo dimostrato per la serie parziale da $k=k_0$ a $+\infty$ adesso vale lo stesso per tutta la serie}
+    \end{align*}
+    \colorbox{yellow}{Osservazione}: La dimostrazione del punto 2 e 3 sono analoghe a quella del punto 1, cambiando l'intervallo in cui esiste $r$.\\\\
+    \begin{defi}{Serie Logaritmica}{}
+        \[\sum_{n=1}^{+\infty}(-1)^{n+1}\frac{x^n}{n}\qquad x\in\mathbb{R}\]
+    \end{defi}\newpage
+    \colorbox{yellow}{Svolgimento}: studio la convergenza assoluta tramite il criterio del rapporto
+    \[\frac{|x|^{n+1}}{n+1}\cdot\frac{n}{|x|^n}\]
+    Ed ottengo $|x|\cdot\frac{n}{n+1}\rightarrow|x|$ per $n\rightarrow+\infty$, è quindi convergente assolutamente se $|x|<1$,
+    se $|x|=1$ non posso dire nulla, se $|x|>1$ allora non è convergente assolutamente.\\
+    Provo a vedere com'è il carattere per $x>1$ e ottengo
+    \[\lim_{n\rightarrow+\infty}\frac{(-1)^{n+1}\cdot x^n}{n}=\lim_{n\rightarrow+\infty}\frac{x^n}{n}=+\infty\quad\forall x>1\]
+    Quindi per il criterio di convergenza $a_n$ con $|x|>1$ non è convergente.\\
+    Se $x=-1$ ottengo \[\sum^{+\infty}_{n=1}\frac{(-1)^{n+1}\cdot(-1)^n}{n}=\sum_{n=1}^{+\infty}\frac{-1}{n}=-\infty\]
+    diverge quindi a $-\infty$\\
+    Per $x=1$ ottengo\[\sum_{n=1}^{+\infty}\frac{(-1)^{n+1}}{n}\]Che per determinarne il carattere ho bisogno di un nuovo criterio.\\\\
+    \begin{theo}{Criterio di Leibniz}{}
+        Sia $\{a_k\}$ successione tale che
+        \begin{enumerate}
+            \item $a_k\ge0\qquad\forall k\in\mathbb{N}$
+            \item $\{a_k\}$ decrescente: $a_{k+1}\le a_k\qquad\forall k\in\mathbb{N}$
+            \item $a_k\rightarrow0$ per $k\rightarrow+\infty$
+        \end{enumerate}
+        Allora \[\sum_{k=1}^{+\infty}(-1)^k\cdot a_k\]
+        converge
+    \end{theo}
+    \colorbox{yellow}{Osservazione}: il criterio di Leibniz vale solo per la convergenza semplice non assoluta.
 \end{document}
