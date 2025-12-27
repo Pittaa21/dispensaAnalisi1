@@ -1305,5 +1305,43 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         Allora \[\sum_{k=1}^{+\infty}(-1)^k\cdot a_k\]
         converge
     \end{theo}
-    \colorbox{yellow}{Osservazione}: il criterio di Leibniz vale solo per la convergenza semplice non assoluta.
+    \colorbox{yellow}{Osservazione}: il criterio di Leibniz vale solo per la convergenza semplice non assoluta.\\\\
+    \newpage\section{Calcolo Integrale}
+    \begin{tikzpicture}
+        \begin{axis}[axis lines=left, line width=2pt, xtick={2,4,6,8,10}, xticklabels={$2$,$4$,$6$,$8$,$10$}, legend entries= {$f(x)=x^2$},legend pos=north west,legend style={draw=none}]
+            \addplot[samples=200, blue, domain=0:10]{x^2};
+            \addplot[red, dashed] coordinates {(10,0) (10,100)};
+        \end{axis}
+    \end{tikzpicture}
+    \\\\\colorbox{yellow}{Idea}: suddivido $[0,10]$ in tanti intervalli $[x_i,x_{i+1}]$ per $i=0,1,2,...,n-1$ quindi in $n$ intervalli
+    con $x_0=0$ e $x_n=10$. Abbiamo quindi:\quad$0=x_0<x_1<x_2<\ ...\ <x_{n-1}<x_n=10$\\\\
+    \begin{minipage}{0.5\textwidth}
+    \begin{tikzpicture}
+        \begin{axis}[axis lines=left, line width=2pt, xtick={0,1,2,3,4,5,6,7,8,9,10}, 
+            xticklabels={$x_0$,$\epsilon_0$,$x_1$,$\epsilon_1$,$x_2$,$\epsilon_2$,$x_3$,$\epsilon_3$,$x_{n-1}$,$\epsilon_{n-1}$,$x_n$},
+            legend entries= {,$f(x)=x^2$},legend pos=north west,legend style={draw=none}]
+            \addplot[red, dashed] coordinates {(10,0) (10,100)};
+            \addplot[samples=200, blue, domain=0:10]{x^2};
+            \addplot[green, dashed, line width=1pt] coordinates {(7,0) (7,49)};
+            \addplot[green] coordinates {(6,0) (6,49)};
+            \addplot[green] coordinates {(8,0) (8,49)};
+            \addplot[green] coordinates {(6,49) (8,49)};
+        \end{axis}
+    \end{tikzpicture}\end{minipage}\hfill
+    \begin{minipage}{0.4\textwidth}
+        \large Pe ogni $i=0,1,...,n-1$ prendo $\epsilon_i\in[x_i,x_{i+1}]$ e considero il rettangolo di base $[x_i,x_{i+1}]$ e altezza
+        $f(\epsilon_i)=\epsilon_i^2$
+    \end{minipage}\\\\
+    Adesso generalizziamo questo ragionamento, unendo tutti i rettangoli, attraverso la sommatoria:
+    \[\text{A}_{\text{tot}}=\sum_{i=0}^{n-1}(x_{i+1}-x_i)\cdot f(\epsilon_i)\]
+    Per rappresentare questa sommatoria si usa \underline{l'integrale definito}:
+    \[\text{A}_{\text{tot}}=\int_{0}^{10}f(x)\cdot dx=\int_{0}^{10}x^2\cdot dx\]\\
+    \begin{defi}{Integrale di Cauchy-Riemann}{}
+        Si dice partizione o suddivisione di $[a,b]$ un insieme finito di punti $\mathcal{P}=\{x_0,x_1,...,x_{n-1},x_n\}$ tale che
+        \[a=x_0<x_1<\ ...\ <x_{n-1}<x_n=b\]
+    \end{defi}
+    \begin{defi}{Partizione Puntata}{}
+        Si dice partizione puntata di $[a,b]$ una coppia $(\mathcal{P},\epsilon)$ dove $\mathcal{P}=\{x_0,x_1,...,x_{n-1},x_n\}$ è partizione
+        di $[a,b]$ e $\epsilon=\{\epsilon_1,...,\epsilon_n\}$ con $\epsilon_k\in[x_{k-1},x_k]\quad\forall k=1,..,n$
+    \end{defi}
 \end{document}
