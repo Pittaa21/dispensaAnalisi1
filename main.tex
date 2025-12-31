@@ -13,12 +13,12 @@
 \usepackage[skip=8pt, indent= 0pt]{parskip}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18, width=10cm}
- \geometry{
- a4paper,
- total={170mm,257mm},
- left=20mm,
- top=20mm,
- }
+\geometry{
+a4paper,
+total={170mm,257mm},
+left=20mm,
+top=20mm,
+}
 \title{Analisi Matematica}
 \author{Marco Pittarello}
 \date{}
@@ -1344,4 +1344,78 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         Si dice partizione puntata di $[a,b]$ una coppia $(\mathcal{P},\epsilon)$ dove $\mathcal{P}=\{x_0,x_1,...,x_{n-1},x_n\}$ è partizione
         di $[a,b]$ e $\epsilon=\{\epsilon_1,...,\epsilon_n\}$ con $\epsilon_k\in[x_{k-1},x_k]\quad\forall k=1,..,n$
     \end{defi}
+    \colorbox{yellow}{Esempio}: $I=[0,1]\qquad\mathcal{P}_n=\{0,\frac1n,\frac2n,...,\frac{n-1}{n},1\}\qquad\mathcal{P} _4=\{0,\frac14,\frac12,\frac34,1\}$\\
+    $\epsilon=\{\frac1{2n},\frac{1}{2n}+\frac{1}{n},...,\frac{1}{2n}+\frac{n-1}{n}\}\qquad$ Quindi $(\mathcal{P}_n,\epsilon)$ è una partizione puntata di $[0,1]$\\\\
+    \begin{defi}{Integrale definito}{}
+        Una funzione limitata $f:\ [a,b]\rightarrow\mathbb{R}$ si dice \underline{integrabile alla Cauchy-Riemann} in $[a,b]$
+        se esiste $I\in\mathbb{R}$ tale che $\forall\epsilon>0\quad\exists\delta>0$ tale che $\forall(\mathcal{P}\epsilon)$ partizione puntata di 
+        $[a,b]$ con $|\mathcal{P}|<\delta$ si ha\[|S(f,\mathcal{P},\epsilon)-I|<\delta\]
+        Tale valore finito $I$ viene detto integrale definito di $f$ in $[a,b]$ e si indica:
+        \[\int_{a}^{b}f(x)\cdot dx\]
+    \end{defi}
+    \colorbox{yellow}{Osservazione}: Per $S(f,\mathcal{P},\epsilon)$ si intende la somma puntata di $f$ rispetto alla partizione $(\mathcal{P},\epsilon)$ di $[a,b]$
+    ossia: \[S(f,\mathcal{P},\epsilon)=\sum_{k=1}^{n}f(\epsilon_k)\cdot(x_k-x_{k-1})\]\\
+    \colorbox{yellow}{Osservazione}: 
+    \[\int_{a}^{a}f(x)\cdot dx=0\]
+    \[\int_{a}^{b}f(x)\cdot dx= -\int_{b}^{a}f(x)\cdot dx\]\\
+    \colorbox{yellow}{Osservazione}: Se $f$ è non negativa e integrabile, allora il suo integrale è l'area del sottografico
+    definito da \[SG(f)=\{(x,y)\in\mathbb{R}^2:\quad0\le y\le f(x),\ x\in[a,b]\}\]\\
+    \begin{theo}{}{}
+        Sia $f:\ [a,b]\rightarrow\mathbb{R}$ monotona e limitata, allora $f$ è integrabile.\\
+        Inotre $f$ è \underline{continua a tratti} se è continua tranne in un numero finito di punti, in cui ha
+        limite destro e sinistro finiti, quindi discontinuità di prima specie.\\
+        Le funzioni continue a tratti sono comunque integrabili, poichè basta sommare gli integrali nei vari tratti.
+    \end{theo}
+    \vspace{20pt}
+    \begin{theo}{Proprietà dell'integrale}{}
+        Sia $f,g;\ [a,b]\rightarrow\mathbb{R}$ integrabili. Allora:
+        \begin{enumerate}
+            \item Linearità dell'integrale: \[\int_{a}^{b}[\alpha f(x)+\beta g(x)]dx=\alpha\int_{a}^{b}f(x)\cdot dx+\beta\int_{a}^{b}g(x)\cdot dx\]
+            \item Adattabilità rispetto all'insieme di integrazione: se $c\in[a,b]$
+            \[\int_{a}^{b}f(x)\cdot dx=\int_{a}^{c}f(x)\cdot dx+\int_{c}^{b}f(x)\cdot dx\]
+            \item Monotonia dell'integrale: se $f\le g$ in $[a,b]$
+            \[\int_{a}^{b}f(x)\cdot dx\le\int_{a}^{b}f(x)\cdot dx\]
+            \item Se $f$ è integrabile in $[a,b]$, allora anche $|f|$ lo è, e si ha:
+            \[|\int_{a}^{b}f(x)\cdot dx|\le\int_{a}^{b}|f(x)|\cdot dx\]
+        \end{enumerate}
+    \end{theo}
+    \vspace{20pt}
+    \begin{theo}{Media integrale}{}
+        Sia $f:\ [a,b]\rightarrow\mathbb{R}$ integrabile e continua per Weistrass esiste $m=\text{inf }f,\quad M=\text{supp }f$ allora:
+        \[m\le\frac{1}{b-a}\int_{a}^{b}f(x)\cdot dx\le M\]
+        Se $f$ è continua in $[a,b]$ allora esiste $c\in[a,b]$ tale che
+        \[\frac{1}{b-a}\int_{a}^{b}f(x)dx=f(c)\]
+    \end{theo}
+    \colorbox{yellow}{Dim}: sapendo che $m\le f(x)\le M\qquad\forall x\in[a,b]$
+    \begin{align*}
+        &\Rightarrow\qquad\int_{a}^{b}m\cdot dx\le\int_{a}^{b}f(x)\cdot dx\le\int_{a}^{b}M\cdot dx&&&&&\\
+        &\Rightarrow\qquad\int_{a}^{b}m\cdot dx=m\cdot\int_{a}^{b}1\cdot dx=m\cdot(b-a)\\
+        &\Rightarrow\qquad m\cdot(b-a)\le\int_{a}^{b}f(x)\cdot dx\le M\cdot(b-a)\\
+        &\Rightarrow\qquad m\le\frac{1}{b-a}\cdot\int_{a}^{b}f(x)\cdot dx\le M
+    \end{align*}
+    Se $f$ è continua $f([a,b])=[m,M]$\quad ed esiste $c\in[a,b]$ tale che \[f(c)=\frac{1}{b-a}\int_{a}^{b}f(x)\ dx\]\\
+    \colorbox{yellow}{Osservazione}: se $f$ non è continua, potrebbe non esistere $c\in[a,b]$ poichè il teorema di Weistrass
+    non assicura massimo e minimo per funzioni non continue.\\\\
+    \begin{defi}{Primitiva e famiglia di primitive}{}
+        Sia $A\subseteq\mathbb{R},\ f:\ A\rightarrow\mathbb{R}$ una funzione $F:\ A\rightarrow\mathbb{R}$ si dice
+        \underline{primitiva di $f$} o funzione primitiva di $f$ in $A$ se $F$ è derivabile in $A$ e si ha
+        \[F'(x)=f(x)\qquad\forall x\in A\]
+        La \underline{famiglia di primitive} è invece l'unione di tutte le $F(x)$ la cui derivata prima è uguale $f(x)$
+        con l'aggiunta di una costante $c$
+    \end{defi}
+    \colorbox{yellow}{Esempio}: se $f$ è derivabile, allora $f$ è una primitiva di $f'$\\
+    $\int f(x)\cdot dx=F(x)+c$ quindi $F(x)+c$ è la famiglia di primitive di $f(x)$\\\\
+    \begin{theo}{Teorema fondamentale del calcolo 1° parte}{}
+        Se $f\in C°[a,b]$ e definisco \[F(x)=\int_{a}^{x}f(t)\ dt\qquad\forall x\in[a,b]\]
+        allora $F$ è derivabile (e continua) in $[a,b]$ e si ha $F'(x)=f(x)$ quindi $F$ è primitiva di $f$
+    \end{theo}\vspace{20pt}
+    \begin{theo}{2° parte calcolo fondamentale}{}
+        Sia $f(x)$ continua in $[a,b]$ e sia $F(x)$ una sua qualsiasi primitiva in $[a,b]$. Allora:
+        \[F(b)-F(a)=\int_{a}^{b}f(x)\ dx\]
+    \end{theo}
+    \colorbox{yellow}{Dim}: Dalla prima parte del teorema sappiamo che la funzione integrale nel punto $a$ è una primitiva
+    della funzione stessa e quindi qualsiasi altra primitiva nell'intervallo $[a,b]$ è diversa dalle altre per un valore finito
+    $c\in\mathbb{R}$. Quindi:\[F(x)=\int_{a}^{x}f(t)\ dt+c\]
+    Otteniamo quindi che: \[F(b)-F(a)=(\int_{a}^{b}f(t)\ dt+c)-(\int_{a}^{a}f(t)\ dt+c)=\int_{a}^{b}f(t)\ dt\]
+    La variabile di integrazione è indifferente quindi possiamo sostituire $t$ con $x$ ed abbiamo verificato la nostra tesi.
 \end{document}
