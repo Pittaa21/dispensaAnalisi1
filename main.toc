@@ -10,3 +10,4 @@
 \contentsline {section}{\numberline {7}Studio di Funzione}{27}{}%
 \contentsline {section}{\numberline {8}Serie Numeriche}{30}{}%
 \contentsline {section}{\numberline {9}Calcolo Integrale}{38}{}%
+\contentsline {subsection}{\numberline {9.1}Metodi di integrazione}{42}{}%

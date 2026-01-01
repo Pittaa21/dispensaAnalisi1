@@ -1417,5 +1417,51 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     della funzione stessa e quindi qualsiasi altra primitiva nell'intervallo $[a,b]$ è diversa dalle altre per un valore finito
     $c\in\mathbb{R}$. Quindi:\[F(x)=\int_{a}^{x}f(t)\ dt+c\]
     Otteniamo quindi che: \[F(b)-F(a)=(\int_{a}^{b}f(t)\ dt+c)-(\int_{a}^{a}f(t)\ dt+c)=\int_{a}^{b}f(t)\ dt\]
-    La variabile di integrazione è indifferente quindi possiamo sostituire $t$ con $x$ ed abbiamo verificato la nostra tesi.
+    La variabile di integrazione è indifferente quindi possiamo sostituire $t$ con $x$ ed abbiamo verificato la nostra tesi.\\\\
+    \begin{defi}{Integrale indefinito}{}
+        Data una funzione $f:\ A\rightarrow\mathbb{R}$ l'integrale indefinito di $f$ in $A$ è l'insieme di tutte le sue
+        primitive in $A$ e si denota\[\int f(x)\ dx=\{F:\ F\text{ è primitiva di $f$ in $A$}\}\]
+        Se $A$ è un intervallo, allora\[\int f(x)\ dx=\{F+c:\ c\in\mathbb{R}\}\]
+    \end{defi}
+    \colorbox{yellow}{Osservazione}: l'integrale indefinito è lineare, ossia:\[\int f(x)+g(x)\ dx=\int f(x)\ dx+\int g(x)\ dx\]\\
+    \subsection{Metodi di integrazione}
+    \begin{defi}{Integrazione per parti}{}
+        Siano $f,g$ funzioni derivabili in $I=[a,b]$, allora:
+        \[(f(x)\cdot g(x))'=f'(x)\cdot g(x)+f(x)\cdot g'(x)\qquad\forall x\in[a,b]\]
+        Quindi, integrando:\[\int_{a}^{b}f'(x)\cdot g(x)\ dx= [f(x)\cdot g(x)]^b_a-\int_{a}^{b}f(x)\cdot g'(x)\ dx\]
+    \end{defi}\vspace{20pt}
+    \begin{defi}{Integrazione per sostituzione}{}
+        $f:\ [a,b]\rightarrow\mathbb{R}$ continua, $\varphi:\ [c,d]\rightarrow[a,b]$ di classe $C^1$ e tale che $\varphi(c)=a$,
+        $\varphi(d)=b$, $F$ primitiva di $f$ in $[a,b]$. Allora:
+        \[\int_{c}^{d}f(\varphi(t))\cdot\varphi'(t)\ dt=\int_{a}^{b}f(x)\ dx\]
+    \end{defi}\vspace{20pt}
+    \begin{center}
+        \LARGE\underline{Integrali indefiniti noti}\\\vspace{10pt}\large
+        {\rowcolors{1}{gray!10}{white!100}
+        \begin{tabular}{| c | c |}
+            \hline
+            \LARGE$\int f(x)$ & \LARGE$F(x)$\\\hline
+            $\int e^x\ dx$ & $e^x+c$\\\hline
+            $\int x^\alpha\ dx$ & $\frac{1}{\alpha+1}\cdot x^{\alpha+1}+c$\\\hline
+            $\int \frac{1}{x}\ dx$ & $\ln|x|+c$\\\hline
+            $\int \alpha^x\ dx$ & $\frac{1}{\ln\alpha}\cdot\alpha^x+c$\\\hline
+            $\int \sin x\ dx$ & $-\cos x+c$\\\hline
+            $\int \cos x\ dx$ & $\sin x+c$\\\hline
+            $\int \frac{1}{\cos^2x}\ dx$ & $\tan x+c$\\\hline
+            $\int \frac{1}{1+x^2}\ dx$ & $\arctan x+c$\\\hline
+            $\int \frac{1}{\sin^2x}\ dx$ & $-\cot x+c$\\\hline
+            $\int \frac{1}{\sqrt{1-x^2}}\ dx$ & $\arcsin x+c$\\\hline
+        \end{tabular}}
+    \end{center}\newpage
+    \begin{ex}{}{}
+        \[\int (e^{3x}-\frac{1}{x^3}+\frac{1}{x\cdot(1+\ln^2x)})\ dx\]
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}:
+    \begin{align*}
+        &\Rightarrow\qquad\int e^{3x}-\int\frac{1}{x^3}+\int\frac{1}{x\cdot(1+\ln^2x)} &&&&&&&&\\
+        &\Rightarrow\qquad\frac{1}{3}\int\underbrace{3}_{f'(x)}\cdot e^{3x}\ dx\quad+\frac{1}{2x^2}\quad+\int\frac{1}{x\cdot(1+\ln^2x)}\\
+        &\Rightarrow\qquad\frac{e^{3x}}{3}+\frac{1}{2x^2}+\quad\int\frac{1}{x}\cdot\frac{1}{1+(\ln x)^2}\\
+        &\text{Quindi: }\quad\int f'(x)\cdot f(x)\\
+        &\Rightarrow\qquad\frac{e^{3x}}{3}+\frac{1}{2x^2}+\arctan(\ln x)+c
+    \end{align*}
 \end{document}
