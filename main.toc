@@ -11,3 +11,4 @@
 \contentsline {section}{\numberline {8}Serie Numeriche}{30}{}%
 \contentsline {section}{\numberline {9}Calcolo Integrale}{38}{}%
 \contentsline {subsection}{\numberline {9.1}Metodi di integrazione}{42}{}%
+\contentsline {subsection}{\numberline {9.2}Integrale improprio}{45}{}%
