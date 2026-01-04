@@ -1,14 +1,14 @@
-\contentsline {section}{\numberline {1}Principio di Induzione}{2}{}%
-\contentsline {section}{\numberline {2}Coefficenti Binomiali}{3}{}%
-\contentsline {subsection}{\numberline {2.1}Proprietà di $\binom {n}{k}$}{4}{}%
-\contentsline {section}{\numberline {3}Limiti di funzioni}{4}{}%
-\contentsline {subsection}{\numberline {3.1}O-piccoli}{12}{}%
-\contentsline {section}{\numberline {4}Successioni}{16}{}%
-\contentsline {section}{\numberline {5}Funzioni Continue}{19}{}%
-\contentsline {section}{\numberline {6}Derivata}{21}{}%
-\contentsline {subsection}{\numberline {6.1}Massimo e minimo assuluto di una funzione}{25}{}%
-\contentsline {section}{\numberline {7}Studio di Funzione}{27}{}%
-\contentsline {section}{\numberline {8}Serie Numeriche}{30}{}%
-\contentsline {section}{\numberline {9}Calcolo Integrale}{38}{}%
-\contentsline {subsection}{\numberline {9.1}Metodi di integrazione}{42}{}%
-\contentsline {subsection}{\numberline {9.2}Integrale improprio}{45}{}%
+\contentsline {section}{\numberline {1}Principio di Induzione}{2}{section.1}%
+\contentsline {section}{\numberline {2}Coefficenti Binomiali}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Proprietà del binomio}{4}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Limiti di funzioni}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}O-piccoli}{12}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Successioni}{16}{section.4}%
+\contentsline {section}{\numberline {5}Funzioni Continue}{19}{section.5}%
+\contentsline {section}{\numberline {6}Derivata}{21}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Massimo e minimo assuluto di una funzione}{25}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Studio di Funzione}{27}{section.7}%
+\contentsline {section}{\numberline {8}Serie Numeriche}{30}{section.8}%
+\contentsline {section}{\numberline {9}Calcolo Integrale}{38}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Metodi di integrazione}{42}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Integrale improprio}{45}{subsection.9.2}%
