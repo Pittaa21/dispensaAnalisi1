@@ -491,22 +491,6 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         &=-\frac{1}{2}x^2+o(x^2)
     \end{align*}
     \[\lim_{x\rightarrow0}\frac{\text{NUM}}{\text{DEN}}=\lim_{x\rightarrow0}\frac{\frac{x^2}{2}+o(x^2)}{-\frac{1}{2}x^2+o(x^2)}=\lim_{x\rightarrow0}\frac{\frac{x^2}{2}}{-\frac{1}{2}x^2}=-1\]\\
-    \newpage
-    \subsection{Sviluppi asintotici di alcune funzioni}\vspace{10pt}\large
-    \begin{center}
-        {\rowcolors{1}{gray!10}{white!100}
-        \begin{tabular}{| c | c |}
-            \hline
-            $\sin x$ & $x-\frac{x^3}{3!}+\frac{x^5}{5!}+o(x^5)$ per $x\rightarrow0$\\\hline
-            $\cos x$ & $1-\frac{x^2}{2!}+\frac{x^4}{4!}+o(x^4)$ per $x\rightarrow0$\\\hline
-            $\ln(1+x)$ & $x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^3)$ per $x\rightarrow0$\\\hline
-            $\cosh x$ & $1-\frac{x^2}{2!}+\frac{x^4}{4!}+o(x^4)$ per $x\rightarrow0$\\\hline
-            $\sinh x$ & $x-\frac{x^3}{3!}+\frac{x^5}{5!}+o(x^5)$ per $x\rightarrow0$\\\hline
-            $\tan x$ & $x+\frac{x^3}{3}+o(x^3)$ per $x\rightarrow0$\\\hline
-            $\arctan x$ & $x-\frac{x^3}{3}+$ per $x\rightarrow0$\\\hline
-            $e^x$ & $1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+o(x^3)$\\\hline
-        \end{tabular}}
-    \end{center}\vspace{10pt}
     \begin{ex}{Sviluppi asintotici}{}
         \[\sinh(e^x)\quad\text{per}\quad x\rightarrow-\infty\]
     \end{ex}
@@ -641,7 +625,7 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
             \item \underline{Strett. Decrescente}: se $a_{n+1}< a_n\qquad\forall\ n\in\mathbb{N}$
         \end{itemize}
     \end{defi}
-    \newpage\colorbox{yellow}{Es}:
+    \colorbox{yellow}{Es}:
     \begin{itemize}
         \item [] $\{2^n\}=1,2,4,\dots$ \underline{Strett. crescente}
         \item [] $\{1^n\}$ \underline{Costante}
@@ -763,7 +747,7 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \end{defi}
     \colorbox{yellow}{Es}: $f(x)=x^n,\ x\in\mathbb{R},\ n\in\mathbb{N}$. Sia $x_0\in\mathbb{R}$ Calcolo $f^1(x_0)$
     \begin{align*}
-        &f(x)=1\qquad\forall\ x\in\mathbb{R}\qquad n=0&&&&&\\
+        &f(x)=1\qquad\forall\ x\in\mathbb{R}\qquad n=0&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\\
         &f^1(x_0)=\lim_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}=\\
         =&\lim_{x\rightarrow x_0}\frac{1-1}{x-x_0}=0\\
         &f^1(x_0)=0\qquad\forall\ x_0\in\mathbb{R}\quad\text{se }n=0\\\\
@@ -774,35 +758,16 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         &f^1(x_0)=\lim_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}=\lim_{x\rightarrow x_0}\frac{x^n-x_0^n}{x-x_0}=\\
         =&\lim_{h\rightarrow0}\frac{(x_o+h)^n-x_0^n}{h}=\\
         &\text{Utilizziamo il binomio di Newton: }(a+b)^n=\sum_{k=0}^{n}\binom{n}{k}a^{n-k}b^k\\
-        =&\sum_{k=0}^{n}\frac{n!}{k!(n-k)!}\cdot x_0^{n-k}\cdot h^k=\\
+    \end{align*}
+    \begin{align*}
+        =&\sum_{k=0}^{n}\frac{n!}{k!(n-k)!}\cdot x_0^{n-k}\cdot h^k=&\\
         =&\underbrace{\frac{n!}{n!}\cdot x_0^n\cdot1}_{x_0^n}+\underbrace{\frac{n!}{(n-1)!}\cdot x_0^{n-1}\cdot h}_{n\cdot x_0^{n-1}\cdot h^2}+\underbrace{\frac{n!}{2(n-2)!}\cdot x_0^{n-2}\cdot h^2}_{\frac{1}{2}n(n-1)\cdot x_0^{n-2}\cdot h^2}\qquad\text{nel caso di }n=2\text{ (per gli altri valori è analogo)}\\
         =&\lim_{h\rightarrow0}\frac{x^n_0+n\cdot x_0^{n-1}\cdot h+\frac{1}{2}n(n-1)\cdot x_0^{n-2}\cdot h^2-x^n_0}{h}=\\
         =&\lim_{h\rightarrow0}\frac{n\cdot x_0^{n-1}\cdot h+\frac{1}{2}n(n-1)\cdot x_0^{n-2}\cdot h^2}{h}=\\
         =&\lim_{h\rightarrow0}n\cdot x_0^{n-1}+\underbrace{\frac{1}{2}n(n-1)\cdot x_0^{n-2}\cdot h}_0=\\
         =&n\cdot x_0^{n-1}\qquad\forall x_0\in\mathbb{R}\\
     \end{align*}
-        \newpage
-        \subsection{Tabella Derivate Semplici}\vspace{10pt}\begin{center}\large
-        {\rowcolors{1}{gray!10}{white!100}
-        \begin{tabular}{| c | c |}
-            \hline
-            \LARGE f(x) &\LARGE f$^\text{1}$(x)\\\hline
-            $k$ & $0$\\\hline
-            $x^n$ & $n\cdot x^{n-1}$\\\hline
-            $\ln |x|$ & $\frac{1}{x}$\\\hline
-            $\log_a |x|$ & $(\log_ae)\cdot\frac{1}{x}$\\\hline
-            $e^x$ & $e^x$\\\hline
-            $a^x$ & $(\ln a)\cdot a^x$\\\hline
-            $\sin x$ & $\cos x$\\\hline
-            $\cos x$ & $-\sin x$\\\hline
-            $\tan x$ & $\frac{1}{\cos^2x}=1+\tan^2x$\\\hline
-            $\cot x$ & $-\frac{1}{\sin^2x}=-1-\cot^2x$\\\hline
-            $\arcsin x$ & $\frac{1}{\sqrt{1-x^2}}$\\\hline
-            $\arccos x$ & $-\frac{1}{\sqrt{1-x^"}}$\\\hline
-            $\arctan x$ & $-\frac{1}{1+x^2}$\\\hline
-        \end{tabular}}
-    \end{center}
-    \vspace{20pt}
+        
     \begin{theo}{Derivabilità}{}
         Sia $I\subseteq \mathbb{R}$ intervallo, $x_0\in I,\ f:I\rightarrow\mathbb{R}$ derivabile in $x_0$.
         Allora, $f$ è continua in $x_0$.
@@ -855,8 +820,7 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         Siano $f,g$ funzioni reali di variabile reale, definite in un intervallo $I$, se $g$ è derivabile in $x_0$ e $f$ è derivabile in $g(x_0)$.
         Allora si ha:
         \[\text{D}f(g(x_0))=f^1(g(x_0))\cdot g^1(x_0)\]
-    \end{theo}
-    \newpage
+    \end{theo}\vspace{20pt}
     \begin{ex}{}{}
         Calcolare la derivata di $x^\alpha$ con $\alpha>0$
     \end{ex}
@@ -910,7 +874,7 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \begin{defi}{}{}
         M massimo assoluto per $f$ se $\exists\ x_1\in X$ tale che $f(x_1)=$ M e $f(x)\le f(x_1)=$ M $\forall\ x\in X$\\
         ($x_1$ è punto di massimo assoluto), per il minimo assoluto si ha la situazione analoga
-    \end{defi}
+    \end{defi}\newpage
     \colorbox{yellow}{Esempio}: $\sin x$\\\\
     \begin{minipage}{0.5\textwidth}
         \begin{tikzpicture}
@@ -1068,23 +1032,6 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         \[f(x)=\sum_{k=0}^{n}\frac{f^{(x)}(x_0)}{k!}\cdot(x-x_0)^k\quad+o((x-x_0)^n)\quad\text{per }x\rightarrow x_0\]
     \end{theo}
     \colorbox{yellow}{Osservazione}: se $x_0=0$, si chiama \underline{polinomio e formula di McLaurin}.\\\\
-    \newpage
-        \subsection{Sviluppi di McLaurin}\vspace{10pt}\large\begin{center}
-        {\rowcolors{1}{gray!10}{white!100}
-        \begin{tabular}{| c | c | c |}
-            \hline
-            \LARGE f(x) &\LARGE P$^n_0(x)$&\LARGE $\sum_{k=0}^{n\rightarrow+\infty}$\\\hline
-            $e^x$ per $x\rightarrow 0$ &$1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\dots$& $\sum\frac{x^k}{k!}+o(x^k)$\\\hline
-            $\log(1+x)$ per $x\rightarrow 0$ &$x+-\frac{x^2}{2}+\frac{x^3}{3}+\frac{x^3}{3!}+\dots$& $\sum(-1)^{k+1}\frac{x^k}{k}+o(x^k)$\\\hline
-            $(1+x)^\alpha$ per $x\rightarrow 0$ &$1+\alpha x+\frac{\alpha(\alpha-1)x^2}{2}+\dots$& $\sum\binom{\alpha}{k}x^k+o(x^k)$\\\hline
-            $\cos x$ per $x\rightarrow 0$ &$1-\frac{x^2}{2!}+\frac{x^4}{4!}-\dots$& $\sum(-1)^{k}\frac{x^{2k}}{(2k)!}+o(x^{2k})$\\\hline
-            $\cosh x$ per $x\rightarrow 0$ &$1+\frac{x^2}{2!}+\frac{x^4}{4!}+\dots$& \\\hline
-            $\sin x$ per $x\rightarrow 0$ &$x-\frac{x^3}{3!}+\frac{x^5}{5!}-\dots$& $\sum(-1)^{k}\frac{x^{2k+1}}{(2k+1)!}+o(x^{2k+1})$\\\hline
-            $\sinh x$ per $x\rightarrow 0$ &$x+\frac{x^3}{3!}+\frac{x^5}{5!}+\dots$& \\\hline
-            $\arctan x$ per $x\rightarrow 0$ &$x-\frac{x^3}{3}+\frac{x^5}{5}-\dots$& $\sum(-1)^{k}\frac{x^{2k+1}}{2k+1}+o(x^{2k+1})$\\\hline
-            $\tan x$ per $x\rightarrow 0$ &$x+\frac{x^3}{3}+\frac{2x^5}{15}+\dots$& \\\hline
-        \end{tabular}}
-    \end{center}\vspace{10pt}
     \section{Serie Numeriche}
     \begin{defi}{}{}
         Data una successione $a_n$ di numeri reali si dice \underline{serie a termine generale $a_n$} la successione $\{S_n\}_{n\in\mathbb{R}}$
@@ -1286,7 +1233,7 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \colorbox{yellow}{Osservazione}: La dimostrazione del punto 2 e 3 sono analoghe a quella del punto 1, cambiando l'intervallo in cui esiste $r$.\\\\
     \begin{defi}{Serie Logaritmica}{}
         \[\sum_{n=1}^{+\infty}(-1)^{n+1}\frac{x^n}{n}\qquad x\in\mathbb{R}\]
-    \end{defi}\newpage
+    \end{defi}
     \colorbox{yellow}{Svolgimento}: studio la convergenza assoluta tramite il criterio del rapporto
     \[\frac{|x|^{n+1}}{n+1}\cdot\frac{n}{|x|^n}\]
     Ed ottengo $|x|\cdot\frac{n}{n+1}\rightarrow|x|$ per $n\rightarrow+\infty$, è quindi convergente assolutamente se $|x|<1$,
@@ -1437,23 +1384,6 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         $\varphi(d)=b$, $F$ primitiva di $f$ in $[a,b]$. Allora:
         \[\int_{c}^{d}f(\varphi(t))\cdot\varphi'(t)\ dt=\int_{a}^{b}f(x)\ dx\]
     \end{defi}\vspace{20pt}
-        \subsection{Integrali indefiniti noti}\vspace{10pt}\large\begin{center}
-        {\rowcolors{1}{gray!10}{white!100}
-        \begin{tabular}{| c | c |}
-            \hline
-            \LARGE$\int f(x)$ & \LARGE$F(x)$\\\hline
-            $\int e^x\ dx$ & $e^x+c$\\\hline
-            $\int x^\alpha\ dx$ & $\frac{1}{\alpha+1}\cdot x^{\alpha+1}+c$\\\hline
-            $\int \frac{1}{x}\ dx$ & $\ln|x|+c$\\\hline
-            $\int \alpha^x\ dx$ & $\frac{1}{\ln\alpha}\cdot\alpha^x+c$\\\hline
-            $\int \sin x\ dx$ & $-\cos x+c$\\\hline
-            $\int \cos x\ dx$ & $\sin x+c$\\\hline
-            $\int \frac{1}{\cos^2x}\ dx$ & $\tan x+c$\\\hline
-            $\int \frac{1}{1+x^2}\ dx$ & $\arctan x+c$\\\hline
-            $\int \frac{1}{\sin^2x}\ dx$ & $-\cot x+c$\\\hline
-            $\int \frac{1}{\sqrt{1-x^2}}\ dx$ & $\arcsin x+c$\\\hline
-        \end{tabular}}
-    \end{center}\newpage
     \begin{ex}{}{}
         \[\int (e^{3x}-\frac{1}{x^3}+\frac{1}{x\cdot(1+\ln^2x)})\ dx\]
     \end{ex}
@@ -1463,7 +1393,7 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         &\Rightarrow\qquad\frac{1}{3}\int\underbrace{3}_{f'(x)}\cdot e^{3x}\ dx\quad+\frac{1}{2x^2}\quad+\int\frac{1}{x\cdot(1+\ln^2x)}\\
         &\Rightarrow\qquad\frac{e^{3x}}{3}+\frac{1}{2x^2}+\quad\int\frac{1}{x}\cdot\frac{1}{1+(\ln x)^2}\\
         &\text{Quindi: }\quad\int f'(x)\cdot f(x)\\
-        &\Rightarrow\qquad\frac{e^{3x}}{3}+\frac{1}{2x^2}+\arctan(\ln x)+c\\\\
+        &\Rightarrow\qquad\frac{e^{3x}}{3}+\frac{1}{2x^2}+\arctan(\ln x)+c
     \end{align*}
     \begin{defi}{Integrale di funzione razionale}{}
         Consideriamo l'integrale:\[\int \frac{\mathcal{P}(x)}{\mathcal{Q}(x)}\ dx\qquad\text{ con }\mathcal{P}\text{ e }\mathcal{Q}\text{ polinomi}\]
@@ -1550,5 +1480,90 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \[\int_{0}^{1}\frac{1}{x^\alpha}<+\infty\quad\Leftrightarrow\quad\alpha<1\]Se $\alpha\ge1$ allora $\Rightarrow+\infty$
     \[\int_{1}^{+\infty}\frac{1}{x^\alpha}<+\infty\quad\Leftrightarrow\quad\alpha>1\]Se $\alpha\le1$ allora $\Rightarrow+\infty$\\\\
     \colorbox{yellow}{Osservazione}:\[\int_{0}^{+\infty}\frac{1}{x^\alpha}=\int_{0}^{1}\frac{1}{x^\alpha}+\int_{1}^{+\infty}\frac{1}{x^\alpha}=+\infty\qquad\forall\alpha\in\mathbb{R}\]
-    
+    \newpage\section{Tabelle Utili}
+    \vspace{10pt}
+    \subsection{Limiti notevoli}\vspace{5pt}\large
+    \begin{center}
+        \rowcolors{1}{gray!8}{white!100}
+        \begin{tabular}{| c | c |}
+            \hline
+            $\lim_{x\rightarrow0}\frac{\sin x}x=1$ & $\lim_{x\rightarrow0}\frac{\tan x}{x}=1$\\\hline
+            $\lim_{x\rightarrow0}\frac{1-\cos x}x=0$ & $\lim_{x\rightarrow0}\frac{\arcsin x}{x}=1$\\\hline
+            $\lim_{x\rightarrow0}\frac{1-\cos x}{x^2}=\frac12$ & $\lim_{x\rightarrow0}\frac{\arctan x}{x}=1$\\\hline
+            $\lim_{x\rightarrow+\infty}\left(1+\frac1x\right)^x=e  $ & $\lim_{x\rightarrow0}\left(1+x\right)^{\frac1x}=e$\\\hline
+            $\lim_{x\rightarrow0}\frac{\log_a(1+x)}x=\log_ae$ & $\lim_{x\rightarrow0}\frac{\ln(1+x)}{x}=1$\\\hline
+            $\lim_{x\rightarrow0}\frac{a^x-1}x=\ln a$ & $\lim_{x\rightarrow0}\frac{e^x-1}{x}=1$\\\hline
+            $\lim_{x\rightarrow0}\frac{(1+x)^k-1}x=k$ & $\lim_{x\rightarrow+\infty}\frac{x^n}{a^x}=0\quad a>0$\\\hline
+            $\lim_{x\rightarrow0^+}x^a\cdot\log_ax=0\quad a>0,a>1$ & / \\\hline
+        \end{tabular}
+    \end{center}
+    \vspace{10pt}
+    \subsection{Sviluppi asintotici di alcune funzioni}\vspace{5pt}\large
+    \begin{center}
+        \rowcolors{1}{gray!8}{white!100}
+        \begin{tabular}{| c | c |}
+            \hline
+            $\sin x$ & $x-\frac{x^3}{3!}+\frac{x^5}{5!}+o(x^5)$ per $x\rightarrow0$\\\hline
+            $\cos x$ & $1-\frac{x^2}{2!}+\frac{x^4}{4!}+o(x^4)$ per $x\rightarrow0$\\\hline
+            $\ln(1+x)$ & $x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^3)$ per $x\rightarrow0$\\\hline
+            $\cosh x$ & $1-\frac{x^2}{2!}+\frac{x^4}{4!}+o(x^4)$ per $x\rightarrow0$\\\hline
+            $\sinh x$ & $x-\frac{x^3}{3!}+\frac{x^5}{5!}+o(x^5)$ per $x\rightarrow0$\\\hline
+            $\tan x$ & $x+\frac{x^3}{3}+o(x^3)$ per $x\rightarrow0$\\\hline
+            $\arctan x$ & $x-\frac{x^3}{3}+o(x^3)$ per $x\rightarrow0$\\\hline
+            $e^x$ & $1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+o(x^3)$\\\hline
+        \end{tabular}
+    \end{center}
+    \subsection{Tabella Derivate Semplici}\vspace{5pt}\begin{center}\large
+        {\rowcolors{1}{gray!8}{white!100}
+        \begin{tabular}{| c | c |}
+            \hline
+            \LARGE f(x) &\LARGE f$^\text{1}$(x)\\\hline
+            $k$ & $0$\\\hline
+            $x^n$ & $n\cdot x^{n-1}$\\\hline
+            $\ln |x|$ & $\frac{1}{x}$\\\hline
+            $\log_a |x|$ & $(\log_ae)\cdot\frac{1}{x}$\\\hline
+            $e^x$ & $e^x$\\\hline
+            $a^x$ & $(\ln a)\cdot a^x$\\\hline
+            $\sin x$ & $\cos x$\\\hline
+            $\cos x$ & $-\sin x$\\\hline
+            $\tan x$ & $\frac{1}{\cos^2x}=1+\tan^2x$\\\hline
+            $\cot x$ & $-\frac{1}{\sin^2x}=-1-\cot^2x$\\\hline
+            $\arcsin x$ & $\frac{1}{\sqrt{1-x^2}}$\\\hline
+            $\arccos x$ & $-\frac{1}{\sqrt{1-x^"}}$\\\hline
+            $\arctan x$ & $-\frac{1}{1+x^2}$\\\hline
+        \end{tabular}}
+    \end{center}
+       \subsection{Sviluppi di McLaurin}\vspace{5pt}\large\begin{center}
+        {\rowcolors{1}{gray!8}{white!100}
+        \begin{tabular}{| c | c | c |}
+            \hline
+            \LARGE f(x) &\LARGE P$^n_0(x)$&\LARGE $\sum_{k=0}^{n\rightarrow+\infty}$\\\hline
+            $e^x$ per $x\rightarrow 0$ &$1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\dots$& $\sum\frac{x^k}{k!}+o(x^k)$\\\hline
+            $\log(1+x)$ per $x\rightarrow 0$ &$x+-\frac{x^2}{2}+\frac{x^3}{3}+\frac{x^3}{3!}+\dots$& $\sum(-1)^{k+1}\frac{x^k}{k}+o(x^k)$\\\hline
+            $(1+x)^\alpha$ per $x\rightarrow 0$ &$1+\alpha x+\frac{\alpha(\alpha-1)x^2}{2}+\dots$& $\sum\binom{\alpha}{k}x^k+o(x^k)$\\\hline
+            $\cos x$ per $x\rightarrow 0$ &$1-\frac{x^2}{2!}+\frac{x^4}{4!}-\dots$& $\sum(-1)^{k}\frac{x^{2k}}{(2k)!}+o(x^{2k})$\\\hline
+            $\cosh x$ per $x\rightarrow 0$ &$1+\frac{x^2}{2!}+\frac{x^4}{4!}+\dots$& \\\hline
+            $\sin x$ per $x\rightarrow 0$ &$x-\frac{x^3}{3!}+\frac{x^5}{5!}-\dots$& $\sum(-1)^{k}\frac{x^{2k+1}}{(2k+1)!}+o(x^{2k+1})$\\\hline
+            $\sinh x$ per $x\rightarrow 0$ &$x+\frac{x^3}{3!}+\frac{x^5}{5!}+\dots$& \\\hline
+            $\arctan x$ per $x\rightarrow 0$ &$x-\frac{x^3}{3}+\frac{x^5}{5}-\dots$& $\sum(-1)^{k}\frac{x^{2k+1}}{2k+1}+o(x^{2k+1})$\\\hline
+            $\tan x$ per $x\rightarrow 0$ &$x+\frac{x^3}{3}+\frac{2x^5}{15}+\dots$& \\\hline
+        \end{tabular}}
+    \end{center}
+            \subsection{Integrali indefiniti noti}\vspace{5pt}\large\begin{center}
+        {\rowcolors{1}{gray!8}{white!100}
+        \begin{tabular}{| c | c |}
+            \hline
+            \LARGE$\int f(x)$ & \LARGE$F(x)$\\\hline
+            $\int e^x\ dx$ & $e^x+c$\\\hline
+            $\int x^\alpha\ dx$ & $\frac{1}{\alpha+1}\cdot x^{\alpha+1}+c$\\\hline
+            $\int \frac{1}{x}\ dx$ & $\ln|x|+c$\\\hline
+            $\int \alpha^x\ dx$ & $\frac{1}{\ln\alpha}\cdot\alpha^x+c$\\\hline
+            $\int \sin x\ dx$ & $-\cos x+c$\\\hline
+            $\int \cos x\ dx$ & $\sin x+c$\\\hline
+            $\int \frac{1}{\cos^2x}\ dx$ & $\tan x+c$\\\hline
+            $\int \frac{1}{1+x^2}\ dx$ & $\arctan x+c$\\\hline
+            $\int \frac{1}{\sin^2x}\ dx$ & $-\cot x+c$\\\hline
+            $\int \frac{1}{\sqrt{1-x^2}}\ dx$ & $\arcsin x+c$\\\hline
+        \end{tabular}}
+    \end{center}
 \end{document}

@@ -3,16 +3,18 @@
 \contentsline {subsection}{\numberline {2.1}Proprietà del binomio}{4}{subsection.2.1}%
 \contentsline {section}{\numberline {3}Limiti di funzioni}{4}{section.3}%
 \contentsline {subsection}{\numberline {3.1}O-piccoli}{12}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Sviluppi asintotici di alcune funzioni}{14}{subsection.3.2}%
 \contentsline {section}{\numberline {4}Successioni}{16}{section.4}%
-\contentsline {section}{\numberline {5}Funzioni Continue}{19}{section.5}%
-\contentsline {section}{\numberline {6}Derivata}{21}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Tabella Derivate Semplici}{22}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Massimo e minimo assuluto di una funzione}{25}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Studio di Funzione}{27}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Sviluppi di McLaurin}{30}{subsection.7.1}%
-\contentsline {section}{\numberline {8}Serie Numeriche}{30}{section.8}%
-\contentsline {section}{\numberline {9}Calcolo Integrale}{39}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Metodi di integrazione}{43}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Integrali indefiniti noti}{44}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Integrale improprio}{47}{subsection.9.3}%
+\contentsline {section}{\numberline {5}Funzioni Continue}{18}{section.5}%
+\contentsline {section}{\numberline {6}Derivata}{20}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Massimo e minimo assuluto di una funzione}{23}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Studio di Funzione}{25}{section.7}%
+\contentsline {section}{\numberline {8}Serie Numeriche}{28}{section.8}%
+\contentsline {section}{\numberline {9}Calcolo Integrale}{36}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Metodi di integrazione}{40}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Integrale improprio}{42}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Tabelle Utili}{44}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Limiti notevoli}{44}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Sviluppi asintotici di alcune funzioni}{44}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Tabella Derivate Semplici}{45}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Sviluppi di McLaurin}{46}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}Integrali indefiniti noti}{46}{subsection.10.5}%

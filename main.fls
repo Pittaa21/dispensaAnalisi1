@@ -452,9 +452,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/atkinson/atkinsn-Regular-lf-t1.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/atkinson/atkinsn-Regular-lf-t1.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/atkinson/atkinsn-Regular-lf-ts1.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/atkinson/atkinsn-Regular-lf-ts1.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/atkinson/atkinsn-Regular-lf-ts1--base.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/atkinson/atkinsn-Regular-lf-t1.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
@@ -468,9 +465,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/atkinson/atkinsn-Regular-lf-t1.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/atkinson/atkinsn-Regular-lf-t1--base.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/atkinson/atkinsn-Regular-lf-t1--lcdfj.tfm
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
