@@ -13,8 +13,9 @@
 \contentsline {subsection}{\numberline {9.1}Metodi di integrazione}{40}{subsection.9.1}%
 \contentsline {subsection}{\numberline {9.2}Integrale improprio}{42}{subsection.9.2}%
 \contentsline {section}{\numberline {10}Tabelle Utili}{44}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Limiti notevoli}{44}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Sviluppi asintotici di alcune funzioni}{44}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}Tabella Derivate Semplici}{45}{subsection.10.3}%
-\contentsline {subsection}{\numberline {10.4}Sviluppi di McLaurin}{46}{subsection.10.4}%
-\contentsline {subsection}{\numberline {10.5}Integrali indefiniti noti}{46}{subsection.10.5}%
+\contentsline {subsection}{\numberline {10.1}Proprietà potenze e logaritmi}{44}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Limiti notevoli}{44}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Sviluppi asintotici di alcune funzioni}{45}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Tabella Derivate Semplici}{45}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}Sviluppi di McLaurin}{46}{subsection.10.5}%
+\contentsline {subsection}{\numberline {10.6}Integrali indefiniti noti}{46}{subsection.10.6}%
