@@ -1,9 +1,9 @@
-PWD /home/pitta/Documents/dispensaAnalisi1
+PWD /home/pitta/Documents/Latex
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/pitta/Documents/dispensaAnalisi1/main.tex
+INPUT /home/pitta/Documents/Latex/main.tex
 OUTPUT main.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -345,6 +345,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/atkinson/T1atkinsn-LF.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/atkinson/T1atkinsn-LF.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/atkinson/T1atkinsn-LF.fd
@@ -489,6 +491,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb
