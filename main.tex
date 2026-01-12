@@ -273,7 +273,7 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \colorbox{yellow}{Dim}:\quad Considero il caso $l\in\mathbb{R},\ x_0\in\mathbb{\bar{R}}$. Poichè $l>0\Rightarrow\ \exists\ V$ intorno di $l$ tale che:
     \[V\subseteq\ ]0,+\infty[\]
     $\exists\ U$ intorno di $x_0$ tale che se $x\in U\ \cap$ dom$f,\ x\ne x_0$ allora $f(x)\in V$\quad Poichè $V\subseteq\ ]0,+\infty[$, ho
-    \[f(x>0)\]
+    \[f(x)>0\]
     $\forall x\in U$ dom$f,\ x\ne x_0$\\
     \colorbox{yellow}{Oss}: vale l'analogo con $l<0$\\
     \begin{theo}{Teorema del Confronto}{}
@@ -469,6 +469,11 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         \end{itemize}\vspace{8pt}
         Allora:\[\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)}=\lim_{x\rightarrow x_0}\frac{f_1(x)}{g_1(x)}\]
     \end{theo}
+    \colorbox{yellow}{Dim}: 
+    \begin{align*}
+        &\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)}=\quad\lim_{x\rightarrow x_0}\frac{f_1(x)+o\left(f_1(x)\right)}{g_1(x)+o\left(g_1(x)\right)}&&&&&\\
+        &\Rightarrow\quad\lim_{x\rightarrow x_0}\frac{f_1(x)}{g_1(x)}
+    \end{align*}
     \colorbox{yellow}{Osservazione}:\[\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)}=\lim_{x\rightarrow x_0}\frac{f_1(x)+o(f_1(x))}{g_1(x)+o(g_1(x))}=\lim_{x\rightarrow x_0}\frac{f_1(x)}{g_1(x)}\]\\
     \begin{ex}{Calcolare}{}
         \[\lim_{x\rightarrow0}\frac{\sin x-\ln(1+x)}{x\ln(1+x)-2\sin^2x+1-\cos x}\quad\text{F.I. }\frac{0}{0}\]
@@ -715,7 +720,37 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         cioè $\exists\ x_m,x_M\in[a,b]$ tale che:
         \[\text{min}_{x\in[a,b]}f(x)=f(x_m)\qquad\text{max}_{x\in[a,b]}f(x)=f(x_M)\]
     \end{theo}
-    \colorbox{yellow}{Es}:\qquad$\sin[-2\pi,2\pi]\rightarrow\mathbb{R}$\\
+    \colorbox{yellow}{Dim}: dimostro che $f$ ha minimo (la dimostrazione del massimo è analoga)\\
+    \begin{align*}
+        &\text{Si considera l'estremo inferiore}\quad I=\text{inf}_{x\in[a,b]}\ f(x)\quad \in\mathbb{R}&&&&\\
+        &\text{Voglio costruire una successione $x_n$ in }[a,b]\text{ tale che }\lim_{n\rightarrow+\infty}f(x_n)=I\\
+        &\{x_n\}\quad\text{È una successione minimizzante}
+    \end{align*}
+    \[-\infty<a\le b<+\infty\]
+    \begin{itemize}    
+        \item Suppongo che $I=-\infty$. Per ogni $n\ge1\quad\exists x_n\in[a,b]$ tale che $f(x_n)\le-n$\\
+        \[\Rightarrow\quad\exists\lim_{n\rightarrow+\infty}f(x_n)\le\lim_{n\rightarrow+\infty}(-n)=-\infty=I\]
+        \item Suppongo che $I\in\mathbb{R}$. Ottengo che per la definizione di inf\\
+        \begin{minipage}{0.4\textwidth}
+            $I=\text{inf}_{x\in[a,b]}\ f(x)$
+        \end{minipage}
+        \begin{minipage}{0.1\textwidth}
+            $\Leftrightarrow$
+        \end{minipage}\hfill
+        \begin{minipage}{0.4\textwidth}
+            \[I\le f(x)\quad\forall x\in[a,b]\]
+            \[\forall\epsilon>0\quad\exists x\in[a,b]\text{ tale che }f(x)<I+\epsilon\]
+        \end{minipage}\\
+        Se $\epsilon=\frac1n,\ n\in\mathbb{N}\smallsetminus\{0\},\ \exists x_n\in[a,b]$ tale che $I\le f(x_n)\le I+\frac1n$\\
+        $\Rightarrow\quad\exists\lim_{n\rightarrow+\infty}f(x_n)=I$
+    \end{itemize}
+    Quindi in entrambi i casi il limite per $n\rightarrow+\infty$ di $f(x_n)=I$. Per il teorema di Weistrass visto che $\{x_n\}$
+    è una successione limitata, è possibile prendere una sottosuccessione di $x_n$ convergente ad un $x_0\in[a,b]$. Poichè $f$ è continua:
+    \[\lim_{x\rightarrow+\infty}f(x_{n_k})=f(x_0)\]
+    Però visto che stiamo considerando una sottosuccessione di $x_n$ che converge ad $I$ allora anche la s.s. converge ad $I$. Quindi:
+    \[f(x_0)=I\]
+    Ed $I$ è il minimo visto che si trova in $x_0$ che è punto di minimo.
+    \\\colorbox{yellow}{Es}:\qquad$\sin[-2\pi,2\pi]\rightarrow\mathbb{R}$\\
     \[\text{min}_{x\in[-2\pi,2\pi]}\sin x=-1\qquad\text{max}_{x\in[-2\pi,2\pi]}\sin x=1\]
     \vspace{20pt}
     \begin{theo}{Teorema degli zeri}{}

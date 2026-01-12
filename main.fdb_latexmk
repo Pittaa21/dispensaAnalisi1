@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1767724136.23569 "/home/pitta/Documents/Latex/main.tex" "main.pdf" "main" 1767724139.52458 0
-  "/etc/texmf/web2c/texmf.cnf" 1764412924.27367 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/pitta/Documents/Latex/main.tex" 1767724135.99782 101595 2ac716fde074fcb79d501850a00d3d0b ""
+["pdflatex"] 1768209851.92898 "/home/pitta/Documents/dispensaAnalisi1/main.tex" "main.pdf" "main" 1768209854.3159 0
+  "/etc/texmf/web2c/texmf.cnf" 1765825161.37441 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/pitta/Documents/dispensaAnalisi1/main.tex" 1768209848.31075 103833 fce301aa325787c075151eab1bd7465e ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/atkinson/atksn_cvs3iv.enc" 1612564038 2852 0e84d9c42a84502cb059a346f06c6632 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/atkinson/atksn_ycy2xh.enc" 1612564038 3176 391809404193674ae2e225815b04d7d6 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -271,12 +271,12 @@
   "/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1655411236 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1764412946.09031 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1764413083 8214005 b94c646e6e46fa3fbdf3b229186627aa ""
-  "main.aux" 1767724139.38932 2767 86e5da7716446a5b3ffed6347c8bc125 "pdflatex"
-  "main.out" 1767724139.39032 3316 d6ef13bf8dc9624adc8b83af61f364df "pdflatex"
-  "main.tex" 1767724135.99782 101595 2ac716fde074fcb79d501850a00d3d0b ""
-  "main.toc" 1767724139.39032 1743 d634cabf3a95a8bca9bf8498cc8d7783 "pdflatex"
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1765825179.56208 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1765825191 8214958 685f9a373a959265e10b73dca7877076 ""
+  "main.aux" 1768209854.1994 2767 86819e88995d9d293c76508472a79b37 "pdflatex"
+  "main.out" 1768209854.2004 3316 d6ef13bf8dc9624adc8b83af61f364df "pdflatex"
+  "main.tex" 1768209848.31075 103833 fce301aa325787c075151eab1bd7465e ""
+  "main.toc" 1768209854.2004 1743 f4a928080b0716238b9ad89c981042cd "pdflatex"
   (generated)
   "main.aux"
   "main.log"
