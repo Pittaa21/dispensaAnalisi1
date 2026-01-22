@@ -946,7 +946,7 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \colorbox{yellow}{Osservazione}: per quanto riguarda massimo e minimo locale se $\exists\ U$ intorno di $x_0$ si dice che 
     $f(x_0)$ è max o min locale se $f(x_0)\ge f(x)$ oppure $f(x_0)\le f(x)\qquad\forall\ x\in U\cap X$\\\\
     \begin{theo}{Teorema di Fermat o del punto critico}{}
-        $f:\ ]a,b[\rightarrow\mathbb{R}\qquad x_0\in\ ]a,b[$, $f$ derivabile in $x_0$, $f$ ha estremo locale in $x_0$. Allora $f^1(x_0)=0$
+        $f:\ ]a,b[\rightarrow\mathbb{R}\qquad x_0\in\ ]a,b[$, $f$ derivabile in $x_0$, $f$ ha estremo locale in $x_0$. Allora $f'(x_0)=0$
     \end{theo}
     \colorbox{yellow}{Dim}: Ipotizziamo che $x_0$ è punto di estremo locale e $f$ è derivabile in $x_0$. Allora esiste $U\subseteq\ ]a,b[$ intorno di $x_0$
     tale che \[f(x)\le f(x_0)\qquad\forall x\in U\]
@@ -963,7 +963,7 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
             \item $f$ derivabile in $]a,b[$
             \item $f(a)=f(b)$
         \end{enumerate}
-        Allora esiste $c\in\ ]a,b[$ tale che $f^1(c)=0$
+        Allora esiste $c\in\ ]a,b[$ tale che $f'(c)=0$
     \end{theo}
     \colorbox{yellow}{Dim}: Per il teorema di Weistrass la funzione in $[a,b]$ ha un massimo e minimo assoluti.\\
     A questo punto si verificano due casi:
@@ -975,30 +975,36 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \end{enumerate}
     \begin{theo}{Teorema di Lagrange}{}
         Sia $f:\ [a,b]\rightarrow\mathbb{R}$ continua in $[a,b]$ e derivabile in $]a,b[$. Allora esiste $c\in\ ]a,b[$ tale che
-        \[\frac{f(b)-f(a)}{b-a}=f^1(c)\]
+        \[\frac{f(b)-f(a)}{b-a}=f'(c)\]
     \end{theo}
     \colorbox{yellow}{Dim}: La dimostrazione viene da se applicando la formula del teorema, la prima parte indica il coefficiente angolare della retta
     che passa secante per i due estremi a,b che è uguale alla derivata prima della funzione nel punto c, che è il coefficiente angolare della tangente nel punto c\\\\
     \begin{theo}{Teorema di Cauchy}{}
         $f,g:\ [a,b]\rightarrow\mathbb{R}$, continue in $[a,b]$ e derivabili in $]a,b[$. Allora esiste $c\in\ ]a,b[$ tale che
-        \[g^1(c)[f(b)-f(a)]=f^1(c)[g(b)-g(a)]\]
+        \[g'(c)[f(b)-f(a)]=f'(c)[g(b)-g(a)]\]
         Se $g^1(x)\ne0$ vale:
-        \[\frac{f(b)-f(a)}{g(b)-g(a)}=\frac{f^1(c)}{g^1(c)}\]
+        \[\frac{f(b)-f(a)}{g(b)-g(a)}=\frac{f'(c)}{g'(c)}\]
     \end{theo}
-    \colorbox{yellow}{Osservazione}: Cauchy $\underbrace{\Rightarrow}_{g(x)=x}$ Lagrange $\underbrace{\Rightarrow}_{f(a)=f(b)}$ Rolle
+    \colorbox{yellow}{Osservazione}: Cauchy $\underbrace{\Rightarrow}_{g(x)=x}$ Lagrange $\underbrace{\Rightarrow}_{f(a)=f(b)}$ Rolle\\
+    \colorbox{yellow}{Proposizione}: $I\subseteq\mathbb{R}$ intervallo, $f:\ I\rightarrow\mathbb{R}$ derivabile in $I$ e tale che
+    \[f'(x)=0\qquad\forall\ x\in I\]
+    Allora $f$ è costante in $I$.\\
+    \colorbox{yellow}{Dim}: dobbiamo mostrare che per ogni $x_1,x_2\in I,\ x_1<x_2$ abbiamo $f(x_1)=f(x_2)$\\
+    Nell'intervallo $[x_1,x_2]\ f$ soddisfa il teorema di Lagrange, quindi esiste $c\in\ ]x_1,x_2[$ tale che\[\frac{f(x_2)-f(x_1)}{x_2-x_1}=f'(c)\]
+    Poichè $f'(x)=0\quad\forall x\in I$ allora $f'(c)=0$, quindi:\[\frac{f(x_2)-f(x_1)}{x_2-x_1}=0\quad\Rightarrow\quad f(x_2)=f(x_1)\quad\checkmark\]\\
     \begin{theo}{Monotonie}{}
         $f:\ ]a,b[\rightarrow\mathbb{R}$ derivabile:
         \begin{enumerate}
             \item $f$ è crescente $\Leftrightarrow f^1(x)\ge0\quad\forall x\in\ ]a,b[$
             \item $f$ è decrescente $\Leftrightarrow f^1(x)\le0\quad\forall x\in\ ]a,b[$
-            \item Se $f^1(x)>0\quad\forall\ x\in\ ]a,b[\ \Rightarrow f$ è strett crescente
-            \item Se $f^1(x)<0\quad\forall\ x\in\ ]a,b[\ \Rightarrow f$ è strett decrescente
+            \item Se $f'(x)>0\quad\forall\ x\in\ ]a,b[\ \Rightarrow f$ è strett crescente
+            \item Se $f'(x)<0\quad\forall\ x\in\ ]a,b[\ \Rightarrow f$ è strett decrescente
         \end{enumerate}
     \end{theo}
     \colorbox{yellow}{Dim}: faccio solo punto 1 (per gli altri il ragionamento è analogo)\\\\
     Se $f$ è crescente e prendo due punti $x,y$ con $y>x$, allora di conseguenza ho che $f(y)\ge f(x)$, quindi applicando Lagrange
-    ho $\frac{f(y)-f(x)\ge0}{y-x>0}=f^1(c)\quad \ge0$ quindi se faccio il limite per $y\rightarrow x^+$ ottengo che $f^1_+(x)\ge0$ se ora applico il ragionamento per 
-    ogni $x$ ottengo che $f^1(x)\ge0$. \checkmark\\\\
+    ho $\frac{f(y)-f(x)\ge0}{y-x>0}=f'(c)\quad \ge0$ quindi se faccio il limite per $y\rightarrow x^+$ ottengo che $f'_+(x)\ge0$ se ora applico il ragionamento per 
+    ogni $x$ ottengo che $f'(x)\ge0$. \checkmark
     \section{Studio di Funzione}
     \begin{defi}{Funzioni concave e convesse}{}
         $f:\ \mathbb{R}\supseteq I\rightarrow\mathbb{R},\ I$ intervallo, $f$ è \underline{convessa} in $I$ se $\forall\ x_1,x_2\in I$, il segmento che congiunge $x_1,f(x_1)$ e $x_2,f(x_2)$ non ha
@@ -1019,6 +1025,20 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         \end{axis}
     \end{tikzpicture}
     \end{minipage}\\\\
+    \begin{theo}{}{}
+        Sia $f$ derivabile due volte nell'intervallo $I$:
+        \begin{itemize}
+            \item $f$ convessa in $I\ \Leftrightarrow\ f''(x)\ge0\quad\forall x\in I$
+            \item $f$ concava in $I\ \Leftrightarrow\ f''(x)\le0\quad\forall x\in I$
+            \item Se $f''(x)>0\quad\forall x\in I\ \Rightarrow\ f$ è strett. convessa in $I$
+            \item Se $f''(x)<0\quad\forall x\in I\ \Rightarrow\ f$ è strett. concava in $I$
+        \end{itemize}
+    \end{theo}\vspace{20pt}
+    \begin{defi}{Punto di flesso}{}
+        $x_0\in I,\ f:I\rightarrow\mathbb{R},\ x_0$ è \underline{punto di flesso per $f$} se esiste un intorno $U$ di $x_0$ in cui
+        $f$ cambia concavità in $x_0$ ed esiste $f'(x_0)\in\mathbb{\bar R}$.\\
+        Di conseguenza $f''(x_0)=0$
+    \end{defi}\vspace{20pt}
     \begin{defi}{Asintoti}{}
         Sia $f$ funzione reale di variabile reale:
         \begin{itemize}
@@ -1225,7 +1245,7 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
             \item Se $l=0$ e $b_k$ converge anche $a_k$ converge
             \item Se $l=+\infty$ e $b_k$ diverge anche $a_k$ diverge
         \end{enumerate}
-    \end{theo}
+    \end{theo}\vspace{20pt}
     \begin{theo}{Criterio del Rapporto}{}
         Sia $\{a_k\}$ una successione a termini positivi (oppure def $\ge0$ per $k\rightarrowè\infty$).\\
         Valgono le seguenti affermazioni:
@@ -1409,6 +1429,9 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \end{defi}
     \colorbox{yellow}{Esempio}: se $f$ è derivabile, allora $f$ è una primitiva di $f'$\\
     $\int f(x)\cdot dx=F(x)+c$ quindi $F(x)+c$ è la famiglia di primitive di $f(x)$\\\\
+    \begin{theo}{}{}
+        Siano $F,G$ due primitive di $f$
+    \end{theo}\vspace{20pt}
     \begin{theo}{Teorema fondamentale del calcolo 1° parte}{}
         Se $f\in C°[a,b]$ e definisco \[F(x)=\int_{a}^{x}f(t)\ dt\qquad\forall x\in[a,b]\]
         allora $F$ è derivabile (e continua) in $[a,b]$ e si ha $F'(x)=f(x)$ quindi $F$ è primitiva di $f$
