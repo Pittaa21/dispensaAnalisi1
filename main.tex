@@ -1430,8 +1430,15 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \colorbox{yellow}{Esempio}: se $f$ è derivabile, allora $f$ è una primitiva di $f'$\\
     $\int f(x)\cdot dx=F(x)+c$ quindi $F(x)+c$ è la famiglia di primitive di $f(x)$\\\\
     \begin{theo}{}{}
-        Siano $F,G$ due primitive di $f$
-    \end{theo}\vspace{20pt}
+        Siano $F,G$ due primitive di $f$ sia $A=I$ intervallo. Allora esiste $c\in\mathbb{R}$ tale che\[F(x)=G(x)+c\qquad\forall x\in I\]
+    \end{theo}
+    \colorbox{yellow}{Dim}: so che $G'(x)=f(x)=F'(x)\quad\forall x\in I$
+    \begin{align*}
+        &\Rightarrow\quad\left(F(x)-G(x)\right)'=F'(x)-G'(x)=f(x)-f(x)=0&&&&&&\\
+        &\Rightarrow\quad F-G\quad\text{ è costante in }I\\
+        &\Rightarrow\quad\exists\ c\in\mathbb{R}\quad\text{tale che}\quad F(x)-G(x)=c\quad\forall x\in I\\
+        &\Rightarrow\quad\exists\ c\in\mathbb{R}\quad\text{tale che}\quad F(x)=G(x)-c\quad\forall x\in I\quad\checkmark\\
+    \end{align*}
     \begin{theo}{Teorema fondamentale del calcolo 1° parte}{}
         Se $f\in C°[a,b]$ e definisco \[F(x)=\int_{a}^{x}f(t)\ dt\qquad\forall x\in[a,b]\]
         allora $F$ è derivabile (e continua) in $[a,b]$ e si ha $F'(x)=f(x)$ quindi $F$ è primitiva di $f$
@@ -1558,6 +1565,8 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \[\int_{0}^{1}\frac{1}{x^\alpha}<+\infty\quad\Leftrightarrow\quad\alpha<1\]Se $\alpha\ge1$ allora $\Rightarrow+\infty$
     \[\int_{1}^{+\infty}\frac{1}{x^\alpha}<+\infty\quad\Leftrightarrow\quad\alpha>1\]Se $\alpha\le1$ allora $\Rightarrow+\infty$\\\\
     \colorbox{yellow}{Osservazione}:\[\int_{0}^{+\infty}\frac{1}{x^\alpha}=\int_{0}^{1}\frac{1}{x^\alpha}+\int_{1}^{+\infty}\frac{1}{x^\alpha}=+\infty\qquad\forall\alpha\in\mathbb{R}\]
+    \newpage\section{Equazioni Differenziali}
+    \vspace{10pt}
     \newpage\section{Tabelle Utili}
     \vspace{10pt}
     \subsection{Proprietà potenze e logaritmi}\vspace{5pt}\large
