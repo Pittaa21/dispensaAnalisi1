@@ -13,11 +13,11 @@
 \contentsline {subsection}{\numberline {9.1}Metodi di integrazione}{41}{subsection.9.1}%
 \contentsline {subsection}{\numberline {9.2}Integrale improprio}{43}{subsection.9.2}%
 \contentsline {section}{\numberline {10}Equazioni Differenziali}{45}{section.10}%
-\contentsline {section}{\numberline {11}Tabelle Utili}{46}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Proprietà potenze e logaritmi}{46}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11.2}Limiti notevoli}{46}{subsection.11.2}%
-\contentsline {subsection}{\numberline {11.3}Sviluppi asintotici di alcune funzioni}{47}{subsection.11.3}%
-\contentsline {subsection}{\numberline {11.4}Tabella Derivate Semplici}{47}{subsection.11.4}%
-\contentsline {subsection}{\numberline {11.5}Sviluppi di McLaurin}{48}{subsection.11.5}%
-\contentsline {subsection}{\numberline {11.6}Integrali indefiniti noti}{48}{subsection.11.6}%
-\contentsline {subsection}{\numberline {11.7}Come risolvere le Equazioni Differenziali}{49}{subsection.11.7}%
+\contentsline {section}{\numberline {11}Tabelle Utili}{47}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Proprietà potenze e logaritmi}{47}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Limiti notevoli}{47}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Sviluppi asintotici di alcune funzioni}{48}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}Tabella Derivate Semplici}{48}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}Sviluppi di McLaurin}{49}{subsection.11.5}%
+\contentsline {subsection}{\numberline {11.6}Integrali indefiniti noti}{49}{subsection.11.6}%
+\contentsline {subsection}{\numberline {11.7}Come risolvere le Equazioni Differenziali}{50}{subsection.11.7}%

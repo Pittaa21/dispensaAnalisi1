@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.29)  23 JAN 2026 20:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.29)  24 JAN 2026 15:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1763,16 +1763,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 1597--1605
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1610--1613
+Underfull \hbox (badness 10000) in paragraph at lines 1610--1615
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1610--1613
+Underfull \hbox (badness 10000) in paragraph at lines 1610--1615
 
  []
 
-[45] [46] [47] [48] [49] (./main.aux)
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 1623--1627
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1623--1627
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1628--1632
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1628--1632
+
+ []
+
+[46] [47] [48] [49] [50] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1781,18 +1801,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: DB73A3100870A4683E108096A4DE72E7;3756.
  ) 
 Here is how much of TeX's memory you used:
- 39511 strings out of 474222
- 929865 string characters out of 5748732
+ 39516 strings out of 474222
+ 929932 string characters out of 5748732
  2029975 words of memory out of 5000000
- 60841 multiletter control sequences out of 15000+600000
+ 60843 multiletter control sequences out of 15000+600000
  628242 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,19n,107p,760b,2204s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/atkinson/atkinsn-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/atkinson/atkinsn-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (49 pages, 472771 bytes).
+Output written on main.pdf (50 pages, 476501 bytes).
 PDF statistics:
- 778 PDF objects out of 1000 (max. 8388607)
- 645 compressed objects within 7 object streams
- 286 named destinations out of 1000 (max. 500000)
+ 786 PDF objects out of 1000 (max. 8388607)
+ 652 compressed objects within 7 object streams
+ 289 named destinations out of 1000 (max. 500000)
  341 words of extra memory for PDF output out of 10000 (max. 10000000)
 

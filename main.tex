@@ -1610,7 +1610,33 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \colorbox{yellow}{Svolgimento}: La funzione $y(t)=e^{3t}$ è una soluzione. Infatti $y'(t)=3e^{3t}=3y(t)$\\
     $\Rightarrow\qquad y(t)=e^{3t}$ soddisfa l'equazione.\\
     Se prendo $y(t)=K\cdot e^{3t}$ ho l'integrale generale di $y'(t)=3y$\\\\
-
+    \begin{ex}{Lineari}{}
+        \[y'=3y+t\]
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}: $y'=a(t)\cdot y+b(t)$
+    \begin{align*}
+        &a(t)=3\qquad b(t)=t\qquad a,b:\ \mathbb{R}\rightarrow\mathbb{R} &&&&&\\
+        &A(t) = 3t\\
+        &\Rightarrow\quad y(t)=e^{3t}\cdot\left(\int t\cdot e^{-3t}\ dt\right)\qquad\text{ utilizzato la formula di risoluzione delle ED lineari}\\
+        &\Rightarrow\quad y(t)=e^{3t}\cdot\left(-\frac13e^{-3t}\cdot t-\frac19e^{-3t}+c\right)\\
+        &\Rightarrow\quad y(t)=-\frac t3-\frac19+c\ e^{3t}\qquad c\in\mathbb{R}
+    \end{align*}
+    Posso verificare che sia la soluzione derivando $y(t)$\\\\
+    \begin{ex}{A variabili separabili}{}
+        \[y'=t\cdot y^2\]
+    \end{ex}
+    \colorbox{yellow}{Svolgimento}: $a(t)=t\quad b(y)=y^2$\\\\
+    Cerco le soluzioni costanti, quindi con $b(\bar{y})=0$ ossia $\bar{y}^2=0\quad\Rightarrow\quad\bar{y}=0$\\
+    L'unica soluzione costante è quindi $y(t)=0$.\\\\
+    Adesso cerco le soluzioni non costanti:$\qquad$ Se $y(t)\ne0$ posso dividere per $\left(y(t)\right)^2$
+    \[\frac{y'(t)}{\left(y(t)\right)^2}=t\]
+    Da cui:
+    \begin{align*}
+        &\Rightarrow\quad\int\frac{y'(t)}{(y(t))^2}\ dt=\int t\ dt&&\\
+        &\Rightarrow\quad\int\frac{1}{s^2}\ ds=\frac{t^2}{2}+c\qquad s=y(t)\\
+        &\Rightarrow\quad-\frac{1}{s}=\frac{t^2}2+c\qquad s=y(t)\\
+        &\Rightarrow\quad y(t)=-\frac{1}{\frac{1}{2}t^2+c}
+    \end{align*}
     \newpage\section{Tabelle Utili}
     \vspace{10pt}
     \subsection{Proprietà potenze e logaritmi}\vspace{5pt}\large
@@ -1715,17 +1741,10 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
         {\rowcolors{1}{gray!8}{white!100}
         \begin{tabular}{| c | c |}
             \hline
-            \LARGE$\int f(x)$ & \LARGE$F(x)$\\\hline
-            $\int e^x\ dx$ & $e^x+c$\\\hline
-            $\int x^\alpha\ dx$ & $\frac{1}{\alpha+1}\cdot x^{\alpha+1}+c$\\\hline
-            $\int \frac{1}{x}\ dx$ & $\ln|x|+c$\\\hline
-            $\int \alpha^x\ dx$ & $\frac{1}{\ln\alpha}\cdot\alpha^x+c$\\\hline
-            $\int \sin x\ dx$ & $-\cos x+c$\\\hline
-            $\int \cos x\ dx$ & $\sin x+c$\\\hline
-            $\int \frac{1}{\cos^2x}\ dx$ & $\tan x+c$\\\hline
-            $\int \frac{1}{1+x^2}\ dx$ & $\arctan x+c$\\\hline
-            $\int \frac{1}{\sin^2x}\ dx$ & $-\cot x+c$\\\hline
-            $\int \frac{1}{\sqrt{1-x^2}}\ dx$ & $\arcsin x+c$\\\hline
+            \LARGE ED & \LARGE $y'=a(t)\cdot y+b(t)$\\\hline
+            $y'=b(t)\qquad a(t)=0$ & $\int b(t)=B(t)+c$\\\hline
+            $y'(t)=a(t)\cdot b(y(t))$ & $\int\frac{y'(t)}{b(y(t))}\ dt=\int a(t)\ dt$\\\hline
+            $y'=a(t)\cdot y+b(t)$ & $y=e^{A(t)}\cdot\int e^{-A(t)}\cdot b(t)\ dt\qquad A(t)=\int a(t)\ dt$\\\hline
         \end{tabular}}
     \end{center}
 \end{document}
