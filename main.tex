@@ -473,7 +473,8 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \colorbox{yellow}{Dim}: 
     \begin{align*}
         &\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)}=\quad\lim_{x\rightarrow x_0}\frac{f_1(x)+o\left(f_1(x)\right)}{g_1(x)+o\left(g_1(x)\right)}&&&&&\\
-        &\Rightarrow\quad\lim_{x\rightarrow x_0}\frac{f_1(x)}{g_1(x)}
+        &\Rightarrow\quad\lim_{x\rightarrow x_0}\frac{f_1(x)\left(1+\frac{o(f_1(x))}{f_1(x)}\right)}{g_1(x)\left(1+\frac{o(g_1(x))}{g_1(x)}\right)}\\
+        &\Rightarrow\quad\lim_{x\rightarrow x_0}\frac{f_1(x)}{g_1(x)}\qquad\checkmark
     \end{align*}
     \colorbox{yellow}{Osservazione}:\[\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)}=\lim_{x\rightarrow x_0}\frac{f_1(x)+o(f_1(x))}{g_1(x)+o(g_1(x))}=\lim_{x\rightarrow x_0}\frac{f_1(x)}{g_1(x)}\]\\
     \begin{ex}{Calcolare}{}
