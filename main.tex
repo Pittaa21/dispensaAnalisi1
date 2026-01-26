@@ -1261,15 +1261,13 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \colorbox{yellow}{Dim}: prendiamo il punto 1 nel caso $\frac{a_{k+1}}{a_k}\le r\qquad\forall k\ge k_0$ e $r<1$
     \begin{align*}
         &\Rightarrow\qquad a_{k+1}\le r\cdot a_k\qquad\forall k\ge k_0&&&&&&&&&\\
-        &\Rightarrow\qquad a_{k_0+1}\le r\cdot a_{k_0}\\\\
+        &\Rightarrow\qquad a_{k_0+1}\le r\cdot a_{k_0}\\
         &\frac{a_{k_0+2}}{a_{k_0+1}}\le r\Rightarrow a_{k_0+2}\le r\cdot a_{k_0+1}\le r\cdot r\cdot a_{k_0}=r^2\cdot a_{k_0}\\
         &\text{In generale}\qquad a_{k_0+j}\le r\cdot a_{k_0+(j-1)}\le r\cdot r^{j-1}\cdot a_{k_0}=r^j\cdot a_{k_0}\\
-        &\text{Si dimostra per induzione, ossia}\qquad a_{k_0+j}\le r^j\cdot a_{k_0}\quad\forall j\ge0\\
-        &k=k_0+j\qquad a_k\le r^{k-k_0}\cdot a_{k_0}\quad\forall k\ge k_0\\
-        &\sum_{k=0}^{+\infty}a_k=\sum_{k=0}^{k_0-1}a_k+\sum_{k=k_0}^{+\infty}a_k\le\sum_{k=0}^{k-1}a_k+\sum_{k=k_0}^{+\infty}r^{k-k_0}\cdot a_{k_0}\\
-        &=\sum_{k=0}^{k_0-1}a_k+a_{k_0}\sum_{k=k_0}^{+\infty}r^{k-k_0}=\sum_{k=0}^{k_0-1}a_k+a_{k_0}\underbrace{\sum_{j=0}^{+\infty}r^{j}}_{converge}<+\infty
+        &\Rightarrow\quad a_{k_0+j}\le r^j\cdot a_{k_0}\quad\forall j\ge1\\
+        &\sum a_{k_0+j}\le a_{k_0}\cdot\sum r^j\qquad\qquad\sum r^j = \text{ serie è convergente }r<1\\
+        &\text{Quindi per il criterio del confronto anche }\sum a_{k_0+j}\quad\text{ è convergente.}
     \end{align*}
-    Quindi si ottiene che la sommatoria è convergente da $k_0$ a $+\infty$ e di conseguenza si può applicare lo stesso ragionamento, per induzione, a tutti i termini della serie da $k=0$.\\\\
     \colorbox{yellow}{Osservazione}: Per quanto riguarda la divergenza si può applicare lo stesso ragionamento, ma con $r\ge1$ e quindi verrà sempre $\sum r^j$ che è divergente.\\
     Oppure si può notare che $a_{k_0+1}\ge a_{k_0}>0$ che generalizzato vuol dire $a_{k_0+j}\ge a_{k_0}>0\quad\forall j\ge0$ e applicando il criterio
     di convergenza abbiamo che $a_{k_0+1}\nrightarrow0$ per $j\rightarrow+\infty$ e quindi la serie diverge.\\\\
@@ -1302,9 +1300,8 @@ Utilizzando il teorema e $\binom{n}{0}=1$ possiamo calcolare ogni valore di $\bi
     \begin{align*}
         &\sqrt[k]{a_k}\le r\quad\forall k\ge k_0&&&&&&&&&\\
         &\Rightarrow a_k\le r^k\\
-        &\sum_{k=0}^{+\infty}a_k=\sum_{k=0}^{k_0-1}a_k+\sum_{k=k_0}^{+\infty}a_k\le\sum_{k=0}^{k_0-1}a_k+\underbrace{\sum_{k=k_0}^{+\infty}r^k}_{\text{convergente}}<+\infty\\
-        &\text{Quindi stesso ragionamento della dimostrazione del criterio del rapporto:}\\
-        &\text{abbiamo dimostrato per la serie parziale da $k=k_0$ a $+\infty$ adesso vale lo stesso per tutta la serie}
+        &\sum_{k=0}^{+\infty}a_k\le\sum_{k=k_0}^{+\infty}r^k\qquad\qquad\sum r^k=\text{ serie è convergente }r<1\\
+        &\text{Quindi per il criterio del confronto anche }\sum_{k=0}^{+\infty}a_k\quad\text{ è convergente}
     \end{align*}
     \colorbox{yellow}{Osservazione}: La dimostrazione del punto 2 e 3 sono analoghe a quella del punto 1, cambiando l'intervallo in cui esiste $r$.\\\\
     \begin{defi}{Serie Logaritmica}{}
