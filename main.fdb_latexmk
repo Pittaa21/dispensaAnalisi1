@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1769520587.65324 "/home/pitta/Documents/Latex/main.tex" "main.pdf" "main" 1769520591.21686 0
+["pdflatex"] 1769535144.21562 "/home/pitta/Documents/Latex/main.tex" "main.pdf" "main" 1769535147.86316 0
   "/etc/texmf/web2c/texmf.cnf" 1764412924.27367 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/pitta/Documents/Latex/main.tex" 1769520587.44951 111880 a6d753720cbc0e4786826f86a19b8066 ""
+  "/home/pitta/Documents/Latex/main.tex" 1769535143.90412 111878 9bb79eb85b76c03c1f6aed63e420e0e1 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/atkinson/atksn_cvs3iv.enc" 1612564038 2852 0e84d9c42a84502cb059a346f06c6632 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/atkinson/atksn_ycy2xh.enc" 1612564038 3176 391809404193674ae2e225815b04d7d6 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -275,10 +275,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1764412946.09031 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1764413083 8214005 b94c646e6e46fa3fbdf3b229186627aa ""
-  "main.aux" 1769520591.06447 3041 192572a329060b8b2598a2668c43c2d4 "pdflatex"
-  "main.out" 1769520591.06447 3756 db73a3100870a4683e108096a4de72e7 "pdflatex"
-  "main.tex" 1769520587.44951 111880 a6d753720cbc0e4786826f86a19b8066 ""
-  "main.toc" 1769520591.06597 1935 df00b19a668500a6344f7008f08c159f "pdflatex"
+  "main.aux" 1769535147.71571 3041 192572a329060b8b2598a2668c43c2d4 "pdflatex"
+  "main.out" 1769535147.71571 3756 db73a3100870a4683e108096a4de72e7 "pdflatex"
+  "main.tex" 1769535143.90412 111878 9bb79eb85b76c03c1f6aed63e420e0e1 ""
+  "main.toc" 1769535147.7174 1935 df00b19a668500a6344f7008f08c159f "pdflatex"
   (generated)
   "main.aux"
   "main.log"
